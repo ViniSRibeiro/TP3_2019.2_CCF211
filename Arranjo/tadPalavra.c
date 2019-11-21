@@ -1,4 +1,4 @@
-#include "includes/tadPalavra.h"
+#include "tadPalavra.h"
 
 void FazPalavraVazia(Palavra *palavra){
     palavra->Primeiro = 0;

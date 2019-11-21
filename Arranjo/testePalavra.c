@@ -1,4 +1,4 @@
-#include "includes/tadPalavra.h"
+#include "tadPalavra.h"
 
 int main(){
     Caractere letrinha;

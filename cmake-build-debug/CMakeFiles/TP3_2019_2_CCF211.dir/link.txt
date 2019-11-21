@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/tadPalavra.c.o CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/testePalavra.c.o  -o TP3_2019_2_CCF211 
