@@ -4,10 +4,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 typedef struct 
 {
-    char letra[2];
+    char letra;
 }Caractere;
 
 typedef struct Lista

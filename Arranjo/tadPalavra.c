@@ -1,7 +1,7 @@
 #include "tadPalavra.h"
 
 void FazPalavraVazia(Palavra *palavra){
-    palavra->Primeiro = 0;
+    palavra->Primeiro = InicioArranjo;
     palavra->Ultimo = palavra->Primeiro;
 }
 
@@ -11,7 +11,8 @@ int PalavraVazia(Palavra *palavra){
 
 void InsereLetra(Palavra *palavra, Caractere caractere){
    // if(palavra ->Ultimo == TAMMAX) return 0; //vetor cheio
-    strcpy(palavra->caractere[palavra->Ultimo].letra,caractere.letra);
+    palavra->caractere[palavra->Ultimo].letra = caractere.letra;
+    //strcpy(palavra->caractere[palavra->Ultimo].letra,caractere.letra);
     palavra->Ultimo +=1;
     //return 1;
 }
@@ -29,7 +30,7 @@ void RetiraLetra(Palavra *palavra,int Posicao, Caractere *caractere){
 }
 void ImprimePalavra (Palavra *palavra){
     for(int i = palavra->Primeiro; i < palavra->Ultimo; i++){
-        printf("%c", palavra->caractere[i].letra[0]);
+        printf("%c", palavra->caractere[i].letra);
     }
     printf("\n");
 }
