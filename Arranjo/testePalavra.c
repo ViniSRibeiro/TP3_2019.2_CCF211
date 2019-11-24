@@ -1,12 +1,14 @@
 #include "tadPalavra.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+//gcc -o teste tadPalavra.c tadPalavra.h testePalavra.c tadTexto.c tadTexto.h
+//main.c principal
 
 int main(){
     Caractere letrinha;
     Palavra palavrinha;
     int op = -1,n;
+
     while (op != 0)
     {
         printf("------ MENU -------\n");
@@ -27,7 +29,7 @@ int main(){
             srand(time(NULL));
             for(int i = 0; i < n; i++){
                 letrinha.letra = (rand() % (122 + 1 - 97)) + 97;
-                InsereLetra(&palavrinha,letrinha); 
+                InsereLetra(&palavrinha,letrinha);
             }
         }
         else if(op == 3){
