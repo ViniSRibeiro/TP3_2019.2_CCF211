@@ -16,6 +16,7 @@ int main(){
         printf("2 - Inserir palavra\n");
         printf("3 - Imprimir palavra\n");
         printf("4 - Remover letra\n");
+        printf("5 - Tamanho da palavra\n");
         printf("0 - Sair\n");
         printf("-------------------\n");
         scanf("%d",&op);
@@ -39,7 +40,10 @@ int main(){
             printf("Insira a posicao que deseja remover: ");
             scanf("%d",&n);
             RetiraLetra(&palavrinha,n,&letrinha);
-            printf("A letra removida foi '%c'.\n",letrinha);
+            printf("A letra removida foi '%c'.\n",letrinha.letra);
+        }
+        else if(op == 5){
+            TamanhoPalavra(&palavrinha);
         }
     }
 
