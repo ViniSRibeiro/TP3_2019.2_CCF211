@@ -10,16 +10,17 @@ int PalavraVazia(Palavra *palavra){
 }
 
 void InsereLetra(Palavra *palavra, Caractere caractere){
-   // if(palavra ->Ultimo == TAMMAX) return 0; //vetor cheio
+     //if(palavra ->Ultimo == TAMMAX){
+     //    printf("Vetor cheio\n");
+      //   exit ;} //vetor cheio
     palavra->caractere[palavra->Ultimo].letra = caractere.letra;
-    //strcpy(palavra->caractere[palavra->Ultimo].letra,caractere.letra);
     palavra->Ultimo +=1;
     //return 1;
 }
 
 void RetiraLetra(Palavra *palavra,int Posicao, Caractere *caractere){
     int cont;
-  //  if(PalavraVazia(palavra) || Posicao >= palavra->Ultimo || Posicao < 0) return 0;
+  //if(PalavraVazia(palavra) || Posicao >= palavra->Ultimo || Posicao < 0) exit;
 
     *caractere = palavra->caractere[Posicao];
     palavra->Ultimo--;
@@ -28,6 +29,11 @@ void RetiraLetra(Palavra *palavra,int Posicao, Caractere *caractere){
     }
   //  return 1;
 }
+
+void TamanhoPalavra(Palavra *palavra){
+  printf("Tamanho palavra: %d\n",palavra->Ultimo);
+}
+
 void ImprimePalavra (Palavra *palavra){
     for(int i = palavra->Primeiro; i < palavra->Ultimo; i++){
         printf("%c", palavra->caractere[i].letra);

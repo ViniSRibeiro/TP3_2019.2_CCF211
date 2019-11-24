@@ -20,11 +20,4 @@ int PalavraVazia(Palavra *palavra);
 void InsereLetra(Palavra *palavra, Caractere caractere);
 void RetiraLetra(Palavra *palavra,int posicao, Caractere *caractere);
 void ImprimePalavra (Palavra *palavra);
-
-/*
-void FLVazia(TLista* pLista);
-int LEhVazia(TLista* pLista);
-int LInsere(TLista* pLista, TItem x);
-int LRetira(TLista* pLista, Apontador p, TItem *pX);
-void LImprime(TLista* pLista);
-*/
+void TamanhoPalavra(Palavra *Palavra);
