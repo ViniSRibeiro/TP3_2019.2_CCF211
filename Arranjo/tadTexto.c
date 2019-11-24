@@ -28,3 +28,6 @@ void ImprimeTexto(Ttexto *pTexto){
     }
     printf("\n");
 }
+void TamanhoTexto(Ttexto *pTexto){
+  printf("Tamanho Texto %d\n",pTexto->TextoUltimo );
+}
