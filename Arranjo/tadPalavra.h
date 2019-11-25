@@ -4,24 +4,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <time.h>
 
 typedef struct 
 {
     char letra;
-}Caractere;
+}TCaractere;
 
-typedef struct Lista
+typedef struct
 {
-    Caractere caractere[TAMMAX];
+    TCaractere caractere[TAMMAX];
     int Primeiro,Ultimo;
-}Palavra;
+}TPalavra;
 
-void FazPalavraVazia(Palavra *palavra);
-int PalavraVazia(Palavra *palavra);
-void InsereLetra(Palavra *palavra, Caractere caractere);
-void RetiraLetra(Palavra *palavra,int posicao, Caractere *caractere);
-void ImprimePalavra (Palavra *palavra);
+void FazPalavraVazia(TPalavra *palavra);
+int PalavraEhVazia(TPalavra *palavra);
+void InsereLetra(TPalavra *palavra, TCaractere caractere);
+void RetiraLetra(TPalavra *palavra, int posicao, TCaractere *caractere);
+void ImprimePalavra (TPalavra *palavra);
 
 /*
 void FLVazia(TLista* pLista);
