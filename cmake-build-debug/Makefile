@@ -123,32 +123,86 @@ TP3_2019_2_CCF211/fast:
 	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/build
 .PHONY : TP3_2019_2_CCF211/fast
 
-Arranjo/tadPalavra.o: Arranjo/tadPalavra.c.o
+Arranjo/TAD_Biblioteca.o: Arranjo/TAD_Biblioteca.c.o
 
-.PHONY : Arranjo/tadPalavra.o
+.PHONY : Arranjo/TAD_Biblioteca.o
 
 # target to build an object file
-Arranjo/tadPalavra.c.o:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/tadPalavra.c.o
-.PHONY : Arranjo/tadPalavra.c.o
+Arranjo/TAD_Biblioteca.c.o:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Biblioteca.c.o
+.PHONY : Arranjo/TAD_Biblioteca.c.o
 
-Arranjo/tadPalavra.i: Arranjo/tadPalavra.c.i
+Arranjo/TAD_Biblioteca.i: Arranjo/TAD_Biblioteca.c.i
 
-.PHONY : Arranjo/tadPalavra.i
+.PHONY : Arranjo/TAD_Biblioteca.i
 
 # target to preprocess a source file
-Arranjo/tadPalavra.c.i:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/tadPalavra.c.i
-.PHONY : Arranjo/tadPalavra.c.i
+Arranjo/TAD_Biblioteca.c.i:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Biblioteca.c.i
+.PHONY : Arranjo/TAD_Biblioteca.c.i
 
-Arranjo/tadPalavra.s: Arranjo/tadPalavra.c.s
+Arranjo/TAD_Biblioteca.s: Arranjo/TAD_Biblioteca.c.s
 
-.PHONY : Arranjo/tadPalavra.s
+.PHONY : Arranjo/TAD_Biblioteca.s
 
 # target to generate assembly for a file
-Arranjo/tadPalavra.c.s:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/tadPalavra.c.s
-.PHONY : Arranjo/tadPalavra.c.s
+Arranjo/TAD_Biblioteca.c.s:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Biblioteca.c.s
+.PHONY : Arranjo/TAD_Biblioteca.c.s
+
+Arranjo/TAD_Palavra.o: Arranjo/TAD_Palavra.c.o
+
+.PHONY : Arranjo/TAD_Palavra.o
+
+# target to build an object file
+Arranjo/TAD_Palavra.c.o:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Palavra.c.o
+.PHONY : Arranjo/TAD_Palavra.c.o
+
+Arranjo/TAD_Palavra.i: Arranjo/TAD_Palavra.c.i
+
+.PHONY : Arranjo/TAD_Palavra.i
+
+# target to preprocess a source file
+Arranjo/TAD_Palavra.c.i:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Palavra.c.i
+.PHONY : Arranjo/TAD_Palavra.c.i
+
+Arranjo/TAD_Palavra.s: Arranjo/TAD_Palavra.c.s
+
+.PHONY : Arranjo/TAD_Palavra.s
+
+# target to generate assembly for a file
+Arranjo/TAD_Palavra.c.s:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Palavra.c.s
+.PHONY : Arranjo/TAD_Palavra.c.s
+
+Arranjo/TAD_Texto.o: Arranjo/TAD_Texto.c.o
+
+.PHONY : Arranjo/TAD_Texto.o
+
+# target to build an object file
+Arranjo/TAD_Texto.c.o:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Texto.c.o
+.PHONY : Arranjo/TAD_Texto.c.o
+
+Arranjo/TAD_Texto.i: Arranjo/TAD_Texto.c.i
+
+.PHONY : Arranjo/TAD_Texto.i
+
+# target to preprocess a source file
+Arranjo/TAD_Texto.c.i:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Texto.c.i
+.PHONY : Arranjo/TAD_Texto.c.i
+
+Arranjo/TAD_Texto.s: Arranjo/TAD_Texto.c.s
+
+.PHONY : Arranjo/TAD_Texto.s
+
+# target to generate assembly for a file
+Arranjo/TAD_Texto.c.s:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Texto.c.s
+.PHONY : Arranjo/TAD_Texto.c.s
 
 Arranjo/testePalavra.o: Arranjo/testePalavra.c.o
 
@@ -186,9 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... TP3_2019_2_CCF211"
 	@echo "... edit_cache"
-	@echo "... Arranjo/tadPalavra.o"
-	@echo "... Arranjo/tadPalavra.i"
-	@echo "... Arranjo/tadPalavra.s"
+	@echo "... Arranjo/TAD_Biblioteca.o"
+	@echo "... Arranjo/TAD_Biblioteca.i"
+	@echo "... Arranjo/TAD_Biblioteca.s"
+	@echo "... Arranjo/TAD_Palavra.o"
+	@echo "... Arranjo/TAD_Palavra.i"
+	@echo "... Arranjo/TAD_Palavra.s"
+	@echo "... Arranjo/TAD_Texto.o"
+	@echo "... Arranjo/TAD_Texto.i"
+	@echo "... Arranjo/TAD_Texto.s"
 	@echo "... Arranjo/testePalavra.o"
 	@echo "... Arranjo/testePalavra.i"
 	@echo "... Arranjo/testePalavra.s"

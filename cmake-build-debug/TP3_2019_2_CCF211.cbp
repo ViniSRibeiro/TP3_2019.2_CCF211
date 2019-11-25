@@ -34,11 +34,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/."/>
 					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
@@ -59,11 +55,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/."/>
 					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
@@ -88,16 +80,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/tadPalavra.c">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Biblioteca.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/tadPalavra.h">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Biblioteca.h">
+			<Option target="TP3_2019_2_CCF211"/>
+		</Unit>
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Palavra.c">
+			<Option target="TP3_2019_2_CCF211"/>
+		</Unit>
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Palavra.h">
+			<Option target="TP3_2019_2_CCF211"/>
+		</Unit>
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Texto.c">
+			<Option target="TP3_2019_2_CCF211"/>
+		</Unit>
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Texto.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
 		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/testePalavra.c">
-			<Option target="TP3_2019_2_CCF211"/>
-		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/README.md">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
 		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/CMakeLists.txt">
