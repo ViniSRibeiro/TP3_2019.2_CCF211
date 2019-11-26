@@ -101,6 +101,12 @@
 		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/testePalavra.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada/TAD_Palavra.c">
+			<Option target="TP3_2019_2_CCF211"/>
+		</Unit>
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada/TAD_Palavra.h">
+			<Option target="TP3_2019_2_CCF211"/>
+		</Unit>
 		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

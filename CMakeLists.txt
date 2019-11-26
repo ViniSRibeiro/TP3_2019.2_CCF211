@@ -10,4 +10,4 @@ add_executable(TP3_2019_2_CCF211
         Arranjo/TAD_Palavra.h
         Arranjo/TAD_Texto.c
         Arranjo/TAD_Texto.h
-        Arranjo/testePalavra.c Arranjo/TAD_Biblioteca.c Arranjo/TAD_Biblioteca.h)
+        Arranjo/testePalavra.c Arranjo/TAD_Biblioteca.c Arranjo/TAD_Biblioteca.h ListaEncadeada/TAD_Palavra.c ListaEncadeada/TAD_Palavra.h)

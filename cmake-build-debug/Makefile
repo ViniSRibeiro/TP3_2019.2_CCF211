@@ -231,6 +231,33 @@ Arranjo/testePalavra.c.s:
 	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/testePalavra.c.s
 .PHONY : Arranjo/testePalavra.c.s
 
+ListaEncadeada/TAD_Palavra.o: ListaEncadeada/TAD_Palavra.c.o
+
+.PHONY : ListaEncadeada/TAD_Palavra.o
+
+# target to build an object file
+ListaEncadeada/TAD_Palavra.c.o:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Palavra.c.o
+.PHONY : ListaEncadeada/TAD_Palavra.c.o
+
+ListaEncadeada/TAD_Palavra.i: ListaEncadeada/TAD_Palavra.c.i
+
+.PHONY : ListaEncadeada/TAD_Palavra.i
+
+# target to preprocess a source file
+ListaEncadeada/TAD_Palavra.c.i:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Palavra.c.i
+.PHONY : ListaEncadeada/TAD_Palavra.c.i
+
+ListaEncadeada/TAD_Palavra.s: ListaEncadeada/TAD_Palavra.c.s
+
+.PHONY : ListaEncadeada/TAD_Palavra.s
+
+# target to generate assembly for a file
+ListaEncadeada/TAD_Palavra.c.s:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Palavra.c.s
+.PHONY : ListaEncadeada/TAD_Palavra.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -252,6 +279,9 @@ help:
 	@echo "... Arranjo/testePalavra.o"
 	@echo "... Arranjo/testePalavra.i"
 	@echo "... Arranjo/testePalavra.s"
+	@echo "... ListaEncadeada/TAD_Palavra.o"
+	@echo "... ListaEncadeada/TAD_Palavra.i"
+	@echo "... ListaEncadeada/TAD_Palavra.s"
 .PHONY : help
 
 

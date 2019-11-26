@@ -38,4 +38,5 @@ int ImprimeBib(TBiblioteca* PBiblioteca){
     for (int i = PBiblioteca->BibPrimeiro; i <PBiblioteca->BibUltimo ; ++i) {
         ImprimeTexto(&PBiblioteca->biblioteca[i]);
     }
+    return 1;
 }

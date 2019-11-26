@@ -24,7 +24,7 @@ void RetiraPalavra(Ttexto *pTexto,int Posicao, Palavra *pPalavra){
 }
 void ImprimeTexto(Ttexto *pTexto){
     for(int i = pTexto->TextoPrimeiro; i < pTexto->TextoUltimo; i++){
-        printf("%c", pTexto->vetorPalavra[i]);
+        ImprimePalavra(&pTexto->vetorPalavra[i]);
     }
     printf("\n");
 }
