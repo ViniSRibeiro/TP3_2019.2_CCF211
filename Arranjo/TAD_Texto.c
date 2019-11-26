@@ -9,12 +9,12 @@ int TextoVazia(Ttexto *pTexto){
     return(pTexto->TextoUltimo == pTexto->TextoPrimeiro);
 }
 
-void InserePalavra(Ttexto *pTexto, Palavra palavra){
+void InserePalavra(Ttexto *pTexto, TPalavra palavra){
     pTexto->vetorPalavra[pTexto->TextoUltimo] = palavra;
     pTexto->TextoUltimo +=1;
 }
 
-void RetiraPalavra(Ttexto *pTexto,int Posicao, Palavra *pPalavra){
+void RetiraPalavra(Ttexto *pTexto, int Posicao, TPalavra *pPalavra){
     int cont;
     *pPalavra = pTexto->vetorPalavra[Posicao];
     pTexto->TextoUltimo--;

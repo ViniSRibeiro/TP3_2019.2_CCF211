@@ -5,8 +5,8 @@
 //main.c principal
 
 int main(){
-    Caractere letrinha;
-    Palavra palavrinha;
+    TCaractere letrinha;
+    TPalavra palavrinha;
     int op = -1,n;
 
     while (op != 0)

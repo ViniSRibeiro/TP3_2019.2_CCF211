@@ -3,13 +3,13 @@
 typedef int ApontadorTexto;
 
 typedef struct{
-  Palavra vetorPalavra[TAMMAX];
+  TPalavra vetorPalavra[TAMMAX];
   ApontadorTexto TextoPrimeiro,TextoUltimo;
 }Ttexto;
 
 void FazTextoVazia(Ttexto *pTexto);
 int TextoVazia(Ttexto *pTexto);
-void InserePalavra(Ttexto *pTexto, Palavra palavra);
-void RetiraPalavra(Ttexto *pTexto,int posicao, Palavra *pPalavra);
+void InserePalavra(Ttexto *pTexto, TPalavra palavra);
+void RetiraPalavra(Ttexto *pTexto, int posicao, TPalavra *pPalavra);
 void ImprimeTexto(Ttexto *pTexto);
 void TamanhoTexto(Ttexto *pTexto);
