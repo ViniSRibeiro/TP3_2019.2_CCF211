@@ -33,3 +33,9 @@ int RetiraTexto(TBiblioteca* PBiblioteca, Ttexto* PTexto){
         }
     }
 }
+
+int ImprimeBib(TBiblioteca* PBiblioteca){
+    for (int i = PBiblioteca->BibPrimeiro; i <PBiblioteca->BibUltimo ; ++i) {
+        ImprimeTexto(&PBiblioteca->biblioteca[i]);
+    }
+}

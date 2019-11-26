@@ -21,3 +21,4 @@ void FBibVazia(TBiblioteca* PBiblioteca);
 int BibEhVazia(TBiblioteca* PBiblioteca);
 int InsereTexto(TBiblioteca* PBiblioteca, Ttexto PTexto);
 int RetiraTexto(TBiblioteca* PBiblioteca, Ttexto* PTexto);
+int ImprimeBib(TBiblioteca* PBiblioteca);
