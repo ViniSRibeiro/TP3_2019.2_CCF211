@@ -4,6 +4,7 @@
 #endif //TP3_2019_2_CCF211_TAD_PALAVRA_H
 
 #include "TAD_Texto.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 

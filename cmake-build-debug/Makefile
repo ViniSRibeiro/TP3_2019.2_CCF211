@@ -231,6 +231,33 @@ Arranjo/main.c.s:
 	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/main.c.s
 .PHONY : Arranjo/main.c.s
 
+Interface.o: Interface.c.o
+
+.PHONY : Interface.o
+
+# target to build an object file
+Interface.c.o:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.o
+.PHONY : Interface.c.o
+
+Interface.i: Interface.c.i
+
+.PHONY : Interface.i
+
+# target to preprocess a source file
+Interface.c.i:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.i
+.PHONY : Interface.c.i
+
+Interface.s: Interface.c.s
+
+.PHONY : Interface.s
+
+# target to generate assembly for a file
+Interface.c.s:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.s
+.PHONY : Interface.c.s
+
 ListaEncadeada/TAD_Biblioteca.o: ListaEncadeada/TAD_Biblioteca.c.o
 
 .PHONY : ListaEncadeada/TAD_Biblioteca.o
@@ -387,6 +414,9 @@ help:
 	@echo "... Arranjo/main.o"
 	@echo "... Arranjo/main.i"
 	@echo "... Arranjo/main.s"
+	@echo "... Interface.o"
+	@echo "... Interface.i"
+	@echo "... Interface.s"
 	@echo "... ListaEncadeada/TAD_Biblioteca.o"
 	@echo "... ListaEncadeada/TAD_Biblioteca.i"
 	@echo "... ListaEncadeada/TAD_Biblioteca.s"
