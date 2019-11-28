@@ -15,19 +15,31 @@ void InserePalavra(Ttexto_Arranjo *pTexto, TPalavra_Arranjo palavra){
 }
 
 void RetiraPalavra(Ttexto_Arranjo *pTexto, int Posicao, TPalavra_Arranjo *pPalavra){
-    int cont;
-    *pPalavra = pTexto->vetorPalavra[Posicao];
-    pTexto->TextoUltimo--;
-    for(cont = Posicao + 1; cont <= pTexto->TextoUltimo; cont++){
-        pTexto->vetorPalavra[cont - 1] = pTexto->vetorPalavra[cont];
+    if (TextoVazia(pTexto) == 1) {
+      printf("Texto vazio.\n");
+    }else{
+      for (int i = Posicao; i < 100; i++) {
+        pTexto->vetorPalavra[i] = pTexto->vetorPalavra[i + 1];
+      }
+      pTexto->TextoUltimo--;
+      printf("Palavra removida com sucesso!\n");
     }
 }
 void ImprimeTexto(Ttexto_Arranjo *pTexto){
-    for(int i = pTexto->TextoPrimeiro; i < pTexto->TextoUltimo; i++){
-        ImprimePalavra_Arranjo(&pTexto->vetorPalavra[i]);
+    if (TextoVazia(pTexto) == 1) {
+      printf("Texto vazio.\n");
+    }else{
+      for(int i = pTexto->TextoPrimeiro; i < pTexto->TextoUltimo; i++){
+          ImprimePalavra_Arranjo(&pTexto->vetorPalavra[i]);
+      }
+      printf("\n");
     }
-    printf("\n");
+
 }
 void TamanhoTexto(Ttexto_Arranjo *pTexto){
-  printf("Tamanho Texto %d\n",pTexto->TextoUltimo );
+  if (TextoVazia(pTexto) == 1) {
+    printf("Tamanho Texto 0.\n");
+  }else{
+    printf("Tamanho Texto %d\n",pTexto->TextoUltimo );
+  }
 }

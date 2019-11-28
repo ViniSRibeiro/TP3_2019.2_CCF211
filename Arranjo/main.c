@@ -2,15 +2,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 //gcc -o teste main.c TAD_Texto.c TAD_Texto.h TAD_Biblioteca.h TAD_Biblioteca.c TAD_Palavra.c TAD_Palavra.h
-//main.c principal
+//main.c principal teste
 
 int main(){
+
     TCaractere letrinha;
     TPalavra_Arranjo palavrinha;
     int op = -1,n;
-
+    TBiblioteca_Arranjo biblioteca;
     Ttexto_Arranjo texto;
     int opcao = -1;
+    ////////////////////////////////TESTE TAD PALAVRA////////////////////////////////////////
+
     while (op != 0)
     {
       printf("********************[MENU PALAVRA]********************\n");
@@ -48,8 +51,8 @@ int main(){
             TamanhoPalavra(&palavrinha);
         }
     }
-/*
-    ///////////////////////////////////////////////////////////////////////////
+
+    ////////////////////////////////TESTE TAD TEXTO////////////////////////////////////////
 
     while (opcao!=0) {
       printf("************************[MENU TEXTO]******************\n");
@@ -66,12 +69,36 @@ int main(){
       }else if(opcao == 2){
         InserePalavra(&texto,palavrinha);
       }else if(opcao == 3){
-        ImprimePalavra(&palavrinha);
-        ImprimeTexto(&texto);
+          ImprimeTexto(&texto);
       }else if(opcao == 4){
-
+        printf("Insira a posicao da palavra que deseja remover no texto: ");
+        scanf("%d",&n);
+        RetiraPalavra(&texto,n,&palavrinha);
       }else if (opcao == 5) {
         TamanhoTexto(&texto);
       }
-    }*/
     }
+    opcao = -1;
+    ////////////////////////////////TESTE TAD BIBLIOTECAs////////////////////////////////////////
+    while (opcao!=0) {
+      printf("*******************[MENU BIBLIOTECA]******************\n");
+      printf("* 1) - Inicializar Biblioteca                        *\n");
+      printf("* 2) - Inserir Texto Biblioteca                      *\n");
+      printf("* 3) - Imprimir Biblioteca                           *\n");
+      printf("* 4) - Remover texto Biblioteca                      *\n");
+      printf("* 0) - Sair                                          *\n");
+      printf("******************************************************\n");
+      scanf("%d",&opcao);
+      if (opcao == 1) {
+        FBibVazia(&biblioteca);//inicializa BIBLIOTECA
+      }else if(opcao == 2){
+        InsereTexto(&biblioteca,texto);
+      }else if(opcao == 3){
+          ImprimeTexto(&texto);
+      }else if(opcao == 4){
+          RetiraTexto(&biblioteca,&texto);
+      }
+    }
+
+
+}
