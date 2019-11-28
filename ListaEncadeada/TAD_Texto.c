@@ -1,4 +1,3 @@
-#include "TAD_texto.h"
 #include "TAD_Texto.h"
 
 void FTVazia_LEncadeada(Ttexto_LEncadeada *pTexto){
