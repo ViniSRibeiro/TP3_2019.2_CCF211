@@ -6,7 +6,7 @@
 #include "TAD_Palavra.h"
 
 typedef struct CelulaTexto{
-  TPalavra_Arranjo palavra;
+  TPalavra_LEncadeada palavra;
   struct CelulaTexto *pProxTexto;
 }TcelulaTexto;//CELULA
 
