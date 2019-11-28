@@ -19,9 +19,9 @@ typedef struct{
 }TCaractere;
 
 
-typedef struct{
+typedef struct Celula{
     TCaractere caractere;
-    struct Tcelula *pProx;
+    struct Celula *pProx;
 }Tcelula;
 
 typedef struct {
@@ -34,4 +34,4 @@ int PalavraEhVazia(TPalavra *pPalavra);
 void InsereLetra(TPalavra *pPalavra, TCaractere caractere);
 void RetiraLetra(TPalavra *pPalavra, TCaractere Caractere,TCaractere *pCaractere);
 void ImprimePalavra (TPalavra *pPalavra);
-void TamanhoPalavra(TPalavra *PPalavra);
+void TamanhoPalavra(TPalavra *pPalavra);
