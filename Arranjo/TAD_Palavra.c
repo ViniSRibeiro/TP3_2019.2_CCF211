@@ -1,15 +1,15 @@
 #include "TAD_Palavra.h"
 
-void FazPalavraVazia(TPalavra *palavra){
+void FazPalavraVazia_Arranjo(TPalavra_Arranjo *palavra){
     palavra->Primeiro = InicioArranjo;
     palavra->Ultimo = palavra->Primeiro;
 }
 
-int PalavraVazia(TPalavra *palavra){
+int PalavraEhVazia_Arranjo(TPalavra_Arranjo *palavra){
     return(palavra->Ultimo == palavra->Primeiro);
 }
 
-void InsereLetra(TPalavra *palavra, TCaractere caractere){
+void InsereLetra_Arranjo(TPalavra_Arranjo *palavra, TCaractere caractere){
      //if(palavra ->Ultimo == TAMMAX){
      //    printf("Vetor cheio\n");
       //   exit ;} //vetor cheio
@@ -18,23 +18,23 @@ void InsereLetra(TPalavra *palavra, TCaractere caractere){
     //return 1;
 }
 
-void RetiraLetra(TPalavra *palavra, int Posicao, TCaractere *caractere){
+void RetiraLetra_Arranjo(TPalavra_Arranjo *palavra, int posicao, TCaractere *caractere){
     int cont;
   //if(PalavraEhVazia(palavra) || Posicao >= palavra->Ultimo || Posicao < 0) exit;
 
-    *caractere = palavra->caractere[Posicao];
+    *caractere = palavra->caractere[posicao];
     palavra->Ultimo--;
-    for(cont = Posicao + 1; cont <= palavra->Ultimo; cont++){
+    for(cont = posicao + 1; cont <= palavra->Ultimo; cont++){
         palavra->caractere[cont - 1] = palavra->caractere[cont];
     }
   //  return 1;
 }
 
-void TamanhoPalavra(TPalavra *palavra){
+void TamanhoPalavra(TPalavra_Arranjo *palavra){
   printf("Tamanho palavra: %d\n",palavra->Ultimo);
 }
 
-void ImprimePalavra (TPalavra *palavra){
+void ImprimePalavra_Arranjo (TPalavra_Arranjo *palavra){
     for(int i = palavra->Primeiro; i < palavra->Ultimo; i++){
         printf("%c", palavra->caractere[i].letra);
     }

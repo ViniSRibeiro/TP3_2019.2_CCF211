@@ -26,11 +26,11 @@ typedef struct Celula{
 typedef struct {
     Tcelula* pPrimeiro;
     Tcelula* pUltimo;
-}TPalavra;
+}TPalavra_LEncadeada;
 
-void FPVazia(TPalavra *pPalavra);
-int PalavraEhVazia(TPalavra *pPalavra);
-void InsereLetra(TPalavra *pPalavra, TCaractere caractere);
-void RetiraLetra(TPalavra *pPalavra, TCaractere Caractere,TCaractere *pCaractere);
-void ImprimePalavra (TPalavra *pPalavra);
-void TamanhoPalavra(TPalavra *pPalavra);
+void FPVazia_LEncadeada(TPalavra_LEncadeada *pPalavra);
+int PalavraEhVazia_LEncadeada(TPalavra_LEncadeada *pPalavra);
+void InsereLetra_LEncadeada(TPalavra_LEncadeada *pPalavra, TCaractere caractere);
+void RetiraLetra_LEncadeada(TPalavra_LEncadeada *pPalavra, TCaractere Caractere, TCaractere *pCaractere);
+void ImprimePalavra_LEncadeada (TPalavra_LEncadeada *pPalavra);
+void TamanhoPalavra_LEncadeada(TPalavra_LEncadeada *pPalavra);

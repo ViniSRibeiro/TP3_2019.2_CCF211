@@ -13,12 +13,12 @@
 typedef int Apontadorbiblioteca;
 
 typedef struct{
-    Ttexto biblioteca[size_biblioteca];
+    Ttexto_Arranjo biblioteca[size_biblioteca];
     Apontadorbiblioteca BibPrimeiro, BibUltimo;
-}TBiblioteca;
+}TBiblioteca_Arranjo;
 
-void FBibVazia(TBiblioteca* PBiblioteca);
-int BibEhVazia(TBiblioteca* PBiblioteca);
-int InsereTexto(TBiblioteca* PBiblioteca, Ttexto PTexto);
-int RetiraTexto(TBiblioteca* PBiblioteca, Ttexto* PTexto);
-int ImprimeBib(TBiblioteca* PBiblioteca);
+void FBibVazia(TBiblioteca_Arranjo* PBiblioteca);
+int BibEhVazia(TBiblioteca_Arranjo* PBiblioteca);
+int InsereTexto(TBiblioteca_Arranjo* PBiblioteca, Ttexto_Arranjo PTexto);
+int RetiraTexto(TBiblioteca_Arranjo* PBiblioteca, Ttexto_Arranjo* PTexto);
+int ImprimeBib(TBiblioteca_Arranjo* PBiblioteca);

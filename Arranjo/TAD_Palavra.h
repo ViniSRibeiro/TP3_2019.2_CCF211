@@ -6,18 +6,18 @@
 #include <string.h>
 #include <time.h>
 
-typedef struct TCaractere{
+typedef struct {
     char letra;
 }TCaractere;
 
-typedef struct TPalavra{
+typedef struct {
     TCaractere caractere[TAMMAX];
     int Primeiro,Ultimo;
-}TPalavra;
+}TPalavra_Arranjo;
 
-void FazPalavraVazia(TPalavra *palavra);
-int PalavraVazia(TPalavra *palavra);
-void InsereLetra(TPalavra *palavra, TCaractere caractere);
-void RetiraLetra(TPalavra *palavra, int posicao, TCaractere *caractere);
-void ImprimePalavra (TPalavra *palavra);
-void TamanhoPalavra(TPalavra *Palavra);
+void FazPalavraVazia_Arranjo(TPalavra_Arranjo *palavra);
+int PalavraEhVazia_Arranjo(TPalavra_Arranjo *palavra);
+void InsereLetra_Arranjo(TPalavra_Arranjo *palavra, TCaractere caractere);
+void RetiraLetra_Arranjo(TPalavra_Arranjo *palavra, int posicao, TCaractere *caractere);
+void ImprimePalavra_Arranjo (TPalavra_Arranjo *palavra);
+void TamanhoPalavra(TPalavra_Arranjo *Palavra);

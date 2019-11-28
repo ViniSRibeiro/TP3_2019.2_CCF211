@@ -6,18 +6,18 @@
 #include "TAD_Palavra.h"
 
 typedef struct CelulaTexto{
-  TPalavra palavra;
+  TPalavra_Arranjo palavra;
   struct CelulaTexto *pProxTexto;
 }TcelulaTexto;//CELULA
 
 typedef struct{
   TcelulaTexto* pPrimeiroTexto;
   TcelulaTexto* pUltimoTexto;
-}Ttexto;//TAD LISTA
+}Ttexto_LEncadeada;//TAD LISTA
 
-void FTVazia(Ttexto *pTexto);
-int TextoEhVazia(Ttexto *pTexto);
-void InserePalavra(Ttexto *pTexto, TPalavra palavra);
-void RetiraPalavra(Ttexto *pTexto, TPalavra palavra,TPalavra *pPalavra);
-void ImprimeTexto(Ttexto *pTexto);
-int Tamanho(Ttexto *pTexto);
+void FTVazia_LEncadeada(Ttexto_LEncadeada *pTexto);
+int TextoEhVazia_LEncadeada(Ttexto_LEncadeada *pTexto);
+void InserePalavra_LEncadeada(Ttexto_LEncadeada *pTexto, TPalavra_LEncadeada palavra);
+void RetiraPalavra_LEncadeada(Ttexto_LEncadeada *pTexto, TPalavra_LEncadeada palavra, TPalavra_LEncadeada *pPalavra);
+void ImprimeTexto_LEncadeada(Ttexto_LEncadeada *pTexto);
+int Tamanho_LEncadeada(Ttexto_LEncadeada *pTexto);
