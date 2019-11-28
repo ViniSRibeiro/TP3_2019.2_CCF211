@@ -15,13 +15,13 @@ typedef struct CelulaBiblioteca{
 }TCelulaBiblioteca;
 
 typedef struct{
-  TCelulaBiblioteca* pPrimeiroBilioteca;
-  TCelulaBiblioteca* pUltimoBiblioteca;
+  TCelulaBiblioteca *pPrimeiroBiblioteca;
+  TCelulaBiblioteca *pUltimoBiblioteca;
 }TBiblioteca_LEncadeada;
 
 void FBVazia_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca);
 int BibliotecaEhVazia_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca);
 void InsereTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, Ttexto_LEncadeada *texto);
-void RetiraTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, Ttexto_LEncadeada *texto, Ttexto_LEncadeada);
+void RetiraTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, Ttexto_LEncadeada *texto, Ttexto_LEncadeada texto2);
 void ImprimeBiblioteca_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca);
 int TamanhoBiblioteca_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca);
