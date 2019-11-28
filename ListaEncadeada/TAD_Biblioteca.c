@@ -14,23 +14,21 @@ void InsereTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, Ttexto_LEncadea
     pBiblioteca->pUltimoBiblioteca->texto = *texto;
 
 }
-void RetiraTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, Ttexto_LEncadeada *texto, Ttexto_LEncadeada texto2){
-    TCelulaBiblioteca *pAux = pBiblioteca;
-    //if(BibliotecaEhVazia_LEncadeada(pBiblioteca)) return 0;
-    while (pAux->pProxBiblioteca != NULL && pAux->pProxBiblioteca->texto != texto2)
+TCelulaBiblioteca* RetiraTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, int n){
+    TCelulaBiblioteca *pAux = pBiblioteca->pPrimeiroBiblioteca;
+    TCelulaBiblioteca *texto;
+    int cont = 0;
+    while (pAux->pProxBiblioteca != NULL &&  cont < n)
     {
-        /* Voo* listaProcuraVoo(ListaDeVoos *l, int vid){
-                Celula* aux = l->inicio;
-                while(aux->prox != NULL && getVid(aux->prox->voo) != vid)
-                aux = aux->prox;
-                if(aux->prox != NULL)
-                    return aux->prox->voo;
-                else
-                    return NULL;
-}*/
+        pAux = pAux->pProxBiblioteca;
+        cont++;
+    }
+    if(cont == n){
+        texto = pAux->pProxBiblioteca;
+        pAux->pProxBiblioteca = pAux->pProxBiblioteca->pProxBiblioteca;
     }
     
-    
+    return texto;
    // *texto = pBiblioteca->pPrimeiroBilioteca->pProxBiblioteca
 }
 void ImprimeBiblioteca_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca){
