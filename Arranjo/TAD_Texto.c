@@ -1,20 +1,20 @@
 #include "TAD_Texto.h"
 
-void FazTextoVazia(Ttexto *pTexto){
+void FazTextoVazia(Ttexto_Arranjo *pTexto){
     pTexto->TextoPrimeiro = InicioArranjo;
     pTexto->TextoUltimo = pTexto->TextoPrimeiro;
 }
 
-int TextoVazia(Ttexto *pTexto){
+int TextoVazia(Ttexto_Arranjo *pTexto){
     return(pTexto->TextoUltimo == pTexto->TextoPrimeiro);
 }
 
-void InserePalavra(Ttexto *pTexto, TPalavra palavra){
+void InserePalavra(Ttexto_Arranjo *pTexto, TPalavra_Arranjo palavra){
     pTexto->vetorPalavra[pTexto->TextoUltimo] = palavra;
     pTexto->TextoUltimo +=1;
 }
 
-void RetiraPalavra(Ttexto *pTexto, int Posicao, TPalavra *pPalavra){
+void RetiraPalavra(Ttexto_Arranjo *pTexto, int Posicao, TPalavra_Arranjo *pPalavra){
     int cont;
     *pPalavra = pTexto->vetorPalavra[Posicao];
     pTexto->TextoUltimo--;
@@ -22,12 +22,12 @@ void RetiraPalavra(Ttexto *pTexto, int Posicao, TPalavra *pPalavra){
         pTexto->vetorPalavra[cont - 1] = pTexto->vetorPalavra[cont];
     }
 }
-void ImprimeTexto(Ttexto *pTexto){
+void ImprimeTexto(Ttexto_Arranjo *pTexto){
     for(int i = pTexto->TextoPrimeiro; i < pTexto->TextoUltimo; i++){
-        ImprimePalavra(&pTexto->vetorPalavra[i]);
+        ImprimePalavra_Arranjo(&pTexto->vetorPalavra[i]);
     }
     printf("\n");
 }
-void TamanhoTexto(Ttexto *pTexto){
+void TamanhoTexto(Ttexto_Arranjo *pTexto){
   printf("Tamanho Texto %d\n",pTexto->TextoUltimo );
 }

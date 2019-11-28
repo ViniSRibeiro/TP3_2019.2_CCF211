@@ -4,24 +4,24 @@
 
 #include "TAD_Palavra.h"
 #include <stdio.h>
-void FPVazia(TPalavra *pPalavra){
+void FPVazia_LEncadeada(TPalavra_LEncadeada *pPalavra){
     pPalavra->pPrimeiro = (Tcelula*) malloc(sizeof(Tcelula));
     pPalavra->pUltimo = pPalavra->pPrimeiro;
     pPalavra->pPrimeiro->pProx = NULL;
 }
 
-int PalavraEhVazia(TPalavra *pPalavra){
+int PalavraEhVazia_LEncadeada(TPalavra_LEncadeada *pPalavra){
     return (pPalavra->pPrimeiro == pPalavra->pUltimo);
 }
 
-void InsereLetra(TPalavra *pPalavra, TCaractere caractere){
+void InsereLetra_LEncadeada(TPalavra_LEncadeada *pPalavra, TCaractere caractere){
     pPalavra->pUltimo->pProx = (Tcelula*) malloc(sizeof(Tcelula));
     pPalavra->pUltimo = pPalavra->pUltimo->pProx;
     pPalavra->pUltimo->caractere = caractere;
     pPalavra->pUltimo->pProx = NULL;
 }
 
-void RetiraLetra(TPalavra *pPalavra, TCaractere Caractere,TCaractere *pCaractere){
+void RetiraLetra_LEncadeada(TPalavra_LEncadeada *pPalavra, TCaractere Caractere, TCaractere *pCaractere){
     Tcelula* pAux;
     for (Tcelula* i = pPalavra->pPrimeiro; i != NULL ; i = i->pProx) {
         if(i->caractere.letra == Caractere.letra){
@@ -33,8 +33,8 @@ void RetiraLetra(TPalavra *pPalavra, TCaractere Caractere,TCaractere *pCaractere
     }
 }
 
-void ImprimePalavra (TPalavra *pPalavra){
-    for (Tcelula* i = pPalavra->pPrimeiro; i != NULL ; i = i->pProx) {
+void ImprimePalavra_LEncadeada (TPalavra_LEncadeada *palavra){
+    for (Tcelula* i = palavra->pPrimeiro; i != NULL ; i = i->pProx) {
         printf("%c",i->caractere.letra);
     }
     printf("\n");

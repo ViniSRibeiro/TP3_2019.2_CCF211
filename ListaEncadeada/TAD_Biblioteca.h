@@ -9,18 +9,18 @@
 
 typedef struct CelulaBilioteca* Apontador;
 typedef struct CelulaBiblioteca{
-  Ttexto texto;
+  Ttexto_LEncadeada texto;
   struct CelulaBiblioteca *pProxBiblioteca;
 }TCelulaBiblioteca;
 
 typedef struct{
   TCelulaBiblioteca* pPrimeiroBilioteca;
   TCelulaBiblioteca* pUltimoBiblioteca;
-}TBiblioteca;
+}TBiblioteca_LEncadeada;
 
-void FBVazia(TBiblioteca *pBiblioteca);
-int BibliotecaEhVazia(TBiblioteca *pBiblioteca);
-void InsereTexto(TBiblioteca *pBiblioteca, Ttexto *texto);
-void RetiraTexto(TBiblioteca *pBiblioteca, Ttexto *texto, Ttexto);
-void ImprimeBiblioteca(TBiblioteca *pBiblioteca);
-int TamanhoBiblioteca(TBiblioteca *pBiblioteca);
+void FBVazia_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca);
+int BibliotecaEhVazia_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca);
+void InsereTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, Ttexto_LEncadeada *texto);
+void RetiraTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, Ttexto_LEncadeada *texto, Ttexto_LEncadeada);
+void ImprimeBiblioteca_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca);
+int TamanhoBiblioteca_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca);

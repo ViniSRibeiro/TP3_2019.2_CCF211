@@ -6,10 +6,10 @@
 
 int main(){
     TCaractere letrinha;
-    TPalavra palavrinha;
+    TPalavra_Arranjo palavrinha;
     int op = -1,n;
 
-    Ttexto texto;
+    Ttexto_Arranjo texto;
     int opcao = -1;
     while (op != 0)
     {
@@ -24,7 +24,7 @@ int main(){
         scanf("%d",&op);
 
         if(op == 1){
-            FazPalavraVazia(&palavrinha);
+            FazPalavraVazia_Arranjo(&palavrinha);
         }
         else if(op == 2){
             printf("Insira o tamanho que deseja ter a palavra: ");
@@ -32,16 +32,16 @@ int main(){
             srand(time(NULL));
             for(int i = 0; i < n; i++){
                 letrinha.letra = (rand() % (122 + 1 - 97)) + 97;
-                InsereLetra(&palavrinha,letrinha);
+                InsereLetra_Arranjo(&palavrinha, letrinha);
             }
         }
         else if(op == 3){
-            ImprimePalavra(&palavrinha);
+            ImprimePalavra_Arranjo(&palavrinha);
         }
         else if(op == 4){
             printf("Insira a posicao que deseja remover: ");
             scanf("%d",&n);
-            RetiraLetra(&palavrinha,n,&letrinha);
+            RetiraLetra_Arranjo(&palavrinha, n, &letrinha);
             printf("A letra removida foi '%c'.\n",letrinha.letra);
         }
         else if(op == 5){

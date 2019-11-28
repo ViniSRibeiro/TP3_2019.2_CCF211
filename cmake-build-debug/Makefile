@@ -204,32 +204,59 @@ Arranjo/TAD_Texto.c.s:
 	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Texto.c.s
 .PHONY : Arranjo/TAD_Texto.c.s
 
-Arranjo/testePalavra.o: Arranjo/testePalavra.c.o
+Arranjo/main.o: Arranjo/main.c.o
 
-.PHONY : Arranjo/testePalavra.o
+.PHONY : Arranjo/main.o
 
 # target to build an object file
-Arranjo/testePalavra.c.o:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/testePalavra.c.o
-.PHONY : Arranjo/testePalavra.c.o
+Arranjo/main.c.o:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/main.c.o
+.PHONY : Arranjo/main.c.o
 
-Arranjo/testePalavra.i: Arranjo/testePalavra.c.i
+Arranjo/main.i: Arranjo/main.c.i
 
-.PHONY : Arranjo/testePalavra.i
+.PHONY : Arranjo/main.i
 
 # target to preprocess a source file
-Arranjo/testePalavra.c.i:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/testePalavra.c.i
-.PHONY : Arranjo/testePalavra.c.i
+Arranjo/main.c.i:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/main.c.i
+.PHONY : Arranjo/main.c.i
 
-Arranjo/testePalavra.s: Arranjo/testePalavra.c.s
+Arranjo/main.s: Arranjo/main.c.s
 
-.PHONY : Arranjo/testePalavra.s
+.PHONY : Arranjo/main.s
 
 # target to generate assembly for a file
-Arranjo/testePalavra.c.s:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/testePalavra.c.s
-.PHONY : Arranjo/testePalavra.c.s
+Arranjo/main.c.s:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/main.c.s
+.PHONY : Arranjo/main.c.s
+
+ListaEncadeada/TAD_Biblioteca.o: ListaEncadeada/TAD_Biblioteca.c.o
+
+.PHONY : ListaEncadeada/TAD_Biblioteca.o
+
+# target to build an object file
+ListaEncadeada/TAD_Biblioteca.c.o:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Biblioteca.c.o
+.PHONY : ListaEncadeada/TAD_Biblioteca.c.o
+
+ListaEncadeada/TAD_Biblioteca.i: ListaEncadeada/TAD_Biblioteca.c.i
+
+.PHONY : ListaEncadeada/TAD_Biblioteca.i
+
+# target to preprocess a source file
+ListaEncadeada/TAD_Biblioteca.c.i:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Biblioteca.c.i
+.PHONY : ListaEncadeada/TAD_Biblioteca.c.i
+
+ListaEncadeada/TAD_Biblioteca.s: ListaEncadeada/TAD_Biblioteca.c.s
+
+.PHONY : ListaEncadeada/TAD_Biblioteca.s
+
+# target to generate assembly for a file
+ListaEncadeada/TAD_Biblioteca.c.s:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Biblioteca.c.s
+.PHONY : ListaEncadeada/TAD_Biblioteca.c.s
 
 ListaEncadeada/TAD_Palavra.o: ListaEncadeada/TAD_Palavra.c.o
 
@@ -258,6 +285,87 @@ ListaEncadeada/TAD_Palavra.c.s:
 	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Palavra.c.s
 .PHONY : ListaEncadeada/TAD_Palavra.c.s
 
+ListaEncadeada/TAD_Texto.o: ListaEncadeada/TAD_Texto.c.o
+
+.PHONY : ListaEncadeada/TAD_Texto.o
+
+# target to build an object file
+ListaEncadeada/TAD_Texto.c.o:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Texto.c.o
+.PHONY : ListaEncadeada/TAD_Texto.c.o
+
+ListaEncadeada/TAD_Texto.i: ListaEncadeada/TAD_Texto.c.i
+
+.PHONY : ListaEncadeada/TAD_Texto.i
+
+# target to preprocess a source file
+ListaEncadeada/TAD_Texto.c.i:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Texto.c.i
+.PHONY : ListaEncadeada/TAD_Texto.c.i
+
+ListaEncadeada/TAD_Texto.s: ListaEncadeada/TAD_Texto.c.s
+
+.PHONY : ListaEncadeada/TAD_Texto.s
+
+# target to generate assembly for a file
+ListaEncadeada/TAD_Texto.c.s:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Texto.c.s
+.PHONY : ListaEncadeada/TAD_Texto.c.s
+
+ListaEncadeada/main.o: ListaEncadeada/main.c.o
+
+.PHONY : ListaEncadeada/main.o
+
+# target to build an object file
+ListaEncadeada/main.c.o:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/main.c.o
+.PHONY : ListaEncadeada/main.c.o
+
+ListaEncadeada/main.i: ListaEncadeada/main.c.i
+
+.PHONY : ListaEncadeada/main.i
+
+# target to preprocess a source file
+ListaEncadeada/main.c.i:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/main.c.i
+.PHONY : ListaEncadeada/main.c.i
+
+ListaEncadeada/main.s: ListaEncadeada/main.c.s
+
+.PHONY : ListaEncadeada/main.s
+
+# target to generate assembly for a file
+ListaEncadeada/main.c.s:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/main.c.s
+.PHONY : ListaEncadeada/main.c.s
+
+geracao_aleatoria.o: geracao_aleatoria.c.o
+
+.PHONY : geracao_aleatoria.o
+
+# target to build an object file
+geracao_aleatoria.c.o:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/geracao_aleatoria.c.o
+.PHONY : geracao_aleatoria.c.o
+
+geracao_aleatoria.i: geracao_aleatoria.c.i
+
+.PHONY : geracao_aleatoria.i
+
+# target to preprocess a source file
+geracao_aleatoria.c.i:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/geracao_aleatoria.c.i
+.PHONY : geracao_aleatoria.c.i
+
+geracao_aleatoria.s: geracao_aleatoria.c.s
+
+.PHONY : geracao_aleatoria.s
+
+# target to generate assembly for a file
+geracao_aleatoria.c.s:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/geracao_aleatoria.c.s
+.PHONY : geracao_aleatoria.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -276,12 +384,24 @@ help:
 	@echo "... Arranjo/TAD_Texto.o"
 	@echo "... Arranjo/TAD_Texto.i"
 	@echo "... Arranjo/TAD_Texto.s"
-	@echo "... Arranjo/testePalavra.o"
-	@echo "... Arranjo/testePalavra.i"
-	@echo "... Arranjo/testePalavra.s"
+	@echo "... Arranjo/main.o"
+	@echo "... Arranjo/main.i"
+	@echo "... Arranjo/main.s"
+	@echo "... ListaEncadeada/TAD_Biblioteca.o"
+	@echo "... ListaEncadeada/TAD_Biblioteca.i"
+	@echo "... ListaEncadeada/TAD_Biblioteca.s"
 	@echo "... ListaEncadeada/TAD_Palavra.o"
 	@echo "... ListaEncadeada/TAD_Palavra.i"
 	@echo "... ListaEncadeada/TAD_Palavra.s"
+	@echo "... ListaEncadeada/TAD_Texto.o"
+	@echo "... ListaEncadeada/TAD_Texto.i"
+	@echo "... ListaEncadeada/TAD_Texto.s"
+	@echo "... ListaEncadeada/main.o"
+	@echo "... ListaEncadeada/main.i"
+	@echo "... ListaEncadeada/main.s"
+	@echo "... geracao_aleatoria.o"
+	@echo "... geracao_aleatoria.i"
+	@echo "... geracao_aleatoria.s"
 .PHONY : help
 
 
