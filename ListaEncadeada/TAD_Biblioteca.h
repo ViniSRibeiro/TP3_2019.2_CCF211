@@ -16,11 +16,11 @@ typedef struct CelulaBiblioteca{
 typedef struct{
   TCelulaBiblioteca* pPrimeiroBilioteca;
   TCelulaBiblioteca* pUltimoBiblioteca;
-}TBiblioteca;//TAD LISTA
+}TBiblioteca;
 
 void FBVazia(TBiblioteca *pBiblioteca);
 int BibliotecaEhVazia(TBiblioteca *pBiblioteca);
 void InsereTexto(TBiblioteca *pBiblioteca, Ttexto *texto);
-void RetiraTexto(TBiblioteca *pBiblioteca, Ttexto *texto, Ttexto texto2);
+void RetiraTexto(TBiblioteca *pBiblioteca, Ttexto *texto, Ttexto);
 void ImprimeBiblioteca(TBiblioteca *pBiblioteca);
-int TamanhoBiblioteca(Ttexto *pBiblioteca);
+int TamanhoBiblioteca(TBiblioteca *pBiblioteca);

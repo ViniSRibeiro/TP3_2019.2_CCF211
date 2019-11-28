@@ -33,7 +33,7 @@ void ImprimeBiblioteca(TBiblioteca *pBiblioteca){
         pAux = pAux->pProxBiblioteca;
     }
 }
-int TamanhoBiblioteca(Ttexto *pBiblioteca){
+int TamanhoBiblioteca(TBiblioteca *pBiblioteca){
     int count = 0;
     TCelulaBiblioteca *pAux = pBiblioteca;
     while (pAux->pProxBiblioteca!= NULL)
