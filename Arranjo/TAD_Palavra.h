@@ -6,11 +6,11 @@
 #include <string.h>
 #include <time.h>
 
-typedef struct{
+typedef struct TCaractere{
     char letra;
 }TCaractere;
 
-typedef struct{
+typedef struct TPalavra{
     TCaractere caractere[TAMMAX];
     int Primeiro,Ultimo;
 }TPalavra;

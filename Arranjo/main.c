@@ -5,13 +5,12 @@
 //main.c principal
 
 int main(){
-    Caractere letrinha;
-    Palavra palavrinha;
+    TCaractere letrinha;
+    TPalavra palavrinha;
     int op = -1,n;
 
     Ttexto texto;
     int opcao = -1;
-
     while (op != 0)
     {
       printf("********************[MENU PALAVRA]********************\n");
@@ -49,7 +48,7 @@ int main(){
             TamanhoPalavra(&palavrinha);
         }
     }
-
+/*
     ///////////////////////////////////////////////////////////////////////////
 
     while (opcao!=0) {
@@ -74,5 +73,5 @@ int main(){
       }else if (opcao == 5) {
         TamanhoTexto(&texto);
       }
+    }*/
     }
-}

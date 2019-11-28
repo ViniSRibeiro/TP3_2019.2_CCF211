@@ -18,7 +18,6 @@ typedef struct{
     char letra;
 }TCaractere;
 
-
 typedef struct Celula{
     TCaractere caractere;
     struct Celula *pProx;
