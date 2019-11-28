@@ -4,6 +4,7 @@ void FTVazia_LEncadeada(Ttexto_LEncadeada *pTexto){
   pTexto->pPrimeiroTexto = (TcelulaTexto*) malloc(sizeof(TcelulaTexto));
   pTexto->pUltimoTexto = pTexto->pPrimeiroTexto;
   pTexto->pPrimeiroTexto->pProxTexto = NULL;
+  pTexto->pPrimeiroTexto->pAntTexto = NULL;
 }
 
 int TextoEhVazia_LEncadeada(Ttexto_LEncadeada *pTexto){
@@ -11,6 +12,7 @@ int TextoEhVazia_LEncadeada(Ttexto_LEncadeada *pTexto){
 }
 void InserePalavra_LEncadeada(Ttexto_LEncadeada *pTexto, TPalavra_LEncadeada palavra){
   pTexto->pUltimoTexto->pProxTexto = (TcelulaTexto*) malloc(sizeof(TcelulaTexto));
+  pTexto->pUltimoTexto->pProxTexto->pAntTexto = pTexto->pUltimoTexto; // a nova celula criada recebe o endereço da anterior para a lista duplamente encadeada
   pTexto->pUltimoTexto = pTexto->pUltimoTexto->pProxTexto;
   pTexto->pUltimoTexto->palavra = palavra;
   pTexto->pUltimoTexto->pProxTexto = NULL;
@@ -30,7 +32,7 @@ void RetiraPalavra_LEncadeada(Ttexto_LEncadeada *pTexto, TPalavra_LEncadeada pal
 
 void ImprimeTexto_LEncadeada(Ttexto_LEncadeada *pTexto){
   for (TcelulaTexto* i = pTexto->pPrimeiroTexto; i !=NULL; i = i->pProxTexto) {
-    ImprimePalavra_LEncadeada(&pTexto->pPrimeiroTexto->palavra);
+    ImprimePalavra_LEncadeada(&i->palavra);
   }
 }
 
@@ -41,3 +43,5 @@ int Tamanho_LEncadeada(Ttexto_LEncadeada *pTexto){
   }
   return count;
 }
+
+

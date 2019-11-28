@@ -3,20 +3,22 @@
 void FBVazia_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca){
     pBiblioteca->pPrimeiroBiblioteca = (Apontador) malloc(sizeof(TCelulaBiblioteca));
     pBiblioteca->pUltimoBiblioteca = pBiblioteca->pPrimeiroBiblioteca;
-    pBiblioteca->pPrimeiroBiblioteca->pProxBiblioteca = NULL;  
+    pBiblioteca->pPrimeiroBiblioteca->pProxBiblioteca = NULL;
+    pBiblioteca->pPrimeiroBiblioteca->pAntBiblioteca = NULL;
 }
 int BibliotecaEhVazia_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca){
     return(pBiblioteca->pPrimeiroBiblioteca == pBiblioteca->pUltimoBiblioteca);
 }
 void InsereTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, Ttexto_LEncadeada *texto){
     pBiblioteca->pUltimoBiblioteca->pProxBiblioteca = (Apontador)malloc(sizeof(TCelulaBiblioteca));
+    pBiblioteca->pUltimoBiblioteca->pProxBiblioteca->pAntBiblioteca = pBiblioteca->pUltimoBiblioteca; //gurdando o endereço da celula anterior
     pBiblioteca->pUltimoBiblioteca = pBiblioteca->pUltimoBiblioteca->pProxBiblioteca;
     pBiblioteca->pUltimoBiblioteca->texto = *texto;
 
 }
-void RetiraTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, Ttexto_LEncadeada *texto, Ttexto_LEncadeada texto2){
+int RetiraTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, Ttexto_LEncadeada *texto, Ttexto_LEncadeada texto2){
     TCelulaBiblioteca *pAux = pBiblioteca;
-    //if(BibliotecaEhVazia_LEncadeada(pBiblioteca)) return 0;
+    if(BibliotecaEhVazia_LEncadeada(pBiblioteca)) {return 0;}
     while (pAux->pProxBiblioteca != NULL && pAux->pProxBiblioteca->texto != texto2)
     {
         /* Voo* listaProcuraVoo(ListaDeVoos *l, int vid){

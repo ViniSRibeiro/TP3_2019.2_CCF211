@@ -4,7 +4,7 @@
 
 #include "Arranjo/TAD_Biblioteca.h"
 #include "ListaEncadeada/TAD_Biblioteca.h"
-#include <stdio.h> //TODO criar algoritmos de ordenaçao para os vetores ja ordenados
+#include <stdio.h>
 #include <stdlib.h>
 
 TCaractere Letra_Aleatoria(){
@@ -111,7 +111,7 @@ int main(){
                     ImprimeBiblioteca_LEncadeada(&Biblioteca_LEncadeada);
                     printf(" --------------------------------------------------------- \n");
                 }
-
+                break;
 
         }
     }while(opcao<5);
