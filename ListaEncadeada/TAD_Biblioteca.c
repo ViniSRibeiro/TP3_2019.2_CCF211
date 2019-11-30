@@ -1,12 +1,12 @@
 #include "TAD_Biblioteca.h"
 
 void FBVazia_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca){
-    pBiblioteca->pPrimeiroBilioteca = (Apontador) malloc(sizeof(TCelulaBiblioteca));
-    pBiblioteca->pUltimoBiblioteca = pBiblioteca->pPrimeiroBilioteca;
-    pBiblioteca->pPrimeiroBilioteca->pProxBiblioteca = NULL;  
+    pBiblioteca->pPrimeiroBiblioteca = (Apontador) malloc(sizeof(TCelulaBiblioteca));
+    pBiblioteca->pUltimoBiblioteca = pBiblioteca->pPrimeiroBiblioteca;
+    pBiblioteca->pPrimeiroBiblioteca->pProxBiblioteca = NULL;  
 }
 int BibliotecaEhVazia_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca){
-    return(pBiblioteca->pPrimeiroBilioteca == pBiblioteca->pUltimoBiblioteca);
+    return(pBiblioteca->pPrimeiroBiblioteca == pBiblioteca->pUltimoBiblioteca);
 }
 void InsereTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, Ttexto_LEncadeada *texto){
     pBiblioteca->pUltimoBiblioteca->pProxBiblioteca = (Apontador)malloc(sizeof(TCelulaBiblioteca));
@@ -14,23 +14,29 @@ void InsereTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, Ttexto_LEncadea
     pBiblioteca->pUltimoBiblioteca->texto = *texto;
 
 }
-void RetiraTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, Ttexto_LEncadeada *texto, Ttexto_LEncadeada texto2){
-    TCelulaBiblioteca *pAux;
-    if(BibliotecaEhVazia_LEncadeada(pBiblioteca)) return 0;
-    while (pAux->pProxBiblioteca != NULL)
+TCelulaBiblioteca* RetiraTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, int n){
+    TCelulaBiblioteca *pAux = pBiblioteca->pPrimeiroBiblioteca;
+    TCelulaBiblioteca *texto;
+    int cont = 0;
+    while (pAux->pProxBiblioteca != NULL &&  cont < n)
     {
-        /* code */
+        pAux = pAux->pProxBiblioteca;
+        cont++;
+    }
+    if(cont == n){
+        texto = pAux->pProxBiblioteca;
+        pAux->pProxBiblioteca = pAux->pProxBiblioteca->pProxBiblioteca;
     }
     
-    
+    return texto;
    // *texto = pBiblioteca->pPrimeiroBilioteca->pProxBiblioteca
 }
 void ImprimeBiblioteca_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca){
-    TCelulaBiblioteca *pAux = pBiblioteca;
-    while (pAux->pProxBiblioteca!= NULL)
+    TBiblioteca_LEncadeada *pAux = pBiblioteca->pPrimeiroBiblioteca;
+    while (pAux->pPrimeiroBiblioteca->pProxBiblioteca!= NULL)
     {
-        ImprimeTexto_LEncadeada(&pAux->pProxBiblioteca->texto);
-        pAux = pAux->pProxBiblioteca;
+        ImprimeTexto_LEncadeada(&pAux->pPrimeiroBiblioteca->texto);
+        pAux = pAux->pPrimeiroBiblioteca->pProxBiblioteca;
     }
 }
 int TamanhoBiblioteca_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca){

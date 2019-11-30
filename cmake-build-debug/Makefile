@@ -231,6 +231,33 @@ Arranjo/main.c.s:
 	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/main.c.s
 .PHONY : Arranjo/main.c.s
 
+Interface.o: Interface.c.o
+
+.PHONY : Interface.o
+
+# target to build an object file
+Interface.c.o:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.o
+.PHONY : Interface.c.o
+
+Interface.i: Interface.c.i
+
+.PHONY : Interface.i
+
+# target to preprocess a source file
+Interface.c.i:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.i
+.PHONY : Interface.c.i
+
+Interface.s: Interface.c.s
+
+.PHONY : Interface.s
+
+# target to generate assembly for a file
+Interface.c.s:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.s
+.PHONY : Interface.c.s
+
 ListaEncadeada/TAD_Biblioteca.o: ListaEncadeada/TAD_Biblioteca.c.o
 
 .PHONY : ListaEncadeada/TAD_Biblioteca.o
@@ -339,32 +366,32 @@ ListaEncadeada/main.c.s:
 	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/main.c.s
 .PHONY : ListaEncadeada/main.c.s
 
-geracao_aleatoria.o: geracao_aleatoria.c.o
+Selecao_ListaEncadeada.o: Selecao_ListaEncadeada.c.o
 
-.PHONY : geracao_aleatoria.o
+.PHONY : Selecao_ListaEncadeada.o
 
 # target to build an object file
-geracao_aleatoria.c.o:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/geracao_aleatoria.c.o
-.PHONY : geracao_aleatoria.c.o
+Selecao_ListaEncadeada.c.o:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Selecao_ListaEncadeada.c.o
+.PHONY : Selecao_ListaEncadeada.c.o
 
-geracao_aleatoria.i: geracao_aleatoria.c.i
+Selecao_ListaEncadeada.i: Selecao_ListaEncadeada.c.i
 
-.PHONY : geracao_aleatoria.i
+.PHONY : Selecao_ListaEncadeada.i
 
 # target to preprocess a source file
-geracao_aleatoria.c.i:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/geracao_aleatoria.c.i
-.PHONY : geracao_aleatoria.c.i
+Selecao_ListaEncadeada.c.i:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Selecao_ListaEncadeada.c.i
+.PHONY : Selecao_ListaEncadeada.c.i
 
-geracao_aleatoria.s: geracao_aleatoria.c.s
+Selecao_ListaEncadeada.s: Selecao_ListaEncadeada.c.s
 
-.PHONY : geracao_aleatoria.s
+.PHONY : Selecao_ListaEncadeada.s
 
 # target to generate assembly for a file
-geracao_aleatoria.c.s:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/geracao_aleatoria.c.s
-.PHONY : geracao_aleatoria.c.s
+Selecao_ListaEncadeada.c.s:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Selecao_ListaEncadeada.c.s
+.PHONY : Selecao_ListaEncadeada.c.s
 
 # Help Target
 help:
@@ -387,6 +414,9 @@ help:
 	@echo "... Arranjo/main.o"
 	@echo "... Arranjo/main.i"
 	@echo "... Arranjo/main.s"
+	@echo "... Interface.o"
+	@echo "... Interface.i"
+	@echo "... Interface.s"
 	@echo "... ListaEncadeada/TAD_Biblioteca.o"
 	@echo "... ListaEncadeada/TAD_Biblioteca.i"
 	@echo "... ListaEncadeada/TAD_Biblioteca.s"
@@ -399,9 +429,9 @@ help:
 	@echo "... ListaEncadeada/main.o"
 	@echo "... ListaEncadeada/main.i"
 	@echo "... ListaEncadeada/main.s"
-	@echo "... geracao_aleatoria.o"
-	@echo "... geracao_aleatoria.i"
-	@echo "... geracao_aleatoria.s"
+	@echo "... Selecao_ListaEncadeada.o"
+	@echo "... Selecao_ListaEncadeada.i"
+	@echo "... Selecao_ListaEncadeada.s"
 .PHONY : help
 
 

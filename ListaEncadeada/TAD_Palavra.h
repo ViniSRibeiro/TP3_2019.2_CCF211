@@ -7,8 +7,6 @@
 
 #endif //TP3_2019_2_CCF211_TAD_PALAVRA_H
 
-#define TAMMAX 100
-#define InicioArranjo 0
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

@@ -34,6 +34,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/."/>
 					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo"/>
 					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
@@ -56,6 +57,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/."/>
 					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo"/>
 					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
@@ -103,6 +105,9 @@
 		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/main.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Interface.c">
+			<Option target="TP3_2019_2_CCF211"/>
+		</Unit>
 		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada/TAD_Biblioteca.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
@@ -124,7 +129,10 @@
 		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada/main.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/geracao_aleatoria.c">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Selecao_ListaEncadeada.c">
+			<Option target="TP3_2019_2_CCF211"/>
+		</Unit>
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Selecao_ListaEncadeada.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
 		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/CMakeLists.txt">
