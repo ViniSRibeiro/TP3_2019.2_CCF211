@@ -1,4 +1,6 @@
-#include "TAD_Palavra.h"
+//#include "TAD_Palavra.h"
+#include "TAD_Texto.h"
+TPalavra_LEncadeada geraPalavra();
 
 /*
 //teste feito com o tad palavra
@@ -54,27 +56,43 @@ int main() {
   int opcao = -1;
   TPalavra_LEncadeada palavra;
   TCaractere letra;
-  
+  TcelulaTexto texto;
+  Ttexto_LEncadeada listaDeTexto;
+
   while (opcao!=0) {
+    printf("\n");
     printf("************************[MENU TEXTO]******************\n");
     printf("* 1) - Inicializar texto                             *\n");
-    printf("* 2) - Inserir palvra Texto                          *\n");
+    printf("* 2) - Inserir palavra no Texto                      *\n");
     printf("* 3) - Imprimir texto                                *\n");
     printf("* 4) - Remover palvra no texto                       *\n");
-    printf("* 5) - Tamanho da do texto                           *\n");
+    printf("* 5) - Tamanho do texto                              *\n");
     printf("* 0) - Sair                                          *\n");
     printf("******************************************************\n");
     scanf("%d",&opcao);
     if (opcao == 1) {
-
+    
+      FTVazia_LEncadeada(&listaDeTexto);
+    
     }else if(opcao == 2){
+      FPVazia_LEncadeada(&palavra);
+      int n;
+      printf("Insira o tamanho que deseja que tenha seu texto:");
+      scanf("%d",&n);
+      for (int i = 0; i < n; i++)
+      { srand(time(NULL));
+        InserePalavra_LEncadeada(&listaDeTexto,geraPalavra());
+        srand(time(NULL));
+      }
 
     }else if(opcao == 3){
 
+      ImprimeTexto_LEncadeada(&listaDeTexto);
 
     }else if(opcao == 4){
-
     }else if (opcao == 5) {
+
+      printf("%d",Tamanho_LEncadeada(&listaDeTexto));
 
     }
   }
@@ -82,5 +100,22 @@ int main() {
   return 0;
 }
 
+TPalavra_LEncadeada geraPalavra(){
+
+  TPalavra_LEncadeada palavra;
+  TCaractere letra;
+
+  FPVazia_LEncadeada(&palavra);
+  int n = 0;
+  srand(time(NULL));
+  n = (rand()%20);
+  srand(time(NULL));
+  for(int i = 0; i < n; i++){
+    letra.letra = (rand() % (122 + 1 - 97)) + 97;
+    InsereLetra_LEncadeada(&palavra, letra);
+  }
+  
+  return palavra;
+}
 
 //teste feito com o tad biblioteca

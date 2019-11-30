@@ -38,7 +38,7 @@ void ImprimeTexto_LEncadeada(Ttexto_LEncadeada *pTexto){
 
 int Tamanho_LEncadeada(Ttexto_LEncadeada *pTexto){
   int count = 0;
-  for (TcelulaTexto* i = pTexto->pPrimeiroTexto; i !=NULL; i = i->pProxTexto) {
+  for (TcelulaTexto* i = pTexto->pPrimeiroTexto->pProxTexto; i !=NULL; i = i->pProxTexto) {
     count += 1;
   }
   return count;
