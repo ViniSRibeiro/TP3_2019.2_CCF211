@@ -25,10 +25,10 @@ int main(){
     int opcao,tipo_dados,tam_biblioteca, min_size_texto,max_size_texto;
     printf(" --------------------------------------------------------- \n");
     printf("|                       UFV - CAF                         |\n");
-    printf("|                         TP 1                            |\n");
+    printf("|                         TP 3                            |\n");
     printf("|            Roniel Nunes           -  3464               |\n");
     printf("|            Vinicius Ribeiro       -  2670               |\n");
-    printf("|            Isabella Ramos         -                 |\n"); //TODO colocar matricula da Isabella
+    printf("|            Isabella Ramos         -  3474               |\n"); //TODO colocar matricula da Isabella
     printf(" --------------------------------------------------------- \n");
     FBibVazia(&Biblioteca_Arranjo);
     FBVazia_LEncadeada(&Biblioteca_LEncadeada);

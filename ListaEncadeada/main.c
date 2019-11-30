@@ -1,7 +1,7 @@
 //#include "TAD_Palavra.h"
 #include "TAD_Texto.h"
 TPalavra_LEncadeada geraPalavra();
-
+TCaractere geraCaractere();
 /*
 //teste feito com o tad palavra
 int main() {
@@ -80,9 +80,9 @@ int main() {
       printf("Insira o tamanho que deseja que tenha seu texto:");
       scanf("%d",&n);
       for (int i = 0; i < n; i++)
-      { srand(time(NULL));
+      { 
         InserePalavra_LEncadeada(&listaDeTexto,geraPalavra());
-        srand(time(NULL));
+       
       }
 
     }else if(opcao == 3){
@@ -107,15 +107,17 @@ TPalavra_LEncadeada geraPalavra(){
 
   FPVazia_LEncadeada(&palavra);
   int n = 0;
-  srand(time(NULL));
   n = (rand()%20);
-  srand(time(NULL));
   for(int i = 0; i < n; i++){
-    letra.letra = (rand() % (122 + 1 - 97)) + 97;
-    InsereLetra_LEncadeada(&palavra, letra);
+    InsereLetra_LEncadeada(&palavra, geraCaractere());
   }
-  
   return palavra;
+}
+
+TCaractere geraCaractere(){
+    TCaractere Letra;
+    Letra.letra = 97 + (char)(rand()%26);
+    return Letra;
 }
 
 //teste feito com o tad biblioteca
