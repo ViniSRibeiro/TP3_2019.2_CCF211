@@ -21,7 +21,7 @@ typedef struct{
 
 void FBVazia_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca);
 int BibliotecaEhVazia_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca);
-void InsereTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, Ttexto_LEncadeada *texto);
+void InsereTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, Ttexto_LEncadeada texto);
 TCelulaBiblioteca* RetiraTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca,int n);
 void ImprimeBiblioteca_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca);
 int TamanhoBiblioteca_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca);

@@ -1,7 +1,8 @@
 //#include "TAD_Palavra.h"
-#include "TAD_Texto.h"
+#include "TAD_Biblioteca.h"
 TPalavra_LEncadeada geraPalavra();
 TCaractere geraCaractere();
+Ttexto_LEncadeada geraTexto();
 /*
 //teste feito com o tad palavra
 int main() {
@@ -51,7 +52,7 @@ int main() {
 
 */
 // teste feito com o tad texto
-
+/*
 int main() {
   int opcao = -1;
   TPalavra_LEncadeada palavra;
@@ -65,7 +66,7 @@ int main() {
     printf("* 1) - Inicializar texto                             *\n");
     printf("* 2) - Inserir palavra no Texto                      *\n");
     printf("* 3) - Imprimir texto                                *\n");
-    printf("* 4) - Remover palvra no texto                       *\n");
+    printf("* 4) - Remover palavra no texto                      *\n");
     printf("* 5) - Tamanho do texto                              *\n");
     printf("* 0) - Sair                                          *\n");
     printf("******************************************************\n");
@@ -99,6 +100,21 @@ int main() {
 
   return 0;
 }
+*/
+Ttexto_LEncadeada geraTexto(){
+  Ttexto_LEncadeada listaDeTexto;
+  TPalavra_LEncadeada palavra;
+
+  FTVazia_LEncadeada(&listaDeTexto);
+  int n = 0;
+  n = (rand()%20);
+  for (int i = 0; i < n; i++)
+  { 
+    InserePalavra_LEncadeada(&listaDeTexto,geraPalavra()); 
+  }
+
+  return listaDeTexto;
+}
 
 TPalavra_LEncadeada geraPalavra(){
 
@@ -121,3 +137,44 @@ TCaractere geraCaractere(){
 }
 
 //teste feito com o tad biblioteca
+int main() {
+  int opcao = -1;
+  TPalavra_LEncadeada palavra;
+  TCaractere letra;
+  Ttexto_LEncadeada listaDeTexto;
+  TBiblioteca_LEncadeada biblioteca;
+
+  while (opcao!=0) {
+    printf("\n");
+    printf("*******************[MENU BIBLIOTECA]******************\n");
+    printf("* 1) - Inicializar biblioteca                        *\n");
+    printf("* 2) - Inserir texto na Biblioteca                   *\n");
+    printf("* 3) - Imprimir Biblioteca                           *\n");
+    printf("* 4) - Remover texto na biblioteca                   *\n");
+    printf("* 5) - Tamanho da biblioteca                         *\n");
+    printf("* 0) - Sair                                          *\n");
+    printf("******************************************************\n");
+    scanf("%d",&opcao);
+    if (opcao == 1) {
+
+      FBVazia_LEncadeada(&biblioteca);
+
+    }else if(opcao == 2){
+      printf("Digite a quantidade de textos que deseja que tenha sua biblioteca: ");
+      int n;
+      scanf("%d",&n);
+      for(int i = 0; i < n; i++)
+      {
+        InsereTexto_LEncadeada(&biblioteca, geraTexto());
+      }
+    }else if(opcao == 3){
+      ImprimeBiblioteca_LEncadeada(&biblioteca);
+    }else if(opcao == 4){
+    }else if (opcao == 5) {
+      printf("A biblioteca é composta de %d textos.\n",TamanhoBiblioteca_LEncadeada(&biblioteca));
+    }
+  }
+
+
+  return 0;
+}
