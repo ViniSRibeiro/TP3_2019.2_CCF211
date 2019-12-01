@@ -31,7 +31,7 @@ void RetiraPalavra_LEncadeada(Ttexto_LEncadeada *pTexto, TPalavra_LEncadeada pal
 }
 
 void ImprimeTexto_LEncadeada(Ttexto_LEncadeada *pTexto){
-  for (TcelulaTexto* i = pTexto->pPrimeiroTexto; i !=NULL; i = i->pProxTexto) {
+  for (TcelulaTexto* i = pTexto->pPrimeiroTexto->pProxTexto; i !=NULL; i = i->pProxTexto) {
     ImprimePalavra_LEncadeada(&i->palavra);
   }
 }

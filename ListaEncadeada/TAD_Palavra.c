@@ -34,6 +34,7 @@ void RetiraLetra_LEncadeada(TPalavra_LEncadeada *pPalavra, TCaractereEncadeada C
 }
 
 void ImprimePalavra_LEncadeada (TPalavra_LEncadeada *palavra){
+
     for (Tcelula* i = palavra->pPrimeiro->pProx; i != NULL ; i = i->pProx) {
         printf("%c",i->caractere.letra);
     }

@@ -6,11 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Biblioteca.h
-TAD_Texto.h
-/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Texto.h
+/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Palavra.c
+TAD_Palavra.h
+/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Palavra.h
+stdio.h
+-
 
-/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Palavra.h
+/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Palavra.h
 stdio.h
 -
 stdlib.h
@@ -20,25 +22,11 @@ string.h
 time.h
 -
 
-/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Texto.h
-TAD_Palavra.h
-/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Palavra.h
-
-/home/isabella/UFV/TP3_2019.2_CCF211/Interface.c
-Arranjo/TAD_Biblioteca.h
-/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Biblioteca.h
-ListaEncadeada/TAD_Biblioteca.h
-/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Biblioteca.h
-stdio.h
--
-stdlib.h
--
-
-/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Biblioteca.h
+/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Texto.c
 TAD_Texto.h
 /home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Texto.h
-stdio.h
--
-stdlib.h
--
+
+/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Texto.h
+TAD_Palavra.h
+/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Palavra.h
 
