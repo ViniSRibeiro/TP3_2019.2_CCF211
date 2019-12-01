@@ -1,4 +1,4 @@
-# Install script for directory: /home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211
+# Install script for directory: /home/isabella/UFV/TP3_2019.2_CCF211
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

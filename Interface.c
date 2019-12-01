@@ -7,12 +7,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-TCaractere Letra_Aleatoria(){
-    TCaractere Letra;
+TCaractereArranjo Letra_Aleatoria_Arranjo(){
+    TCaractereArranjo Letra;
     Letra.letra = 97 + (char)(rand()%26);
     return Letra;
 }
 
+TCaractereEncadeada Letra_Aleatoria_Encadeada(){
+    TCaractereEncadeada Letra;
+    Letra.letra = 97 + (char)(rand()%26);
+    return Letra;
+}
 
 int main(){
     TPalavra_Arranjo Palavra_Arranjo;
@@ -28,7 +33,7 @@ int main(){
     printf("|                         TP 3                            |\n");
     printf("|            Roniel Nunes           -  3464               |\n");
     printf("|            Vinicius Ribeiro       -  2670               |\n");
-    printf("|            Isabella Ramos         -  3474               |\n"); //TODO colocar matricula da Isabella
+    printf("|            Isabella Ramos         -  3474               |\n"); 
     printf(" --------------------------------------------------------- \n");
     FBibVazia(&Biblioteca_Arranjo);
     FBVazia_LEncadeada(&Biblioteca_LEncadeada);
@@ -81,7 +86,7 @@ int main(){
                              * o for interno roda K vezes, que eh a quantidade de palavras que o txto tera
                              */
                             for (int j = 0; j < rand()%50 ; ++j) { //roda um numero aleatorio de vezes para gerar de 0 a 50 letras, ja que o numero de letras nao ta especificado
-                                InsereLetra_Arranjo(&Palavra_Arranjo,Letra_Aleatoria()); //insere as letras geradas aleatorias na palavra
+                                InsereLetra_Arranjo(&Palavra_Arranjo,Letra_Aleatoria_Arranjo()); //insere as letras geradas aleatorias na palavra
                             }
                             InserePalavra(&texto_Arranjo,Palavra_Arranjo); //insere a palavra gerada no texto;
                         }
@@ -93,11 +98,11 @@ int main(){
                         for (int j = min_size_texto; j < rand()%(max_size_texto-min_size_texto+1) ; ++j) {
                             FPVazia_LEncadeada(&Palavra_LEncadeada);
                             for (int k = 0; k < rand()%50 ; ++k) {
-                                InsereLetra_LEncadeada(&Palavra_LEncadeada,Letra_Aleatoria());
+                                InsereLetra_LEncadeada(&Palavra_LEncadeada,Letra_Aleatoria_Encadeada());
                             }
                             InserePalavra_LEncadeada(&texto_LEncadeada,Palavra_LEncadeada);
                         }
-                        InsereTexto_LEncadeada(&Biblioteca_LEncadeada,&texto_LEncadeada);
+                        InsereTexto_LEncadeada(&Biblioteca_LEncadeada,texto_LEncadeada);
                     }
                 }
                 printf("Biblioteca criada!\n");

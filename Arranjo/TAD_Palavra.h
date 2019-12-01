@@ -8,16 +8,16 @@
 
 typedef struct {
     char letra;
-}TCaractere;
+}TCaractereArranjo;
 
 typedef struct {
-    TCaractere caractere[TAMMAX];
+    TCaractereArranjo caractere[TAMMAX];
     int Primeiro,Ultimo;
 }TPalavra_Arranjo;
 
 void FazPalavraVazia_Arranjo(TPalavra_Arranjo *palavra);
 int PalavraEhVazia_Arranjo(TPalavra_Arranjo *palavra);
-void InsereLetra_Arranjo(TPalavra_Arranjo *palavra, TCaractere caractere);
-void RetiraLetra_Arranjo(TPalavra_Arranjo *palavra, int posicao, TCaractere *caractere);
+void InsereLetra_Arranjo(TPalavra_Arranjo *palavra, TCaractereArranjo caractere);
+void RetiraLetra_Arranjo(TPalavra_Arranjo *palavra, int posicao, TCaractereArranjo *caractere);
 void ImprimePalavra_Arranjo (TPalavra_Arranjo *palavra);
 void TamanhoPalavra(TPalavra_Arranjo *Palavra);

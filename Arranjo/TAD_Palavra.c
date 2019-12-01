@@ -9,7 +9,7 @@ int PalavraEhVazia_Arranjo(TPalavra_Arranjo *palavra){
     return(palavra->Ultimo == palavra->Primeiro);
 }
 
-void InsereLetra_Arranjo(TPalavra_Arranjo *palavra, TCaractere caractere){
+void InsereLetra_Arranjo(TPalavra_Arranjo *palavra, TCaractereArranjo caractere){
      //if(palavra ->Ultimo == TAMMAX){
      //    printf("Vetor cheio\n");
       //   exit ;} //vetor cheio
@@ -18,7 +18,7 @@ void InsereLetra_Arranjo(TPalavra_Arranjo *palavra, TCaractere caractere){
     //return 1;
 }
 
-void RetiraLetra_Arranjo(TPalavra_Arranjo *palavra, int posicao, TCaractere *caractere){
+void RetiraLetra_Arranjo(TPalavra_Arranjo *palavra, int posicao, TCaractereArranjo *caractere){
     int cont;
   //if(PalavraEhVazia(palavra) || Posicao >= palavra->Ultimo || Posicao < 0) exit;
 

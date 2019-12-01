@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/vinicius/Documentos/clion-2019.1.2/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/isabella/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/vinicius/Documentos/clion-2019.1.2/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/isabella/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211
+CMAKE_SOURCE_DIR = /home/isabella/UFV/TP3_2019.2_CCF211
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug
+CMAKE_BINARY_DIR = /home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF2
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/vinicius/Documentos/clion-2019.1.2/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/isabella/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/vinicius/Documentos/clion-2019.1.2/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/isabella/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/CMakeFiles /home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/CMakeFiles /home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -204,33 +204,6 @@ Arranjo/TAD_Texto.c.s:
 	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Texto.c.s
 .PHONY : Arranjo/TAD_Texto.c.s
 
-Arranjo/main.o: Arranjo/main.c.o
-
-.PHONY : Arranjo/main.o
-
-# target to build an object file
-Arranjo/main.c.o:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/main.c.o
-.PHONY : Arranjo/main.c.o
-
-Arranjo/main.i: Arranjo/main.c.i
-
-.PHONY : Arranjo/main.i
-
-# target to preprocess a source file
-Arranjo/main.c.i:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/main.c.i
-.PHONY : Arranjo/main.c.i
-
-Arranjo/main.s: Arranjo/main.c.s
-
-.PHONY : Arranjo/main.s
-
-# target to generate assembly for a file
-Arranjo/main.c.s:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/main.c.s
-.PHONY : Arranjo/main.c.s
-
 Interface.o: Interface.c.o
 
 .PHONY : Interface.o
@@ -339,33 +312,6 @@ ListaEncadeada/TAD_Texto.c.s:
 	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Texto.c.s
 .PHONY : ListaEncadeada/TAD_Texto.c.s
 
-ListaEncadeada/main.o: ListaEncadeada/main.c.o
-
-.PHONY : ListaEncadeada/main.o
-
-# target to build an object file
-ListaEncadeada/main.c.o:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/main.c.o
-.PHONY : ListaEncadeada/main.c.o
-
-ListaEncadeada/main.i: ListaEncadeada/main.c.i
-
-.PHONY : ListaEncadeada/main.i
-
-# target to preprocess a source file
-ListaEncadeada/main.c.i:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/main.c.i
-.PHONY : ListaEncadeada/main.c.i
-
-ListaEncadeada/main.s: ListaEncadeada/main.c.s
-
-.PHONY : ListaEncadeada/main.s
-
-# target to generate assembly for a file
-ListaEncadeada/main.c.s:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/main.c.s
-.PHONY : ListaEncadeada/main.c.s
-
 Selecao_ListaEncadeada.o: Selecao_ListaEncadeada.c.o
 
 .PHONY : Selecao_ListaEncadeada.o
@@ -411,9 +357,6 @@ help:
 	@echo "... Arranjo/TAD_Texto.o"
 	@echo "... Arranjo/TAD_Texto.i"
 	@echo "... Arranjo/TAD_Texto.s"
-	@echo "... Arranjo/main.o"
-	@echo "... Arranjo/main.i"
-	@echo "... Arranjo/main.s"
 	@echo "... Interface.o"
 	@echo "... Interface.i"
 	@echo "... Interface.s"
@@ -426,9 +369,6 @@ help:
 	@echo "... ListaEncadeada/TAD_Texto.o"
 	@echo "... ListaEncadeada/TAD_Texto.i"
 	@echo "... ListaEncadeada/TAD_Texto.s"
-	@echo "... ListaEncadeada/main.o"
-	@echo "... ListaEncadeada/main.i"
-	@echo "... ListaEncadeada/main.s"
 	@echo "... Selecao_ListaEncadeada.o"
 	@echo "... Selecao_ListaEncadeada.i"
 	@echo "... Selecao_ListaEncadeada.s"

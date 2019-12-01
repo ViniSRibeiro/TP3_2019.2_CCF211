@@ -8,35 +8,35 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug"/>
+				<Option working_dir="/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug"/>
+				<Option working_dir="/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TP3_2019_2_CCF211">
-				<Option output="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/TP3_2019_2_CCF211" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug"/>
+				<Option output="/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/TP3_2019_2_CCF211" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/."/>
-					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo"/>
-					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada"/>
+					<Add directory="/home/isabella/UFV/TP3_2019.2_CCF211/."/>
+					<Add directory="/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo"/>
+					<Add directory="/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
@@ -44,22 +44,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP3_2019_2_CCF211"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP3_2019_2_CCF211"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="TP3_2019_2_CCF211/fast">
-				<Option output="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/TP3_2019_2_CCF211" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug"/>
+				<Option output="/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/TP3_2019_2_CCF211" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/."/>
-					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo"/>
-					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada"/>
+					<Add directory="/home/isabella/UFV/TP3_2019.2_CCF211/."/>
+					<Add directory="/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo"/>
+					<Add directory="/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
@@ -67,75 +67,69 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP3_2019_2_CCF211/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP3_2019_2_CCF211/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug"/>
+				<Option working_dir="/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Biblioteca.c">
+		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Biblioteca.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Biblioteca.h">
+		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Biblioteca.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Palavra.c">
+		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Palavra.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Palavra.h">
+		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Palavra.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Texto.c">
+		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Texto.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Texto.h">
+		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Texto.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/main.c">
+		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/Interface.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Interface.c">
+		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Biblioteca.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada/TAD_Biblioteca.c">
+		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Biblioteca.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada/TAD_Biblioteca.h">
+		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Palavra.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada/TAD_Palavra.c">
+		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Palavra.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada/TAD_Palavra.h">
+		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Texto.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada/TAD_Texto.c">
+		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Texto.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada/TAD_Texto.h">
+		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/Selecao_ListaEncadeada.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada/main.c">
+		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/Selecao_ListaEncadeada.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Selecao_ListaEncadeada.c">
-			<Option target="TP3_2019_2_CCF211"/>
-		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Selecao_ListaEncadeada.h">
-			<Option target="TP3_2019_2_CCF211"/>
-		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/CMakeLists.txt">
+		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

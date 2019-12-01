@@ -6,7 +6,7 @@
 
 int main(){
 
-    TCaractere letrinha;
+    TCaractereArranjo letrinha;
     TPalavra_Arranjo palavrinha;
     int op = -1,n;
     TBiblioteca_Arranjo biblioteca;

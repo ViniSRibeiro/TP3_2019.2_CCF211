@@ -14,14 +14,14 @@ int PalavraEhVazia_LEncadeada(TPalavra_LEncadeada *pPalavra){
     return (pPalavra->pPrimeiro == pPalavra->pUltimo);
 }
 
-void InsereLetra_LEncadeada(TPalavra_LEncadeada *pPalavra, TCaractere caractere){
+void InsereLetra_LEncadeada(TPalavra_LEncadeada *pPalavra, TCaractereEncadeada caractere){
     pPalavra->pUltimo->pProx = (Tcelula*) malloc(sizeof(Tcelula));
     pPalavra->pUltimo = pPalavra->pUltimo->pProx;
     pPalavra->pUltimo->caractere = caractere;
     pPalavra->pUltimo->pProx = NULL;
 }
 
-void RetiraLetra_LEncadeada(TPalavra_LEncadeada *pPalavra, TCaractere Caractere, TCaractere *pCaractere){
+void RetiraLetra_LEncadeada(TPalavra_LEncadeada *pPalavra, TCaractereEncadeada Caractere, TCaractereEncadeada *pCaractere){
     Tcelula* pAux;
     for (Tcelula* i = pPalavra->pPrimeiro; i != NULL ; i = i->pProx) {
         if(i->caractere.letra == Caractere.letra){

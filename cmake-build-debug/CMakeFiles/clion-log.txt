@@ -1,4 +1,4 @@
-/home/vinicius/Documentos/clion-2019.1.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211
+/home/isabella/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/isabella/UFV/TP3_2019.2_CCF211
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug
+-- Build files have been written to: /home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug

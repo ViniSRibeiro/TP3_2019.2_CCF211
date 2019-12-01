@@ -14,10 +14,10 @@
 
 typedef struct{
     char letra;
-}TCaractere;
+}TCaractereEncadeada;
 
 typedef struct Celula{
-    TCaractere caractere;
+    TCaractereEncadeada caractere;
     struct Celula *pProx;
 }Tcelula;
 
@@ -28,7 +28,7 @@ typedef struct {
 
 void FPVazia_LEncadeada(TPalavra_LEncadeada *pPalavra);
 int PalavraEhVazia_LEncadeada(TPalavra_LEncadeada *pPalavra);
-void InsereLetra_LEncadeada(TPalavra_LEncadeada *pPalavra, TCaractere caractere);
-void RetiraLetra_LEncadeada(TPalavra_LEncadeada *pPalavra, TCaractere Caractere, TCaractere *pCaractere);
+void InsereLetra_LEncadeada(TPalavra_LEncadeada *pPalavra, TCaractereEncadeada caractere);
+void RetiraLetra_LEncadeada(TPalavra_LEncadeada *pPalavra, TCaractereEncadeada Caractere, TCaractereEncadeada *pCaractere);
 void ImprimePalavra_LEncadeada (TPalavra_LEncadeada *pPalavra);
 void TamanhoPalavra_LEncadeada(TPalavra_LEncadeada *pPalavra);

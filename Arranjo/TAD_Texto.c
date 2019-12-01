@@ -32,7 +32,7 @@ void ImprimeTexto(Ttexto_Arranjo *pTexto){
       for(int i = pTexto->TextoPrimeiro; i < pTexto->TextoUltimo; i++){
           ImprimePalavra_Arranjo(&pTexto->vetorPalavra[i]);
       }
-      printf("\n");
+      printf(" ");
     }
 
 }

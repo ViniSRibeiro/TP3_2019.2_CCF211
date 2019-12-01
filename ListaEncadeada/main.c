@@ -1,7 +1,7 @@
 //#include "TAD_Palavra.h"
 #include "TAD_Biblioteca.h"
 TPalavra_LEncadeada geraPalavra();
-TCaractere geraCaractere();
+TCaractereEncadeada geraCaractere();
 Ttexto_LEncadeada geraTexto();
 /*
 //teste feito com o tad palavra
@@ -119,7 +119,7 @@ Ttexto_LEncadeada geraTexto(){
 TPalavra_LEncadeada geraPalavra(){
 
   TPalavra_LEncadeada palavra;
-  TCaractere letra;
+  TCaractereEncadeada letra;
 
   FPVazia_LEncadeada(&palavra);
   int n = 0;
@@ -130,8 +130,8 @@ TPalavra_LEncadeada geraPalavra(){
   return palavra;
 }
 
-TCaractere geraCaractere(){
-    TCaractere Letra;
+TCaractereEncadeada geraCaractere(){
+    TCaractereEncadeada Letra;
     Letra.letra = 97 + (char)(rand()%26);
     return Letra;
 }
@@ -140,7 +140,7 @@ TCaractere geraCaractere(){
 int main() {
   int opcao = -1;
   TPalavra_LEncadeada palavra;
-  TCaractere letra;
+  TCaractereEncadeada letra;
   Ttexto_LEncadeada listaDeTexto;
   TBiblioteca_LEncadeada biblioteca;
 
