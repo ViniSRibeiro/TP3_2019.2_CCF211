@@ -20,10 +20,13 @@ TCaractereEncadeada Letra_Aleatoria_Encadeada(){
 }
 
 int main(){
+    
+    TCaractereArranjo Letra_Arranjo;
     TPalavra_Arranjo Palavra_Arranjo;
     Ttexto_Arranjo texto_Arranjo;
     TBiblioteca_Arranjo Biblioteca_Arranjo;
-
+    
+    TCaractereEncadeada Letra_LEncadeada;
     TPalavra_LEncadeada Palavra_LEncadeada;
     Ttexto_LEncadeada texto_LEncadeada;
     TBiblioteca_LEncadeada Biblioteca_LEncadeada;
