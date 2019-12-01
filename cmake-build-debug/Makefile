@@ -204,6 +204,33 @@ Arranjo/TAD_Texto.c.s:
 	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Texto.c.s
 .PHONY : Arranjo/TAD_Texto.c.s
 
+Interface.o: Interface.c.o
+
+.PHONY : Interface.o
+
+# target to build an object file
+Interface.c.o:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.o
+.PHONY : Interface.c.o
+
+Interface.i: Interface.c.i
+
+.PHONY : Interface.i
+
+# target to preprocess a source file
+Interface.c.i:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.i
+.PHONY : Interface.c.i
+
+Interface.s: Interface.c.s
+
+.PHONY : Interface.s
+
+# target to generate assembly for a file
+Interface.c.s:
+	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.s
+.PHONY : Interface.c.s
+
 ListaEncadeada/TAD_Biblioteca.o: ListaEncadeada/TAD_Biblioteca.c.o
 
 .PHONY : ListaEncadeada/TAD_Biblioteca.o
@@ -312,33 +339,6 @@ Selecao_ListaEncadeada.c.s:
 	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Selecao_ListaEncadeada.c.s
 .PHONY : Selecao_ListaEncadeada.c.s
 
-geracaoTextos.o: geracaoTextos.c.o
-
-.PHONY : geracaoTextos.o
-
-# target to build an object file
-geracaoTextos.c.o:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.o
-.PHONY : geracaoTextos.c.o
-
-geracaoTextos.i: geracaoTextos.c.i
-
-.PHONY : geracaoTextos.i
-
-# target to preprocess a source file
-geracaoTextos.c.i:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.i
-.PHONY : geracaoTextos.c.i
-
-geracaoTextos.s: geracaoTextos.c.s
-
-.PHONY : geracaoTextos.s
-
-# target to generate assembly for a file
-geracaoTextos.c.s:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.s
-.PHONY : geracaoTextos.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -357,6 +357,9 @@ help:
 	@echo "... Arranjo/TAD_Texto.o"
 	@echo "... Arranjo/TAD_Texto.i"
 	@echo "... Arranjo/TAD_Texto.s"
+	@echo "... Interface.o"
+	@echo "... Interface.i"
+	@echo "... Interface.s"
 	@echo "... ListaEncadeada/TAD_Biblioteca.o"
 	@echo "... ListaEncadeada/TAD_Biblioteca.i"
 	@echo "... ListaEncadeada/TAD_Biblioteca.s"
@@ -369,9 +372,6 @@ help:
 	@echo "... Selecao_ListaEncadeada.o"
 	@echo "... Selecao_ListaEncadeada.i"
 	@echo "... Selecao_ListaEncadeada.s"
-	@echo "... geracaoTextos.o"
-	@echo "... geracaoTextos.i"
-	@echo "... geracaoTextos.s"
 .PHONY : help
 
 

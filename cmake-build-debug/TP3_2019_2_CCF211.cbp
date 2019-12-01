@@ -102,6 +102,9 @@
 		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Texto.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
+		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/Interface.c">
+			<Option target="TP3_2019_2_CCF211"/>
+		</Unit>
 		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Biblioteca.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
@@ -124,9 +127,6 @@
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
 		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/Selecao_ListaEncadeada.h">
-			<Option target="TP3_2019_2_CCF211"/>
-		</Unit>
-		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/geracaoTextos.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
 		<Unit filename="/home/isabella/UFV/TP3_2019.2_CCF211/CMakeLists.txt">

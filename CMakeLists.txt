@@ -22,6 +22,6 @@ add_executable(TP3_2019_2_CCF211
         ListaEncadeada/TAD_Palavra.h
         ListaEncadeada/TAD_Texto.c
         ListaEncadeada/TAD_Texto.h
-        geracaoTextos.c
+        Interface.c
         Selecao_ListaEncadeada.c
         Selecao_ListaEncadeada.h)

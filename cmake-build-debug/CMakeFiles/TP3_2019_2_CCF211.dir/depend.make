@@ -13,6 +13,12 @@ CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Texto.c.o: ../Arranjo/TAD_Palavra.h
 CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Texto.c.o: ../Arranjo/TAD_Texto.c
 CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Texto.c.o: ../Arranjo/TAD_Texto.h
 
+CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.o: ../Arranjo/TAD_Biblioteca.h
+CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.o: ../Arranjo/TAD_Palavra.h
+CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.o: ../Arranjo/TAD_Texto.h
+CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.o: ../Interface.c
+CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.o: ../ListaEncadeada/TAD_Biblioteca.h
+
 CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Biblioteca.c.o: ../ListaEncadeada/TAD_Biblioteca.c
 CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Biblioteca.c.o: ../ListaEncadeada/TAD_Biblioteca.h
 CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Biblioteca.c.o: ../ListaEncadeada/TAD_Palavra.h
@@ -30,10 +36,4 @@ CMakeFiles/TP3_2019_2_CCF211.dir/Selecao_ListaEncadeada.c.o: ../ListaEncadeada/T
 CMakeFiles/TP3_2019_2_CCF211.dir/Selecao_ListaEncadeada.c.o: ../ListaEncadeada/TAD_Texto.h
 CMakeFiles/TP3_2019_2_CCF211.dir/Selecao_ListaEncadeada.c.o: ../Selecao_ListaEncadeada.c
 CMakeFiles/TP3_2019_2_CCF211.dir/Selecao_ListaEncadeada.c.o: ../Selecao_ListaEncadeada.h
-
-CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.o: ../Arranjo/TAD_Biblioteca.h
-CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.o: ../ListaEncadeada/TAD_Biblioteca.h
-CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.o: ../ListaEncadeada/TAD_Palavra.h
-CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.o: ../ListaEncadeada/TAD_Texto.h
-CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.o: ../geracaoTextos.c
 

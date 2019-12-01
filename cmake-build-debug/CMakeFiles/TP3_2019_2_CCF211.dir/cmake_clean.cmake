@@ -2,11 +2,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Biblioteca.c.o"
   "CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Palavra.c.o"
   "CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Texto.c.o"
+  "CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.o"
   "CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Biblioteca.c.o"
   "CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Palavra.c.o"
   "CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Texto.c.o"
   "CMakeFiles/TP3_2019_2_CCF211.dir/Selecao_ListaEncadeada.c.o"
-  "CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.o"
   "TP3_2019_2_CCF211"
   "TP3_2019_2_CCF211.pdb"
 )

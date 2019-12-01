@@ -13,6 +13,12 @@ CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Texto.c.o
  /home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Palavra.h
  /home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Texto.c
  /home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Texto.h
+CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.o
+ /home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Biblioteca.h
+ /home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Palavra.h
+ /home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Texto.h
+ /home/isabella/UFV/TP3_2019.2_CCF211/Interface.c
+ /home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Biblioteca.h
 CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Biblioteca.c.o
  /home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Biblioteca.c
  /home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Biblioteca.h
@@ -31,9 +37,3 @@ CMakeFiles/TP3_2019_2_CCF211.dir/Selecao_ListaEncadeada.c.o
  /home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Texto.h
  /home/isabella/UFV/TP3_2019.2_CCF211/Selecao_ListaEncadeada.c
  /home/isabella/UFV/TP3_2019.2_CCF211/Selecao_ListaEncadeada.h
-CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.o
- /home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Biblioteca.h
- /home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Biblioteca.h
- /home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Palavra.h
- /home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Texto.h
- /home/isabella/UFV/TP3_2019.2_CCF211/geracaoTextos.c
