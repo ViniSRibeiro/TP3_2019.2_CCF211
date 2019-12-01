@@ -51,6 +51,7 @@ int main(){
 
         printf("Entre com uma opcao: ");
         scanf("%d", &opcao);
+        if(opcao == 5) break;
         printf(" --------------------------------------------------------- \n");
         printf("|                       QUAL O TIPO DE DADOS?             |\n");
         printf("|                                                         |\n");
@@ -59,12 +60,12 @@ int main(){
         printf(" --------------------------------------------------------- \n");
         printf("Entre com uma opcao para o tipo: ");
         scanf("%d", &tipo_dados);
-        while (tipo_dados <1 || tipo_dados>2){
+
+        while (tipo_dados <1 || tipo_dados>2) {
             printf("Tipo Invalido!!!");
             printf("Entre com uma opcao para o tipo: ");
             scanf("%d", &tipo_dados);
         }
-
         switch (opcao){
             case 1:
                 printf("Qual o tamanho da biblioteca ( quantos textos possui): ");
@@ -117,7 +118,6 @@ int main(){
                     printf(" --------------------------------------------------------- \n");
                 }
                 break;
-
         }
     }while(opcao<5);
 

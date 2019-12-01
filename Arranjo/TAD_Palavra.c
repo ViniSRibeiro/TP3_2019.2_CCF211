@@ -38,5 +38,5 @@ void ImprimePalavra_Arranjo (TPalavra_Arranjo *palavra){
     for(int i = palavra->Primeiro; i < palavra->Ultimo; i++){
         printf("%c", palavra->caractere[i].letra);
     }
-    printf("\n");
+    printf(" ");
 }

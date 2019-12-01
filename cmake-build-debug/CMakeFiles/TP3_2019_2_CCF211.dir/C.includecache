@@ -6,3 +6,17 @@
 
 #IncludeRegexTransform: 
 
+/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Palavra.c
+TAD_Palavra.h
+/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Palavra.h
+
+/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo/TAD_Palavra.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+time.h
+-
+
