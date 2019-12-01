@@ -135,18 +135,18 @@ CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Texto.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Texto.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada/TAD_Texto.c -o CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Texto.c.s
 
-CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.o: CMakeFiles/TP3_2019_2_CCF211.dir/flags.make
-CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.o: ../Interface.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.o   -c /home/isabella/UFV/TP3_2019.2_CCF211/Interface.c
+CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.o: CMakeFiles/TP3_2019_2_CCF211.dir/flags.make
+CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.o: ../geracaoTextos.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isabella/UFV/TP3_2019.2_CCF211/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.o   -c /home/isabella/UFV/TP3_2019.2_CCF211/geracaoTextos.c
 
-CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/isabella/UFV/TP3_2019.2_CCF211/Interface.c > CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.i
+CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/isabella/UFV/TP3_2019.2_CCF211/geracaoTextos.c > CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.i
 
-CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/isabella/UFV/TP3_2019.2_CCF211/Interface.c -o CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.s
+CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/isabella/UFV/TP3_2019.2_CCF211/geracaoTextos.c -o CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.s
 
 CMakeFiles/TP3_2019_2_CCF211.dir/Selecao_ListaEncadeada.c.o: CMakeFiles/TP3_2019_2_CCF211.dir/flags.make
 CMakeFiles/TP3_2019_2_CCF211.dir/Selecao_ListaEncadeada.c.o: ../Selecao_ListaEncadeada.c
@@ -169,7 +169,7 @@ TP3_2019_2_CCF211_OBJECTS = \
 "CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Biblioteca.c.o" \
 "CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Palavra.c.o" \
 "CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Texto.c.o" \
-"CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.o" \
+"CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.o" \
 "CMakeFiles/TP3_2019_2_CCF211.dir/Selecao_ListaEncadeada.c.o"
 
 # External object files for target TP3_2019_2_CCF211
@@ -181,7 +181,7 @@ TP3_2019_2_CCF211: CMakeFiles/TP3_2019_2_CCF211.dir/Arranjo/TAD_Texto.c.o
 TP3_2019_2_CCF211: CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Biblioteca.c.o
 TP3_2019_2_CCF211: CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Palavra.c.o
 TP3_2019_2_CCF211: CMakeFiles/TP3_2019_2_CCF211.dir/ListaEncadeada/TAD_Texto.c.o
-TP3_2019_2_CCF211: CMakeFiles/TP3_2019_2_CCF211.dir/Interface.c.o
+TP3_2019_2_CCF211: CMakeFiles/TP3_2019_2_CCF211.dir/geracaoTextos.c.o
 TP3_2019_2_CCF211: CMakeFiles/TP3_2019_2_CCF211.dir/Selecao_ListaEncadeada.c.o
 TP3_2019_2_CCF211: CMakeFiles/TP3_2019_2_CCF211.dir/build.make
 TP3_2019_2_CCF211: CMakeFiles/TP3_2019_2_CCF211.dir/link.txt
