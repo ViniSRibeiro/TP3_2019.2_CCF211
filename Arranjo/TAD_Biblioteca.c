@@ -37,10 +37,14 @@ int RetiraTexto(TBiblioteca_Arranjo* PBiblioteca, Ttexto_Arranjo* PTexto){
 int ImprimeBib(TBiblioteca_Arranjo* PBiblioteca){
     int n =1;
     for (int i = PBiblioteca->BibPrimeiro; i <PBiblioteca->BibUltimo ; ++i) {
-        printf("Texto %d\n",n);
+        printf("Texto %d Tamamnho%d\n",n,TamanhoTexto(&PBiblioteca->biblioteca[i]));
         ImprimeTexto(&PBiblioteca->biblioteca[i]);
         printf("\n");
         n++;
     }
     return 1;
+}
+
+int TamanhoBib(TBiblioteca_Arranjo *PBiblioteca){
+    return(PBiblioteca->BibUltimo);
 }
