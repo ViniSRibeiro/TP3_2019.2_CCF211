@@ -12,4 +12,4 @@ int TextoVazia(Ttexto_Arranjo *pTexto);
 void InserePalavra(Ttexto_Arranjo *pTexto, TPalavra_Arranjo palavra);
 void RetiraPalavra(Ttexto_Arranjo *pTexto, int posicao, TPalavra_Arranjo *pPalavra);
 void ImprimeTexto(Ttexto_Arranjo *pTexto);
-void TamanhoTexto(Ttexto_Arranjo *pTexto);
+int TamanhoTexto(Ttexto_Arranjo *pTexto);

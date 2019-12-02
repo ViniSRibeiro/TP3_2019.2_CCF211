@@ -36,10 +36,6 @@ void ImprimeTexto(Ttexto_Arranjo *pTexto){
     }
 
 }
-void TamanhoTexto(Ttexto_Arranjo *pTexto){
-  if (TextoVazia(pTexto) == 1) {
-    printf("Tamanho Texto 0.\n");
-  }else{
-    printf("Tamanho Texto %d\n",pTexto->TextoUltimo );
-  }
+int TamanhoTexto(Ttexto_Arranjo *pTexto){
+  return(pTexto->TextoUltimo);
 }
