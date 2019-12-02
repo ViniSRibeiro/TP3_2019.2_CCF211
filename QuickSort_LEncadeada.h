@@ -14,3 +14,6 @@ void TrocaItens_Bib_QuickSort(TCelulaBiblioteca* pCelulaBibA, TCelulaBiblioteca*
 void QuickSort_Texto_LEncadeada(Ttexto_LEncadeada* pTexto);
 void Ordena_Texto_LEncadeada(TcelulaTexto* pEsq, TcelulaTexto* pDir, Ttexto_LEncadeada* pTexto);
 void Particao_texto_LEncadeada(TcelulaTexto* pEsq, TcelulaTexto*pDir, TcelulaTexto*pI, TcelulaTexto* pJ, Ttexto_LEncadeada* pTexto);
+void QuickSort_Bib_LEncadeada(TBiblioteca_LEncadeada* pBib);
+void Ordena_Bib_LEncadeda(TCelulaBiblioteca* pEsq, TCelulaBiblioteca* pDir, TBiblioteca_LEncadeada* pBib);
+void Particao_Bib_LEncadeada(TCelulaBiblioteca* pEsq, TCelulaBiblioteca* pDir, TCelulaBiblioteca *pI, TCelulaBiblioteca* pJ, TBiblioteca_LEncadeada* pBib);

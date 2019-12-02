@@ -19,6 +19,20 @@ int Distancia_Texto_LEncadeada(TcelulaTexto* pCelulaA,TcelulaTexto* pCelulaB){
     }
     return cont;
 }
+int Distancia_Bib_LEncadeada(TCelulaBiblioteca* pCelulaBibA, TCelulaBiblioteca* pCelulaBibB){
+    int cont = 0;
+    TCelulaBiblioteca * i;
+    for (i = pCelulaBibA; i !=pCelulaBibB ; i = i->pProxBiblioteca) {
+        cont ++;
+    }
+    if (i == NULL && i != pCelulaBibB){ //Nao achou andando para frente, precisa retroceder agora
+        cont = 0;
+        for (i = pCelulaBibA; i !=pCelulaBibB ; i = i->pAntBiblioteca){
+            cont --;
+        }
+    }
+    return cont;
+}
 void TrocaItens_Texto_QuickSort(TcelulaTexto* pCelulaA,TcelulaTexto* pCelulaB){
     TcelulaTexto *pTemp;
     pTemp = pCelulaA;
@@ -67,4 +81,44 @@ void Particao_texto_LEncadeada(TcelulaTexto* pEsq, TcelulaTexto*pDir, TcelulaTex
             pJ = pJ->pAntTexto;
         } //Troca o conteudo de I por J // TODO verificar a troca por ponteiros
     }while (Distancia_Texto_LEncadeada(pI,pJ)>= 0); //Enquanto a distancia entre I e J for maior ou igual a 0, quando for negativa e pq se cruzaram
+}
+
+void QuickSort_Bib_LEncadeada(TBiblioteca_LEncadeada* pBib){
+    Ordena_Bib_LEncadeda(pBib->pPrimeiroBiblioteca->pProxBiblioteca, pBib->pUltimoBiblioteca, pBib);
+}
+void Ordena_Bib_LEncadeda(TCelulaBiblioteca* pEsq, TCelulaBiblioteca* pDir, TBiblioteca_LEncadeada* pBib){
+    TCelulaBiblioteca i, j;
+
+    Particao_Bib_LEncadeada(pEsq,pDir,&i,&j,pBib);
+    if(pEsq != pBib->pPrimeiroBiblioteca && pEsq != NULL && (Distancia_Bib_LEncadeada(pEsq,&j)>0)){
+        Ordena_Bib_LEncadeda(pEsq,&j,pBib);
+    }
+    if(pDir != pBib->pPrimeiroBiblioteca && pDir != NULL && (Distancia_Bib_LEncadeada(&i,pDir)>0)){
+        Ordena_Bib_LEncadeda(&i,pDir,pBib);
+    }
+}
+
+void Particao_Bib_LEncadeada(TCelulaBiblioteca* pEsq, TCelulaBiblioteca* pDir, TCelulaBiblioteca *pI, TCelulaBiblioteca* pJ, TBiblioteca_LEncadeada* pBib){
+    TCelulaBiblioteca* Pivo;
+
+    int tamanho_particao = Distancia_Bib_LEncadeada(pEsq,pDir);
+
+    pI = pEsq;
+    pJ = pDir;
+    Pivo = pEsq;
+
+    for (int i = 0; i < tamanho_particao/2; ++i) {
+        Pivo = Pivo->pProxBiblioteca;
+    }
+
+    do{
+        while (Pivo->texto.tam_texto > pI->texto.tam_texto){pI = pI->pProxBiblioteca;}
+        while (Pivo->texto.tam_texto < pJ->texto.tam_texto){pJ = pJ->pAntBiblioteca;}
+        if(Distancia_Bib_LEncadeada(pI,pJ)>= 0){
+            TrocaItens_Bib_QuickSort(pI,pJ); //TODO verificar troca por ponteiros
+            pI = pI->pProxBiblioteca;
+            pJ = pJ->pAntBiblioteca;
+        }
+    }while (Distancia_Bib_LEncadeada(pI,pJ)>= 0);
+
 }
