@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/isabella/UFV/TP3_2019.2_CCF211/. -I/home/isabella/UFV/TP3_2019.2_CCF211/Arranjo -I/home/isabella/UFV/TP3_2019.2_CCF211/ListaEncadeada 
+C_INCLUDES = -I/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/. -I/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo -I/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada 
 
