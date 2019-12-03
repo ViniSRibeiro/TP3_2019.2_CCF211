@@ -1,4 +1,3 @@
-ToolSet: 5.2 (local)@D:\MinGW
-Options: 
+ToolSet: 1.0 (local)Options: 
 
 Options:

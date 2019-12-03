@@ -51,7 +51,7 @@ void geracaoAleatoriaBib(TBiblioteca_LEncadeada *BibliotecaEncadeada,TBiblioteca
 
 }
 
-int main(){
+int generation(){
   TBiblioteca_LEncadeada BibliotecaEncadeada;
   TBiblioteca_Arranjo BibliotecaArranjo;
   int tamBib,tamMaxText,tamMinText;

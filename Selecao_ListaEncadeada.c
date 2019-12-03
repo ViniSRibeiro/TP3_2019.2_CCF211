@@ -31,11 +31,11 @@ void SelectSort_Texto(Ttexto_LEncadeada* pTexto){
     }
 }
 void SelectSort_Bib(TBiblioteca_LEncadeada* pBib){
-    TCelulaBiblioteca* pMin, *i , *j;
-    for (i = pBib->pPrimeiroBiblioteca->pProxBiblioteca ; i!=NULL; i = i->pProxBiblioteca){
+    TCelulaBiblioteca * pMin, *i , *j;
+    for (i = pBib->pPrimeiroBiblioteca ; i!=NULL; i = i->pProxBiblioteca){
         pMin = i;
         for (j =i->pProxBiblioteca; j!=NULL;j = j->pProxBiblioteca ){
-            if(j->texto.pPrimeiroTexto->pProxTexto->tam_texto < pMin->texto.pPrimeiroTexto->pProxTexto->tam_texto){
+            if(j->texto.tam_texto < pMin->texto.tam_texto){
                 TrocaItens_Bib(pMin,j);
             }
         }

@@ -8,14 +8,12 @@ include_directories(Arranjo)
 include_directories(ListaEncadeada)
 
 add_executable(TP3_2019_2_CCF211
-        Arranjo/main.c
         Arranjo/TAD_Biblioteca.c
         Arranjo/TAD_Biblioteca.h
         Arranjo/TAD_Palavra.c
         Arranjo/TAD_Palavra.h
         Arranjo/TAD_Texto.c
         Arranjo/TAD_Texto.h
-        ListaEncadeada/main.c
         ListaEncadeada/TAD_Biblioteca.c
         ListaEncadeada/TAD_Biblioteca.h
         ListaEncadeada/TAD_Palavra.c
@@ -24,7 +22,7 @@ add_executable(TP3_2019_2_CCF211
         ListaEncadeada/TAD_Texto.h
         geracaoBib.c
         geracaoBib2.c
-        Interface.c
+        main.c
         Quicksort_Arranjo.c
         Quicksort_Arranjo.h
         QuickSort_LEncadeada.c

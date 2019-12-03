@@ -1,12 +1,11 @@
 //
 // Created by vinicius on 28/11/2019.
 //
-#include "ListaEncadeada/TAD_Biblioteca.h"
-#include "Arranjo/TAD_Biblioteca.h"
 
-#include "Selecao_Arranjo.h"
+
+
+
 #include "Quicksort_Arranjo.h"
-#include "Selecao_ListaEncadeada.h"
 #include "QuickSort_LEncadeada.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -187,6 +186,39 @@ int main(){
                     }
                 }
 
+                break;
+            case 4:
+                printf(" --------------------------------------------------------- \n");
+                printf("|                       O QUE DESEJA ORDENAR?             |\n");
+                printf("|                                                         |\n");
+                printf("|  1 - Palavras no texto                                  |\n");
+                printf("|  2 - Textos na Biblioteca                               |\n");
+                printf(" --------------------------------------------------------- \n");
+                printf("Entre com uma opcao: ");
+                scanf("%d", &texto_ou_bib);
+                if(texto_ou_bib == 1){
+                    if(tipo_dados == 1){
+                        for (int i = 0; i <Biblioteca_Arranjo.BibUltimo ; ++i) {
+                            quicksortForText(&Biblioteca_Arranjo.biblioteca[i],Biblioteca_Arranjo.BibUltimo);
+                        }
+                    }else{
+                        for (TCelulaBiblioteca *i = Biblioteca_LEncadeada.pPrimeiroBiblioteca->pProxBiblioteca; i != Biblioteca_LEncadeada.pUltimoBiblioteca ; i = i->pProxBiblioteca) {
+                            for (TcelulaTexto *j = &i->texto; j != NULL ; j = j->pProxTexto) {
+                                QuickSort_Texto_LEncadeada(j);
+                            }
+                        }
+                    }
+                }else{
+                    if(tipo_dados == 1){
+                        for (int i = 0; i <Biblioteca_Arranjo.BibUltimo ; ++i) {
+                            quicksortForBib(&Biblioteca_Arranjo,Biblioteca_Arranjo.BibUltimo);
+                        }
+                    }else{
+
+                            QuickSort_Bib_LEncadeada(&Biblioteca_LEncadeada);
+
+                    }
+                }
                 break;
         }
     }while(opcao<5);

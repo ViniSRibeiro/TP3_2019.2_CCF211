@@ -6,7 +6,7 @@
 #define TP3_2019_2_CCF211_QUICKSORT_LENCADEADA_H
 
 #endif //TP3_2019_2_CCF211_QUICKSORT_LENCADEADA_H
-#include "ListaEncadeada/TAD_Biblioteca.h"
+#include "Selecao_ListaEncadeada.h"
 int Distancia_Texto_LEncadeada(TcelulaTexto* pCelulaA,TcelulaTexto* pCelulaB);
 void TrocaItens_Texto_QuickSort(TcelulaTexto* pCelulaA,TcelulaTexto* pCelulaB);
 int Distancia_Bib_LEncadeada(TCelulaBiblioteca* pCelulaBibA, TCelulaBiblioteca* pCelulaBibB);
