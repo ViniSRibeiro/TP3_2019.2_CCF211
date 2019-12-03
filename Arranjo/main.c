@@ -12,6 +12,7 @@ int main(){
     TBiblioteca_Arranjo biblioteca;
     Ttexto_Arranjo texto;
     int opcao = -1;
+    /*
     ////////////////////////////////TESTE TAD PALAVRA////////////////////////////////////////
 
     while (op != 0)
@@ -67,6 +68,14 @@ int main(){
       if (opcao == 1) {
         FazTextoVazia(&texto);//inicializa Texto
       }else if(opcao == 2){
+        printf("Insira o tamanho que deseja ter a palavra: ");
+            scanf("%d",&n);
+            FazPalavraVazia_Arranjo(&palavrinha);
+            srand(time(NULL));
+            for(int i = 0; i < n; i++){
+                letrinha.letra = (rand() % (122 + 1 - 97)) + 97;
+                InsereLetra_Arranjo(&palavrinha, letrinha);
+            }
         InserePalavra(&texto,palavrinha);
       }else if(opcao == 3){
           ImprimeTexto(&texto);
@@ -79,8 +88,10 @@ int main(){
       }
     }
     opcao = -1;
+    */
     ////////////////////////////////TESTE TAD BIBLIOTECAs////////////////////////////////////////
     while (opcao!=0) {
+      printf("\n");
       printf("*******************[MENU BIBLIOTECA]******************\n");
       printf("* 1) - Inicializar Biblioteca                        *\n");
       printf("* 2) - Inserir Texto Biblioteca                      *\n");
@@ -92,11 +103,39 @@ int main(){
       if (opcao == 1) {
         FBibVazia(&biblioteca);//inicializa BIBLIOTECA
       }else if(opcao == 2){
+        for (int i = 0; i < 10; i++)
+                    { 
+                        FazTextoVazia(&texto);
+                    
+                        int nTextos = 1 + rand()%20;
+                        for (int i = 0; i < nTextos; i++) //formação de texto
+                        { 
+              
+                        FazPalavraVazia_Arranjo(&palavrinha);
+                            
+                            int nPalavra = rand()%20;
+
+                            for (int i = 0; i < nPalavra; i++)
+                            {
+                            char letra =97 + (char)(rand()%26);
+                            letrinha.letra = letra;
+                            
+                            InsereLetra_Arranjo(&palavrinha,letrinha);
+                            }
+
+                        InserePalavra(&texto,palavrinha);
+                        }  
+
+                        InsereTexto(&biblioteca,texto);
+                    }
+  
         InsereTexto(&biblioteca,texto);
       }else if(opcao == 3){
-          ImprimeTexto(&texto);
+          ImprimeBib(&biblioteca);
       }else if(opcao == 4){
-          RetiraTexto(&biblioteca,&texto);
+        printf("Insira a posicao do texto que deseja remover na biblioteca: ");
+        scanf("%d",&n);
+        RetiraTexto(&biblioteca,n,&texto);
       }
     }
 

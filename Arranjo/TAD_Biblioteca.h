@@ -20,6 +20,6 @@ typedef struct{
 void FBibVazia(TBiblioteca_Arranjo* PBiblioteca);
 int BibEhVazia(TBiblioteca_Arranjo* PBiblioteca);
 int InsereTexto(TBiblioteca_Arranjo* PBiblioteca, Ttexto_Arranjo PTexto);
-int RetiraTexto(TBiblioteca_Arranjo* PBiblioteca, Ttexto_Arranjo* PTexto);
+void RetiraTexto(TBiblioteca_Arranjo* PBiblioteca,int Posicao, Ttexto_Arranjo* PTexto);
 int ImprimeBib(TBiblioteca_Arranjo* PBiblioteca);
 int TamanhoBib(TBiblioteca_Arranjo *PBiblioteca);

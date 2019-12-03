@@ -12,8 +12,7 @@ void FBibVazia(TBiblioteca_Arranjo* PBiblioteca){
 }
 
 int BibEhVazia(TBiblioteca_Arranjo* PBiblioteca){
-  if(PBiblioteca->BibPrimeiro == PBiblioteca->BibUltimo){ return 0;}
-    return 1; // caso nao esteja vazia
+  return(PBiblioteca->BibPrimeiro == PBiblioteca->BibUltimo);
 }
 
 int InsereTexto(TBiblioteca_Arranjo* PBiblioteca, Ttexto_Arranjo PTexto){
@@ -22,8 +21,8 @@ int InsereTexto(TBiblioteca_Arranjo* PBiblioteca, Ttexto_Arranjo PTexto){
     PBiblioteca->BibUltimo++;
     return 1;
 }
-int RetiraTexto(TBiblioteca_Arranjo* PBiblioteca, Ttexto_Arranjo* PTexto){
-    if(BibEhVazia(PBiblioteca)){ return 0;} //biblioteca ja vazia, impossivel adicionar mais
+void RetiraTexto(TBiblioteca_Arranjo* PBiblioteca,int Posicao, Ttexto_Arranjo* PTexto){
+    /*if(BibEhVazia(PBiblioteca)){ return 0;} //biblioteca ja vazia, impossivel adicionar mais
     for (int i = 0; i < size_biblioteca ; ++i) {
         if (PBiblioteca->biblioteca[i].TextoUltimo == PTexto->TextoUltimo){ //compara por tamanho do texto com o texto a ser removido
             for (int j = i; j < size_biblioteca; ++j) {
@@ -31,6 +30,17 @@ int RetiraTexto(TBiblioteca_Arranjo* PBiblioteca, Ttexto_Arranjo* PTexto){
             }
             PBiblioteca->BibUltimo --; //atualiza o tamanho da biblioteca
         }
+    }
+    */
+
+    if (BibEhVazia(PBiblioteca) == 1) {
+      printf("Texto vazio.\n");
+    }else{
+      for (int i = Posicao; i < 100; i++) {
+        PBiblioteca->biblioteca[i] = PBiblioteca->biblioteca[i + 1];
+      }
+      PBiblioteca->BibUltimo--;
+      printf("Palavra removida com sucesso!\n");
     }
 }
 
