@@ -8,12 +8,13 @@
 typedef struct CelulaTexto{
   TPalavra_LEncadeada palavra;
   struct CelulaTexto *pProxTexto,*pAntTexto;
-  int tam_texto;
+
 }TcelulaTexto;//CELULA
 
 typedef struct{
   TcelulaTexto* pPrimeiroTexto;
   TcelulaTexto* pUltimoTexto;
+  int tam_texto;
 }Ttexto_LEncadeada;//TAD LISTA
 
 void FTVazia_LEncadeada(Ttexto_LEncadeada *pTexto);

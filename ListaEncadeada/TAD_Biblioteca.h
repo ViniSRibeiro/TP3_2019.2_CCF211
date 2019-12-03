@@ -12,6 +12,7 @@ typedef struct CelulaBilioteca* Apontador;
 typedef struct CelulaBiblioteca{
   Ttexto_LEncadeada texto;
   struct CelulaBiblioteca *pProxBiblioteca;
+    struct CelulaBiblioteca *pAntBiblioteca;
 }TCelulaBiblioteca;
 
 typedef struct{

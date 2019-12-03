@@ -5,6 +5,7 @@ void FTVazia_LEncadeada(Ttexto_LEncadeada *pTexto){
   pTexto->pUltimoTexto = pTexto->pPrimeiroTexto;
   pTexto->pPrimeiroTexto->pProxTexto = NULL;
   pTexto->pPrimeiroTexto->pAntTexto = NULL;
+  pTexto->tam_texto = 0;
 }
 
 int TextoEhVazia_LEncadeada(Ttexto_LEncadeada *pTexto){
@@ -16,6 +17,7 @@ void InserePalavra_LEncadeada(Ttexto_LEncadeada *pTexto, TPalavra_LEncadeada pal
   pTexto->pUltimoTexto = pTexto->pUltimoTexto->pProxTexto;
   pTexto->pUltimoTexto->palavra = palavra;
   pTexto->pUltimoTexto->pProxTexto = NULL;
+  pTexto->tam_texto ++;
 }
 
 void RetiraPalavra_LEncadeada(Ttexto_LEncadeada *pTexto, TPalavra_LEncadeada palavra,TPalavra_LEncadeada *pPalavra){
