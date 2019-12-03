@@ -5,18 +5,18 @@
 #include "Selecao_ListaEncadeada.h"
 #include <stdio.h>
 void TrocaItens_Texto(TcelulaTexto* pCelulaA,TcelulaTexto* pCelulaB){ //TODO conferir o assign de ponteiros aqui
-    TcelulaTexto *pTemp;
-    pTemp = pCelulaA;
-    pCelulaA = pCelulaB;
-    pCelulaB = pTemp;
+    TcelulaTexto pTemp;
+    pTemp = *pCelulaA;
+    *pCelulaA = *pCelulaB;
+    *pCelulaB = pTemp;
 }
 
 
 void TrocaItens_Bib(TCelulaBiblioteca* pCelulaBibA, TCelulaBiblioteca* pCelulaBibB){
-    TCelulaBiblioteca* pTemp;
-    pTemp =pCelulaBibA;
-    pCelulaBibA = pCelulaBibB;
-    pCelulaBibB = pTemp;
+    TCelulaBiblioteca pTemp;
+    pTemp = *pCelulaBibA;
+    *pCelulaBibA = *pCelulaBibB;
+    *pCelulaBibB = pTemp;
 }
 
 void SelectSort_Texto(Ttexto_LEncadeada* pTexto){

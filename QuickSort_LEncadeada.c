@@ -34,17 +34,17 @@ int Distancia_Bib_LEncadeada(TCelulaBiblioteca* pCelulaBibA, TCelulaBiblioteca* 
     return cont;
 }
 void TrocaItens_Texto_QuickSort(TcelulaTexto* pCelulaA,TcelulaTexto* pCelulaB){
-    TcelulaTexto *pTemp;
-    pTemp = pCelulaA;
-    pCelulaA = pCelulaB;
-    pCelulaB = pTemp;
+    TcelulaTexto pTemp;
+    pTemp = *pCelulaA;
+    *pCelulaA = *pCelulaB;
+    *pCelulaB = pTemp;
 }
 
 void TrocaItens_Bib_QuickSort(TCelulaBiblioteca* pCelulaBibA, TCelulaBiblioteca* pCelulaBibB){
-    TCelulaBiblioteca* pTemp;
-    pTemp = pCelulaBibA;
-    pCelulaBibA = pCelulaBibB;
-    pCelulaBibB = pTemp;
+    TCelulaBiblioteca pTemp;
+    pTemp = *pCelulaBibA;
+    *pCelulaBibA = *pCelulaBibB;
+    *pCelulaBibB = pTemp;
 }
 void Ordena_Texto_LEncadeada(TcelulaTexto* pEsq, TcelulaTexto* pDir, Ttexto_LEncadeada* pTexto){
     printf("Iniciou o Ordena!\n");
@@ -121,7 +121,7 @@ void Particao_Bib_LEncadeada(TCelulaBiblioteca* pEsq, TCelulaBiblioteca* pDir, T
     }
     printf("pivo decidido!\n");
 
-    do{
+    while (Distancia_Bib_LEncadeada(pI,pJ)>= 0){
         while (Pivo->texto.tam_texto > pI->texto.tam_texto && pI!= NULL){pI = pI->pProxBiblioteca;}
         while (Pivo->texto.tam_texto < pJ->texto.tam_texto && pJ != NULL){pJ = pJ->pAntBiblioteca;}
         if(Distancia_Bib_LEncadeada(pI,pJ)>= 0){
@@ -131,7 +131,7 @@ void Particao_Bib_LEncadeada(TCelulaBiblioteca* pEsq, TCelulaBiblioteca* pDir, T
             printf("Itens trocados!\n");
         }
         printf("A distancia entre pI e pJ eh %d\n",Distancia_Bib_LEncadeada(pI,pJ));
-    }while (Distancia_Bib_LEncadeada(pI,pJ)>= 0);
+    }
 
     printf("saiu do while!");
     return;
