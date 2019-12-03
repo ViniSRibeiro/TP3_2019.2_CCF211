@@ -163,26 +163,25 @@ int main(){
                 printf("Entre com uma opcao: ");
                 scanf("%d", &texto_ou_bib);
                 if(texto_ou_bib == 1){
-                    if(tipo_dados == 1){
+                    if(tipo_dados == 1){ //ordenar arranjo, ordenar as palavras dentro do texto
                         for (int i = 0; i <Biblioteca_Arranjo.BibUltimo ; ++i) {
                             selectionForText(&Biblioteca_Arranjo.biblioteca[i],Biblioteca_Arranjo.BibUltimo);
                         }
                     }else{
                         for (TCelulaBiblioteca *i = Biblioteca_LEncadeada.pPrimeiroBiblioteca->pProxBiblioteca; i != Biblioteca_LEncadeada.pUltimoBiblioteca ; i = i->pProxBiblioteca) {
-                            for (TcelulaTexto *j = &i->texto; j != NULL ; j = j->pProxTexto) {
+                            Ttexto_LEncadeada *j = &i->texto;
                                 SelectSort_Texto(j);
-                            }
+
                         }
                     }
                 }else{
                     if(tipo_dados == 1){
                         for (int i = 0; i <Biblioteca_Arranjo.BibUltimo ; ++i) {
-                            selectionForBib(&Biblioteca_Arranjo.biblioteca,Biblioteca_Arranjo.BibUltimo);
+                            selectionForBib(&Biblioteca_Arranjo,Biblioteca_Arranjo.BibUltimo);
                         }
                     }else{
-                        for (TCelulaBiblioteca *i = Biblioteca_LEncadeada.pPrimeiroBiblioteca->pProxBiblioteca; i != Biblioteca_LEncadeada.pUltimoBiblioteca ; i = i->pProxBiblioteca) {
-                            SelectSort_Bib(&i->texto);
-                        }
+                            SelectSort_Bib(&Biblioteca_LEncadeada);
+
                     }
                 }
 
@@ -203,9 +202,9 @@ int main(){
                         }
                     }else{
                         for (TCelulaBiblioteca *i = Biblioteca_LEncadeada.pPrimeiroBiblioteca->pProxBiblioteca; i != Biblioteca_LEncadeada.pUltimoBiblioteca ; i = i->pProxBiblioteca) {
-                            for (TcelulaTexto *j = &i->texto; j != NULL ; j = j->pProxTexto) {
-                                QuickSort_Texto_LEncadeada(j);
-                            }
+
+                                QuickSort_Texto_LEncadeada(&i->texto);
+
                         }
                     }
                 }else{
@@ -214,7 +213,7 @@ int main(){
                             quicksortForBib(&Biblioteca_Arranjo,Biblioteca_Arranjo.BibUltimo);
                         }
                     }else{
-
+                            printf("Vai iniciar o Quicksort de lista encadeada na biblioteca!\n");
                             QuickSort_Bib_LEncadeada(&Biblioteca_LEncadeada);
 
                     }
