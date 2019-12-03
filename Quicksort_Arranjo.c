@@ -1,6 +1,8 @@
 #include "Arranjo/TAD_Biblioteca.h"
 #include "ListaEncadeada/TAD_Biblioteca.h"
 
+int movimentacoesBib, movimentacoesText, comparacoesBib, comparacoesText;
+
 void ordenaForBib(int Esq, int Dir, TBiblioteca_Arranjo *listaDeBiblioteca);
 void ordenaForText(int Esq, int Dir, Ttexto_Arranjo *listaDeTexto);
 void particaoForBib(int Esq, int Dir, int *i, int *j,TBiblioteca_Arranjo *listaDeBiblioteca);
@@ -10,14 +12,25 @@ void quicksortForText(Ttexto_Arranjo *listaDeTexto, int n);
 
 void quicksortForBib(TBiblioteca_Arranjo *listaDeBiblioteca, int tamBib)
 {
+    clock_t tF, tI = clock();
+    double tempo;
+    movimentacoesBib = 0; comparacoesBib = 0;
+    tF = clock();
     ordenaForBib(0,tamBib-1,listaDeBiblioteca);
+    tempo = (tF - tI) * 1000.0 / CLOCKS_PER_SEC;
+    printf("Algoritmo Quick Sort:\n");
+    printf("\tComparações: %d\n", comparacoesBib);
+    printf("\tMovimentações: %d\n", movimentacoesBib);
+    printf("\tTempo Total Gasto: %lf s\n", tempo/1000);
 }
 
 void ordenaForBib(int Esq, int Dir, TBiblioteca_Arranjo *listaDeBiblioteca)
 {
     int i,j;
     particaoForBib(Esq, Dir, &i,&j,listaDeBiblioteca);
+    comparacoesBib++;
     if(Esq < j) ordenaForBib(Esq, j, listaDeBiblioteca);
+    comparacoesBib++;
     if(i < Dir) ordenaForBib(i, Dir, listaDeBiblioteca);
 }
 
@@ -27,14 +40,22 @@ void particaoForBib(int Esq, int Dir, int *i, int *j,TBiblioteca_Arranjo *listaD
     *i = Esq; *j = Dir;
     pivo = listaDeBiblioteca->biblioteca[(*i + *j)/2];
     do{
-        while(pivo.TextoUltimo > listaDeBiblioteca->biblioteca[*i].TextoUltimo) (*i)++;
-        while(pivo.TextoUltimo < listaDeBiblioteca->biblioteca[*j].TextoUltimo) (*j)--;
+        comparacoesBib++;
+        while(pivo.TextoUltimo > listaDeBiblioteca->biblioteca[*i].TextoUltimo){
+            comparacoesBib++;
+            (*i)++;
+        }
+        while(pivo.TextoUltimo < listaDeBiblioteca->biblioteca[*j].TextoUltimo){
+            comparacoesBib++;
+            (*j)--;
+        }
 
         if(*i <= *j)
         {
             aux = listaDeBiblioteca->biblioteca[*i];
             listaDeBiblioteca->biblioteca[*i] = listaDeBiblioteca->biblioteca[*j];
             listaDeBiblioteca->biblioteca[*j] = aux;
+            movimentacoesBib += 3;
             (*i)++; (*j)--;
         }
     } while(*i <= *j);
@@ -45,15 +66,22 @@ void particaoForText(int Esq, int Dir, int *i, int *j, Ttexto_Arranjo *listaDeTe
     *i = Esq; *j = Dir;
     pivo = listaDeTexto->vetorPalavra[(*i + *j)/2]; /* obtem o pivo x */
     do
-    {
-        while (pivo.caractere[0].letra > listaDeTexto->vetorPalavra[*i].caractere[0].letra) (*i)++;
-        while (pivo.caractere[0].letra < listaDeTexto->vetorPalavra[*j].caractere[0].letra) (*j)--;
-
+    {   comparacoesText++;
+        while (pivo.caractere[0].letra > listaDeTexto->vetorPalavra[*i].caractere[0].letra){
+             (*i)++;
+             comparacoesText++;
+        }
+        comparacoesText++;
+        while (pivo.caractere[0].letra < listaDeTexto->vetorPalavra[*j].caractere[0].letra){ 
+            (*j)--;
+            comparacoesText++;
+        }
         if (*i <= *j)
         {
             aux = listaDeTexto->vetorPalavra[*i]; 
             listaDeTexto->vetorPalavra[*i] = listaDeTexto->vetorPalavra[*j]; 
             listaDeTexto->vetorPalavra[*j] = aux;
+            movimentacoesText +=3;
             (*i)++; (*j)--;
         }
     } while (*i <= *j);
@@ -62,14 +90,25 @@ void particaoForText(int Esq, int Dir, int *i, int *j, Ttexto_Arranjo *listaDeTe
 
 void quicksortForText(Ttexto_Arranjo *listaDeTexto, int tamText)
 {
+    clock_t tF, tI = clock();
+    double tempo;
+    comparacoesText = 0; movimentacoesText = 0;
+    tF = clock();
     ordenaForText(0, tamText-1, listaDeTexto);
+    tempo = (tF - tI) * 1000.0 / CLOCKS_PER_SEC;
+    printf("Algoritmo Quick Sort:\n");
+    printf("\tComparações: %d\n", comparacoesText);
+    printf("\tMovimentações: %d\n", movimentacoesText);
+    printf("\tTempo Total Gasto: %lf s\n", tempo/1000);
 }
 
 void ordenaForText(int Esq, int Dir, Ttexto_Arranjo *listaDeTexto)
 {
     int i,j;
     particaoForText(Esq, Dir, &i, &j, listaDeTexto);
+    comparacoesText++;
     if (Esq < j) ordenaForText(Esq, j, listaDeTexto);
+    comparacoesText++;
     if (i < Dir) ordenaForText(i, Dir, listaDeTexto);
 }
 
