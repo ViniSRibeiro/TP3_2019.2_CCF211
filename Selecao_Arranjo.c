@@ -1,6 +1,4 @@
 //#include "Interface.c"
-#include "Arranjo/TAD_Biblioteca.h"
-#include "ListaEncadeada/TAD_Biblioteca.h"
 #include "Selecao_Arranjo.h"
 
 void selectionForBib(TBiblioteca_Arranjo *listaDeBiblioteca, int tamBib){
@@ -71,7 +69,7 @@ void selectionForText(Ttexto_Arranjo *listaDeTexto, int tamText)
     printf("\tMovimentações: %d\n", movimentacoes);
     printf("\tTempo Total Gasto: %lf s\n", tempo/1000);
 }
-
+/*
 int main(){
     TCaractereArranjo Letra_Arranjo;
     TPalavra_Arranjo Palavra_Arranjo;
@@ -108,5 +106,5 @@ int main(){
 
     ImprimeBib(&Biblioteca_Arranjo);
 
-
 }
+*/

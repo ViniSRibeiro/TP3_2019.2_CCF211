@@ -7,7 +7,8 @@
 
 #endif //TP3_2019_2_CCF211_QUICKSORT_ARRANJO_H
 
-
+#include "ListaEncadeada/TAD_Biblioteca.h"
+#include "Arranjo/TAD_Biblioteca.h"
 
 void ordenaForBib(int Esq, int Dir, TBiblioteca_Arranjo *listaDeBiblioteca);
 void ordenaForText(int Esq, int Dir, Ttexto_Arranjo *listaDeTexto);

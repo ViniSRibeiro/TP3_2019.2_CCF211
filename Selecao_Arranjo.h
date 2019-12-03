@@ -1,6 +1,8 @@
 //
 // Created by vinir on 02/12/2019.
 //
+#include "ListaEncadeada/TAD_Biblioteca.h"
+#include "Arranjo/TAD_Biblioteca.h"
 
 #ifndef TP3_2019_2_CCF211_SELECAO_ARRANJO_H
 #define TP3_2019_2_CCF211_SELECAO_ARRANJO_H

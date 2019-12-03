@@ -1,5 +1,4 @@
-#include "Arranjo/TAD_Biblioteca.h"
-#include "ListaEncadeada/TAD_Biblioteca.h"
+
 #include "Quicksort_Arranjo.h"
 int movimentacoesBib, movimentacoesText, comparacoesBib, comparacoesText;
 
@@ -106,6 +105,7 @@ void ordenaForText(int Esq, int Dir, Ttexto_Arranjo *listaDeTexto)
     comparacoesText++;
     if (i < Dir) ordenaForText(i, Dir, listaDeTexto);
 }
+/*
 
 int main(){
   
@@ -145,3 +145,4 @@ int main(){
 
 
 }
+*/
