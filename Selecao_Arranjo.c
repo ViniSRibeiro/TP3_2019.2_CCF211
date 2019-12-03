@@ -1,7 +1,7 @@
 //#include "Interface.c"
 #include "Arranjo/TAD_Biblioteca.h"
 #include "ListaEncadeada/TAD_Biblioteca.h"
-
+#include "Selecao_Arranjo.h"
 
 void selectionForBib(TBiblioteca_Arranjo *listaDeBiblioteca, int tamBib){
     clock_t tF, tI = clock();

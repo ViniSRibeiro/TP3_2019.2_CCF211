@@ -25,6 +25,10 @@ add_executable(TP3_2019_2_CCF211
         geracaoBib.c
         geracaoBib2.c
         Interface.c
+        Quicksort_Arranjo.c
+        Quicksort_Arranjo.h
+        QuickSort_LEncadeada.c
+        QuickSort_LEncadeada.h
         Selecao_Arranjo.c
         Selecao_ListaEncadeada.c
-        Selecao_ListaEncadeada.h QuickSort_LEncadeada.c QuickSort_LEncadeada.h)
+        Selecao_ListaEncadeada.h Selecao_Arranjo.h)

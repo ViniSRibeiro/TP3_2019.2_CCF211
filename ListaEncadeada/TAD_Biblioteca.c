@@ -1,7 +1,7 @@
 #include "TAD_Biblioteca.h"
 
 void FBVazia_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca){
-    pBiblioteca->pPrimeiroBiblioteca = (Apontador) malloc(sizeof(TCelulaBiblioteca));
+    pBiblioteca->pPrimeiroBiblioteca = (TCelulaBiblioteca*) malloc(sizeof(TCelulaBiblioteca));
     pBiblioteca->pUltimoBiblioteca = pBiblioteca->pPrimeiroBiblioteca;
     pBiblioteca->pPrimeiroBiblioteca->pProxBiblioteca = NULL;
     pBiblioteca->pPrimeiroBiblioteca->pAntBiblioteca = NULL;
@@ -10,7 +10,7 @@ int BibliotecaEhVazia_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca){
     return(pBiblioteca->pPrimeiroBiblioteca == pBiblioteca->pUltimoBiblioteca);
 }
 void InsereTexto_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca, Ttexto_LEncadeada texto){
-    pBiblioteca->pUltimoBiblioteca->pProxBiblioteca = (Apontador)malloc(sizeof(TCelulaBiblioteca));
+    pBiblioteca->pUltimoBiblioteca->pProxBiblioteca = (TCelulaBiblioteca*)malloc(sizeof(TCelulaBiblioteca));
     pBiblioteca->pUltimoBiblioteca->pProxBiblioteca->pAntBiblioteca = pBiblioteca->pUltimoBiblioteca;
     pBiblioteca->pUltimoBiblioteca = pBiblioteca->pUltimoBiblioteca->pProxBiblioteca;
     pBiblioteca->pUltimoBiblioteca->texto = texto;

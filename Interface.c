@@ -3,7 +3,11 @@
 //
 
 #include "Arranjo/TAD_Biblioteca.h"
-#include "ListaEncadeada/TAD_Biblioteca.h"
+
+#include "Selecao_Arranjo.h"
+#include "Quicksort_Arranjo.h"
+#include "Selecao_ListaEncadeada.h"
+#include "QuickSort_LEncadeada.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -30,7 +34,7 @@ int main(){
     TPalavra_LEncadeada Palavra_LEncadeada;
     Ttexto_LEncadeada texto_LEncadeada;
     TBiblioteca_LEncadeada Biblioteca_LEncadeada;
-    int opcao,tipo_dados,tam_biblioteca, min_size_texto,max_size_texto;
+    int opcao,tipo_dados,tam_biblioteca, min_size_texto,max_size_texto, texto_ou_bib;
     printf(" --------------------------------------------------------- \n");
     printf("|                       UFV - CAF                         |\n");
     printf("|                         TP 3                            |\n");
@@ -149,6 +153,40 @@ int main(){
                     ImprimeBiblioteca_LEncadeada(&Biblioteca_LEncadeada);
                     printf(" --------------------------------------------------------- \n");
                 }
+                break;
+            case 3:
+                printf(" --------------------------------------------------------- \n");
+                printf("|                       O QUE DESEJA ORDENAR?             |\n");
+                printf("|                                                         |\n");
+                printf("|  1 - Palavras no texto                                  |\n");
+                printf("|  2 - Textos na Biblioteca                               |\n");
+                printf(" --------------------------------------------------------- \n");
+                printf("Entre com uma opcao: ");
+                scanf("%d", &texto_ou_bib);
+                if(texto_ou_bib == 1){
+                    if(tipo_dados == 1){
+                        for (int i = 0; i <Biblioteca_Arranjo.BibUltimo ; ++i) {
+                            selectionForText(&Biblioteca_Arranjo.biblioteca[i],Biblioteca_Arranjo.BibUltimo);
+                        }
+                    }else{
+                        for (TCelulaBiblioteca *i = Biblioteca_LEncadeada.pPrimeiroBiblioteca->pProxBiblioteca; i != Biblioteca_LEncadeada.pUltimoBiblioteca ; i = i->pProxBiblioteca) {
+                            for (TcelulaTexto *j = &i->texto; j != NULL ; j = j->pProxTexto) {
+                                SelectSort_Texto(j);
+                            }
+                        }
+                    }
+                }else{
+                    if(tipo_dados == 1){
+                        for (int i = 0; i <Biblioteca_Arranjo.BibUltimo ; ++i) {
+                            selectionForBib(&Biblioteca_Arranjo.biblioteca,Biblioteca_Arranjo.BibUltimo);
+                        }
+                    }else{
+                        for (TCelulaBiblioteca *i = Biblioteca_LEncadeada.pPrimeiroBiblioteca->pProxBiblioteca; i != Biblioteca_LEncadeada.pUltimoBiblioteca ; i = i->pProxBiblioteca) {
+                            SelectSort_Bib(&i->texto);
+                        }
+                    }
+                }
+
                 break;
         }
     }while(opcao<5);

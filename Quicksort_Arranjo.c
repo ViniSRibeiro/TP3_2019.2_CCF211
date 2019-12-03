@@ -1,14 +1,9 @@
 #include "Arranjo/TAD_Biblioteca.h"
 #include "ListaEncadeada/TAD_Biblioteca.h"
-
+#include "Quicksort_Arranjo.h"
 int movimentacoesBib, movimentacoesText, comparacoesBib, comparacoesText;
 
-void ordenaForBib(int Esq, int Dir, TBiblioteca_Arranjo *listaDeBiblioteca);
-void ordenaForText(int Esq, int Dir, Ttexto_Arranjo *listaDeTexto);
-void particaoForBib(int Esq, int Dir, int *i, int *j,TBiblioteca_Arranjo *listaDeBiblioteca);
-void particaoForText(int Esq, int Dir, int *i, int *j, Ttexto_Arranjo *listaDeTexto);
-void quicksortForBib(TBiblioteca_Arranjo *listaDeBiblioteca, int tamBib);
-void quicksortForText(Ttexto_Arranjo *listaDeTexto, int n);
+
 
 void quicksortForBib(TBiblioteca_Arranjo *listaDeBiblioteca, int tamBib)
 {
