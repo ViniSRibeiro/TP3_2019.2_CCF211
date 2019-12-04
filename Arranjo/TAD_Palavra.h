@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-/*
+
 typedef struct {
     char letra;
 }TCaractereArranjo;
@@ -16,13 +16,7 @@ typedef struct {
     TCaractereArranjo caractere[TAMMAX];
     int Primeiro,Ultimo;
 }TPalavra_Arranjo;
-*/
 
-typedef struct{
-  char *caractere;
-  int indice;
-  int Primeiro, Ultimo;
-}TPalavra_Arranjo;
 
 void FazPalavraVazia_Arranjo(TPalavra_Arranjo *palavra);
 int PalavraEhVazia_Arranjo(TPalavra_Arranjo *palavra);

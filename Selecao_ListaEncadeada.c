@@ -54,12 +54,12 @@ void SelectSort_Texto(Ttexto_LEncadeada* pTexto){
 void SelectSort_Bib(TBiblioteca_LEncadeada* pBib){
     TCelulaBiblioteca  pMin, *i , *j,*pPont;
 
-    for (i = pBib->pPrimeiroBiblioteca->pProxBiblioteca ; i != pBib->pUltimoBiblioteca; i = i->pProxBiblioteca){
+    for (i = pBib->pPrimeiroBiblioteca->pProxBiblioteca ; i != pBib->pUltimoBiblioteca->pProxBiblioteca; i = i->pProxBiblioteca){
 
         pMin = *i;
         pPont = i;
 
-        for (j = i->pProxBiblioteca; j!=pBib->pUltimoBiblioteca;j = j->pProxBiblioteca ){
+        for (j = i->pProxBiblioteca; j!=pBib->pUltimoBiblioteca->pProxBiblioteca;j = j->pProxBiblioteca ){
 
             if(j->texto.tam_texto < pMin.texto.tam_texto){
 
