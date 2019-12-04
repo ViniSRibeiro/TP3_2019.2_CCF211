@@ -9,8 +9,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/TP3_2019_2_CCF211.dir/Quicksort_Arranjo.c.o"
   "CMakeFiles/TP3_2019_2_CCF211.dir/Selecao_Arranjo.c.o"
   "CMakeFiles/TP3_2019_2_CCF211.dir/Selecao_ListaEncadeada.c.o"
-  "CMakeFiles/TP3_2019_2_CCF211.dir/geracaoBib.c.o"
-  "CMakeFiles/TP3_2019_2_CCF211.dir/geracaoBib2.c.o"
   "CMakeFiles/TP3_2019_2_CCF211.dir/main.c.o"
   "TP3_2019_2_CCF211"
   "TP3_2019_2_CCF211.pdb"

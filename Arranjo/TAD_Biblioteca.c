@@ -6,10 +6,12 @@
 #include <stdio.h>
 
 
-void FBibVazia(TBiblioteca_Arranjo *PBiblioteca, int size) {
-    PBiblioteca->biblioteca = (Ttexto_Arranjo*) malloc(size * sizeof(Ttexto_Arranjo));
+void FBibVazia(TBiblioteca_Arranjo *PBiblioteca, int tamanho) {
+    printf("Size eh %d\n", tamanho);
+    PBiblioteca->biblioteca =  malloc(sizeof(Ttexto_Arranjo)* tamanho);
     PBiblioteca->BibPrimeiro = 0;
     PBiblioteca->BibUltimo = PBiblioteca->BibPrimeiro;
+    printf("A biblioteca tem o tamanho %d\n", sizeof(PBiblioteca->biblioteca));
 }
 
 int BibEhVazia(TBiblioteca_Arranjo* PBiblioteca){
@@ -47,7 +49,7 @@ void RetiraTexto(TBiblioteca_Arranjo* PBiblioteca,int Posicao, Ttexto_Arranjo* P
 
 int ImprimeBib(TBiblioteca_Arranjo* PBiblioteca){
     int n =1;
-    for (int i = PBiblioteca->BibPrimeiro; i <PBiblioteca->BibUltimo ; ++i) {
+    for (int i = 0; i < PBiblioteca->BibUltimo ; ++i) {
         printf("Texto %d Tamamnho%d\n",n,TamanhoTexto(&PBiblioteca->biblioteca[i]));
         ImprimeTexto(&PBiblioteca->biblioteca[i]);
         printf("\n");

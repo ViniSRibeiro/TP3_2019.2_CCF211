@@ -144,12 +144,6 @@
 		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Selecao_ListaEncadeada.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/geracaoBib.c">
-			<Option target="TP3_2019_2_CCF211"/>
-		</Unit>
-		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/geracaoBib2.c">
-			<Option target="TP3_2019_2_CCF211"/>
-		</Unit>
 		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/main.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>

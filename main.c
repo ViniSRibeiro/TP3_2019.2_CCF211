@@ -44,7 +44,7 @@ int main(){
     printf("|            Vinicius Ribeiro       -  2670               |\n");
     printf("|            Isabella Ramos         -  3474               |\n"); 
     printf(" --------------------------------------------------------- \n");
-    FBibVazia(&Biblioteca_Arranjo);
+
     FBVazia_LEncadeada(&Biblioteca_LEncadeada);
 
     do{

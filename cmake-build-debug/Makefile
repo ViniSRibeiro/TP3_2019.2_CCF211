@@ -393,60 +393,6 @@ Selecao_ListaEncadeada.c.s:
 	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/Selecao_ListaEncadeada.c.s
 .PHONY : Selecao_ListaEncadeada.c.s
 
-geracaoBib.o: geracaoBib.c.o
-
-.PHONY : geracaoBib.o
-
-# target to build an object file
-geracaoBib.c.o:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/geracaoBib.c.o
-.PHONY : geracaoBib.c.o
-
-geracaoBib.i: geracaoBib.c.i
-
-.PHONY : geracaoBib.i
-
-# target to preprocess a source file
-geracaoBib.c.i:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/geracaoBib.c.i
-.PHONY : geracaoBib.c.i
-
-geracaoBib.s: geracaoBib.c.s
-
-.PHONY : geracaoBib.s
-
-# target to generate assembly for a file
-geracaoBib.c.s:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/geracaoBib.c.s
-.PHONY : geracaoBib.c.s
-
-geracaoBib2.o: geracaoBib2.c.o
-
-.PHONY : geracaoBib2.o
-
-# target to build an object file
-geracaoBib2.c.o:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/geracaoBib2.c.o
-.PHONY : geracaoBib2.c.o
-
-geracaoBib2.i: geracaoBib2.c.i
-
-.PHONY : geracaoBib2.i
-
-# target to preprocess a source file
-geracaoBib2.c.i:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/geracaoBib2.c.i
-.PHONY : geracaoBib2.c.i
-
-geracaoBib2.s: geracaoBib2.c.s
-
-.PHONY : geracaoBib2.s
-
-# target to generate assembly for a file
-geracaoBib2.c.s:
-	$(MAKE) -f CMakeFiles/TP3_2019_2_CCF211.dir/build.make CMakeFiles/TP3_2019_2_CCF211.dir/geracaoBib2.c.s
-.PHONY : geracaoBib2.c.s
-
 main.o: main.c.o
 
 .PHONY : main.o
@@ -513,12 +459,6 @@ help:
 	@echo "... Selecao_ListaEncadeada.o"
 	@echo "... Selecao_ListaEncadeada.i"
 	@echo "... Selecao_ListaEncadeada.s"
-	@echo "... geracaoBib.o"
-	@echo "... geracaoBib.i"
-	@echo "... geracaoBib.s"
-	@echo "... geracaoBib2.o"
-	@echo "... geracaoBib2.i"
-	@echo "... geracaoBib2.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

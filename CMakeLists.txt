@@ -20,8 +20,6 @@ add_executable(TP3_2019_2_CCF211
         ListaEncadeada/TAD_Palavra.h
         ListaEncadeada/TAD_Texto.c
         ListaEncadeada/TAD_Texto.h
-        geracaoBib.c
-        geracaoBib2.c
         main.c
         Quicksort_Arranjo.c
         Quicksort_Arranjo.h

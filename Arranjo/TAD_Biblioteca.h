@@ -17,7 +17,7 @@ typedef struct{
     Apontadorbiblioteca BibPrimeiro, BibUltimo;
 }TBiblioteca_Arranjo;
 
-void FBibVazia(TBiblioteca_Arranjo *PBiblioteca, int size);
+void FBibVazia(TBiblioteca_Arranjo *PBiblioteca, int tamanho);
 int BibEhVazia(TBiblioteca_Arranjo* PBiblioteca);
 int InsereTexto(TBiblioteca_Arranjo* PBiblioteca, Ttexto_Arranjo PTexto);
 void RetiraTexto(TBiblioteca_Arranjo* PBiblioteca,int Posicao, Ttexto_Arranjo* PTexto);
