@@ -22,31 +22,31 @@ void TrocaItens_Bib(TCelulaBiblioteca *pCelulaBibA, TCelulaBiblioteca *pCelulaBi
 
 void SelectSort_Texto(Ttexto_LEncadeada* pTexto){
     TcelulaTexto pMin, *i , *j,*pPont;
-    int teste_ext=0,teste_int=0;
-    printf("Entrou no seleçao!\n");
-    for(i = pTexto->pPrimeiroTexto->pProxTexto;i !=pTexto->pUltimoTexto;i = i->pProxTexto){
-        teste_ext++;
+   // int teste_ext=0,teste_int=0;
+   // printf("Entrou no seleçao!\n");
+    for(i = pTexto->pPrimeiroTexto->pProxTexto;i !=pTexto->pUltimoTexto->pProxTexto;i = i->pProxTexto){
+      //  teste_ext++;
         pMin = *i;
         pPont = i;
-        for(j=i->pProxTexto; j != pTexto->pUltimoTexto ;j = j->pProxTexto){
+        for(j=i->pProxTexto; j != pTexto->pUltimoTexto->pProxTexto ;j = j->pProxTexto){
 
-            teste_int++;
+         //   teste_int++;
             if(j->palavra.pPrimeiro->pProx->caractere.letra < pMin.palavra.pPrimeiro->pProx->caractere.letra ){ //compara a primeira letra valida, fora da celula cabeça
-                printf("J eh %c e pMin eh %c \n",j->palavra.pPrimeiro->pProx->caractere.letra,pMin.palavra.pPrimeiro->caractere.letra);
+             //   printf("J eh %c e pMin eh %c \n",j->palavra.pPrimeiro->pProx->caractere.letra,pMin.palavra.pPrimeiro->caractere.letra);
                 pMin = *j;
                 pPont = j;
 
             }
-            printf("For interno rodou %d vezes\n",teste_int+1);
+     //       printf("For interno rodou %d vezes\n",teste_int+1);
         }
-        teste_int = 0;
+      //  teste_int = 0;
 
-        printf("i eh %c e pMin eh %c\n",i->palavra.pPrimeiro->pProx->caractere.letra,pMin.palavra.pPrimeiro->caractere.letra);
+     //   printf("i eh %c e pMin eh %c\n",i->palavra.pPrimeiro->pProx->caractere.letra,pMin.palavra.pPrimeiro->caractere.letra);
         TrocaItens_Texto(pPont,i);
 
-        printf("i eh %c e pMin eh %c, trocou!\n",i->palavra.pPrimeiro->pProx->caractere.letra,pMin.palavra.pPrimeiro->caractere.letra);
+     //   printf("i eh %c e pMin eh %c, trocou!\n",i->palavra.pPrimeiro->pProx->caractere.letra,pMin.palavra.pPrimeiro->caractere.letra);
 
-        printf("For Externo rodou %d vezes\n", teste_ext+1);
+      //  printf("For Externo rodou %d vezes\n", teste_ext+1);
     }
 
 
