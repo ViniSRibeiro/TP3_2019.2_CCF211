@@ -1,11 +1,13 @@
 // inicializa, insereLetra, removeLetra, imprime e tamanho.
 #define TAMMAX 100
+
+#define size_palavra 20
 #define InicioArranjo 0
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-
+/*
 typedef struct {
     char letra;
 }TCaractereArranjo;
@@ -13,6 +15,13 @@ typedef struct {
 typedef struct {
     TCaractereArranjo caractere[TAMMAX];
     int Primeiro,Ultimo;
+}TPalavra_Arranjo;
+*/
+
+typedef struct{
+  char *caractere;
+  int indice;
+  int Primeiro, Ultimo;
 }TPalavra_Arranjo;
 
 void FazPalavraVazia_Arranjo(TPalavra_Arranjo *palavra);

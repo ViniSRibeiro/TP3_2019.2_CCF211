@@ -29,15 +29,15 @@ void selectionForBib(TBiblioteca_Arranjo *listaDeBiblioteca, int tamBib){
 
     tF = clock();
     tempo = (tF - tI) * 1000.0 / CLOCKS_PER_SEC;
-    printf("Algoritmo Seleção:\n");
-    printf("\tComparações: %d\n", comparacoes);
-    printf("\tMovimentações: %d\n", movimentacoes);
+    printf("Algoritmo Selecao:\n");
+    printf("\tComparacoes: %d\n", comparacoes);
+    printf("\tMovimentacoes: %d\n", movimentacoes);
     printf("\tTempo Total Gasto: %lf s\n", tempo/1000);
     
 }
 
 void selectionForText(Ttexto_Arranjo *listaDeTexto, int tamText)
-{   
+{
     clock_t tF, tI = clock();
     double tempo;
     int movimentacoes = 0, comparacoes = 0;
@@ -65,8 +65,8 @@ void selectionForText(Ttexto_Arranjo *listaDeTexto, int tamText)
     tF = clock();
     tempo = (tF - tI) * 1000.0 / CLOCKS_PER_SEC;
     printf("Selection sort:\n");
-    printf("\tComparações: %d\n", comparacoes);
-    printf("\tMovimentações: %d\n", movimentacoes);
+    printf("\tComparacoes: %d\n", comparacoes);
+    printf("\tMovimentacoes: %d\n", movimentacoes);
     printf("\tTempo Total Gasto: %lf s\n", tempo/1000);
 }
 /*

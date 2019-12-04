@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.13)
 project(TP3_2019_2_CCF211 C)
 
 set(CMAKE_C_STANDARD 11)

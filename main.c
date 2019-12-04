@@ -33,7 +33,10 @@ int main(){
     TPalavra_LEncadeada Palavra_LEncadeada;
     Ttexto_LEncadeada texto_LEncadeada;
     TBiblioteca_LEncadeada Biblioteca_LEncadeada;
+
     int opcao,tipo_dados,tam_biblioteca, min_size_texto,max_size_texto, texto_ou_bib;
+
+
     printf(" --------------------------------------------------------- \n");
     printf("|                       UFV - CAF                         |\n");
     printf("|                         TP 3                            |\n");
@@ -50,7 +53,7 @@ int main(){
         printf("|                                                         |\n");
         printf("|  1 - Gerar Biblioteca                                   |\n");
         printf("|  2 - Imprimir texto                                     |\n");
-        printf("|  3 - Ordenar com Seleçao                                |\n");
+        printf("|  3 - Ordenar com Selecao                                |\n");
         printf("|  4 - Ordenar com QuickSort                              |\n");
         printf("|  5 - Sair                                               |\n");
         printf(" --------------------------------------------------------- \n");
@@ -77,12 +80,17 @@ int main(){
                 printf("Qual o tamanho da biblioteca ( quantos textos possui): ");
                 scanf("%d",&tam_biblioteca);
                 printf("\n");
+                
+
+
                 printf("digite o tamanho minimo de um texto nessa biblioteca: ");
                 scanf("%d",&min_size_texto);
                 printf("\n");
+
                 printf("digite o tamanho maximo de um texto nessa biblioteca: ");
                 scanf("%d",&max_size_texto);
                 printf("\n");
+
                 /*if(tipo_dados ==1){
                 
                     for (int i = 0; i < tam_biblioteca ; ++i) { //gera N textos aleatorios
@@ -99,21 +107,21 @@ int main(){
                         }
                         InsereTexto(&Biblioteca_Arranjo,texto_Arranjo); */
                     for (int i = 0; i < tam_biblioteca; i++)
-                    { 
+                    {
                         FazTextoVazia(&texto_Arranjo);
                         FTVazia_LEncadeada(&texto_LEncadeada);
                     
-                        int nTextos = rand()%(min_size_texto-max_size_texto+1);
+                        int nTextos = 1 + rand()%(min_size_texto-max_size_texto + 1);
                         for (int i = 0; i < nTextos; i++) //formação de texto
                         { 
                         FPVazia_LEncadeada(&Palavra_LEncadeada);
                         FazPalavraVazia_Arranjo(&Palavra_Arranjo);
                             
-                            int nPalavra = rand()%20;
+                            int nPalavra = 1 + rand()%20;
 
                             for (int i = 0; i < nPalavra; i++)
                             {
-                            char letra =97 + (char)(rand()%26);
+                            char letra = 97 + (char)(rand()%26);
                             Letra_Arranjo.letra = letra;
                             Letra_LEncadeada.letra = Letra_Arranjo.letra;
                             InsereLetra_LEncadeada(&Palavra_LEncadeada,Letra_LEncadeada);
@@ -215,7 +223,6 @@ int main(){
                     }else{
                             printf("Vai iniciar o Quicksort de lista encadeada na biblioteca!\n");
                             QuickSort_Bib_LEncadeada(&Biblioteca_LEncadeada);
-
                     }
                 }
                 break;
