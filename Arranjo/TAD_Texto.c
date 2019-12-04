@@ -18,7 +18,7 @@ void RetiraPalavra(Ttexto_Arranjo *pTexto, int Posicao, TPalavra_Arranjo *pPalav
     if (TextoVazia(pTexto) == 1) {
       printf("Texto vazio.\n");
     }else{
-      for (int i = Posicao; i < 100; i++) {
+      for (int i = Posicao; i < size_texto; i++) {
         pTexto->vetorPalavra[i] = pTexto->vetorPalavra[i + 1];
       }
       pTexto->TextoUltimo--;
@@ -34,8 +34,8 @@ void ImprimeTexto(Ttexto_Arranjo *pTexto){
       }
       printf(" ");
     }
-
 }
+
 int TamanhoTexto(Ttexto_Arranjo *pTexto){
   return(pTexto->TextoUltimo);
 }

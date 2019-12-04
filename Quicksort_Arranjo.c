@@ -13,8 +13,8 @@ void quicksortForBib(TBiblioteca_Arranjo *listaDeBiblioteca, int tamBib)
     ordenaForBib(0,tamBib-1,listaDeBiblioteca);
     tempo = (tF - tI) * 1000.0 / CLOCKS_PER_SEC;
     printf("Algoritmo Quick Sort:\n");
-    printf("\tComparações: %d\n", comparacoesBib);
-    printf("\tMovimentações: %d\n", movimentacoesBib);
+    printf("\tComparacoes: %d\n", comparacoesBib);
+    printf("\tMovimentacoes: %d\n", movimentacoesBib);
     printf("\tTempo Total Gasto: %lf s\n", tempo/1000);
 }
 
@@ -29,7 +29,7 @@ void ordenaForBib(int Esq, int Dir, TBiblioteca_Arranjo *listaDeBiblioteca)
 }
 
 void particaoForBib(int Esq, int Dir, int *i, int *j,TBiblioteca_Arranjo *listaDeBiblioteca)
-{   
+{
     Ttexto_Arranjo aux, pivo;
     *i = Esq; *j = Dir;
     pivo = listaDeBiblioteca->biblioteca[(*i + *j)/2];
@@ -66,14 +66,14 @@ void particaoForText(int Esq, int Dir, int *i, int *j, Ttexto_Arranjo *listaDeTe
              comparacoesText++;
         }
         comparacoesText++;
-        while (pivo.caractere[0].letra < listaDeTexto->vetorPalavra[*j].caractere[0].letra){ 
+        while (pivo.caractere[0].letra < listaDeTexto->vetorPalavra[*j].caractere[0].letra){
             (*j)--;
             comparacoesText++;
         }
         if (*i <= *j)
         {
-            aux = listaDeTexto->vetorPalavra[*i]; 
-            listaDeTexto->vetorPalavra[*i] = listaDeTexto->vetorPalavra[*j]; 
+            aux = listaDeTexto->vetorPalavra[*i];
+            listaDeTexto->vetorPalavra[*i] = listaDeTexto->vetorPalavra[*j];
             listaDeTexto->vetorPalavra[*j] = aux;
             movimentacoesText +=3;
             (*i)++; (*j)--;
@@ -91,8 +91,8 @@ void quicksortForText(Ttexto_Arranjo *listaDeTexto, int tamText)
     ordenaForText(0, tamText-1, listaDeTexto);
     tempo = (tF - tI) * 1000.0 / CLOCKS_PER_SEC;
     printf("Algoritmo Quick Sort:\n");
-    printf("\tComparações: %d\n", comparacoesText);
-    printf("\tMovimentações: %d\n", movimentacoesText);
+    printf("\tComparacoes: %d\n", comparacoesText);
+    printf("\tMovimentacoes: %d\n", movimentacoesText);
     printf("\tTempo Total Gasto: %lf s\n", tempo/1000);
 }
 
@@ -108,7 +108,7 @@ void ordenaForText(int Esq, int Dir, Ttexto_Arranjo *listaDeTexto)
 /*
 
 int main(){
-  
+
     TCaractereArranjo Letra_Arranjo;
     TPalavra_Arranjo Palavra_Arranjo;
     Ttexto_Arranjo texto_Arranjo;
@@ -117,11 +117,11 @@ int main(){
     FBibVazia(&Biblioteca_Arranjo);
     srand(time(NULL));
        for (int i = 0; i < 10; i++)
-        { 
-            FazTextoVazia(&texto_Arranjo);                
+        {
+            FazTextoVazia(&texto_Arranjo);
             int nTextos = 1 + rand()%10;
             for (int i = 0; i < nTextos; i++) //formação de texto
-            { 
+            {
                 FazPalavraVazia_Arranjo(&Palavra_Arranjo);
                 int nPalavra = 1 + rand()%20;
                 for (int i = 0; i < nPalavra; i++)
@@ -131,7 +131,7 @@ int main(){
                     InsereLetra_Arranjo(&Palavra_Arranjo,Letra_Arranjo);
                 }
                 InserePalavra(&texto_Arranjo,Palavra_Arranjo);
-            }  
+            }
             InsereTexto(&Biblioteca_Arranjo,texto_Arranjo);
         }
     n = TamanhoBib(&Biblioteca_Arranjo);

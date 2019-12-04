@@ -1,9 +1,10 @@
 #include "TAD_Palavra.h"
 
+#define size_texto 100
 typedef int ApontadorTexto;
 
 typedef struct{
-  TPalavra_Arranjo vetorPalavra[TAMMAX];
+  TPalavra_Arranjo vetorPalavra[size_texto];
   ApontadorTexto TextoPrimeiro,TextoUltimo;
 }Ttexto_Arranjo;
 

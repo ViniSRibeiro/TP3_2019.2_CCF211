@@ -1,4 +1,11 @@
-/home/vinicius/Documentos/clion-2019.1.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211
+"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\Roniel Nunes\github\TP3_2019.2_CCF211"
+-- The C compiler identification is GNU 6.3.0
+-- Check for working C compiler: C:/MinGW/bin/gcc.exe
+-- Check for working C compiler: C:/MinGW/bin/gcc.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug
+-- Build files have been written to: C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug

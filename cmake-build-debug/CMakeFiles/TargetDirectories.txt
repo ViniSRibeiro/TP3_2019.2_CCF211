@@ -1,3 +1,3 @@
-/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/CMakeFiles/TP3_2019_2_CCF211.dir
-/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/CMakeFiles/TP3_2019_2_CCF211.dir
+C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/CMakeFiles/rebuild_cache.dir
