@@ -44,7 +44,7 @@ int main(){
     printf("|            Vinicius Ribeiro       -  2670               |\n");
     printf("|            Isabella Ramos         -  3474               |\n"); 
     printf(" --------------------------------------------------------- \n");
-
+    FBibVazia(&Biblioteca_Arranjo);
     FBVazia_LEncadeada(&Biblioteca_LEncadeada);
 
     do{
@@ -81,7 +81,7 @@ int main(){
                 scanf("%d",&tam_biblioteca);
                 printf("\n");
                 FBibVazia(&Biblioteca_Arranjo,tam_biblioteca );
-                
+
 
 
                 printf("digite o tamanho minimo de um texto nessa biblioteca: ");
@@ -91,7 +91,6 @@ int main(){
                 printf("digite o tamanho maximo de um texto nessa biblioteca: ");
                 scanf("%d",&max_size_texto);
                 printf("\n");
-
 
                     for (int i = 0; i < tam_biblioteca; i++)
                     {
@@ -153,8 +152,8 @@ int main(){
                         }
                         printf("Ordenaçao concluida!\n");
                     }else{
-                        for (TCelulaBiblioteca *i = Biblioteca_LEncadeada.pPrimeiroBiblioteca->pProxBiblioteca; i != Biblioteca_LEncadeada.pUltimoBiblioteca->pAntBiblioteca ; i = i->pProxBiblioteca) {
-                            Ttexto_LEncadeada *j = &i->pProxBiblioteca->texto;
+                        for (TCelulaBiblioteca *i = Biblioteca_LEncadeada.pPrimeiroBiblioteca->pProxBiblioteca; i != Biblioteca_LEncadeada.pUltimoBiblioteca->pProxBiblioteca ; i = i->pProxBiblioteca) {
+                            Ttexto_LEncadeada *j = &i->texto;
                                 SelectSort_Texto(j);
 
 

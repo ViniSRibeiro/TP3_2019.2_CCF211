@@ -19,6 +19,7 @@ typedef struct {
 
 
 
+
 void FazPalavraVazia_Arranjo(TPalavra_Arranjo *palavra);
 int PalavraEhVazia_Arranjo(TPalavra_Arranjo *palavra);
 void InsereLetra_Arranjo(TPalavra_Arranjo *palavra, TCaractereArranjo caractere);
