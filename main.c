@@ -9,7 +9,7 @@
 #include "QuickSort_LEncadeada.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <time.h>
 TCaractereArranjo Letra_Aleatoria_Arranjo(){
     TCaractereArranjo Letra;
     Letra.letra = 97 + (char)(rand()%26);
@@ -22,6 +22,7 @@ TCaractereEncadeada Letra_Aleatoria_Encadeada(){
     return Letra;
 }
 
+
 int main(){
     
     TCaractereArranjo Letra_Arranjo;
@@ -33,7 +34,8 @@ int main(){
     TPalavra_LEncadeada Palavra_LEncadeada;
     Ttexto_LEncadeada texto_LEncadeada;
     TBiblioteca_LEncadeada Biblioteca_LEncadeada;
-
+    time_t t;
+    srand(t);
     int opcao,tipo_dados,tam_biblioteca, min_size_texto,max_size_texto, texto_ou_bib;
 
 
@@ -94,7 +96,8 @@ int main(){
 
                     for (int i = 0; i < tam_biblioteca; i++)
                     {
-                        int nTextos = 1 + rand()%(min_size_texto-max_size_texto + 1);
+                        int nTextos = 1 + rand()%(max_size_texto-min_size_texto + 1);
+
                         FazTextoVazia(&texto_Arranjo, nTextos);
                         FTVazia_LEncadeada(&texto_LEncadeada);
                     

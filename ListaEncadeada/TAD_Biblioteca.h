@@ -13,6 +13,7 @@ typedef struct CelulaBiblioteca{
   Ttexto_LEncadeada texto;
   struct CelulaBiblioteca *pProxBiblioteca;
     struct CelulaBiblioteca *pAntBiblioteca;
+    int indice;
 }TCelulaBiblioteca;
 
 typedef struct{

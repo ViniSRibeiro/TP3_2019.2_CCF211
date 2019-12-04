@@ -1,9 +1,10 @@
 #include "TAD_Texto.h"
 
 void FazTextoVazia(Ttexto_Arranjo *pTexto, int size) {
-
+    printf("size2: %d\n",size);
     pTexto->vetorPalavra = (TPalavra_Arranjo*) malloc(size* sizeof(TPalavra_Arranjo));
     pTexto->TextoPrimeiro = 0;
+    pTexto->tam_palavras = size;
     pTexto->TextoUltimo = pTexto->TextoPrimeiro;
 }
 
@@ -12,7 +13,7 @@ int TextoVazia(Ttexto_Arranjo *pTexto){
 }
 
 void InserePalavra(Ttexto_Arranjo *pTexto, TPalavra_Arranjo palavra){
-    if(pTexto->TextoUltimo == sizeof(pTexto->vetorPalavra)){ return;} //nao existe mais espaço alocado
+    if(pTexto->TextoUltimo == pTexto->tam_palavras){ return;} //nao existe mais espaço alocado
     pTexto->vetorPalavra[pTexto->TextoUltimo] = palavra;
     pTexto->TextoUltimo +=1;
 }

@@ -8,7 +8,7 @@
 typedef struct CelulaTexto{
   TPalavra_LEncadeada palavra;
   struct CelulaTexto *pProxTexto,*pAntTexto;
-
+    int indice;
 }TcelulaTexto;//CELULA
 
 typedef struct{

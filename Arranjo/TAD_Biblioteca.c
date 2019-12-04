@@ -8,10 +8,10 @@
 
 void FBibVazia(TBiblioteca_Arranjo *PBiblioteca, int tamanho) {
     printf("Size eh %d\n", tamanho);
-    PBiblioteca->biblioteca =  malloc(sizeof(Ttexto_Arranjo)* tamanho);
+    PBiblioteca->biblioteca =(Ttexto_Arranjo*)  malloc(sizeof(Ttexto_Arranjo)* tamanho);
     PBiblioteca->BibPrimeiro = 0;
+    PBiblioteca->tam_max = tamanho;
     PBiblioteca->BibUltimo = PBiblioteca->BibPrimeiro;
-    printf("A biblioteca tem o tamanho %d\n", sizeof(PBiblioteca->biblioteca));
 }
 
 int BibEhVazia(TBiblioteca_Arranjo* PBiblioteca){
@@ -19,16 +19,16 @@ int BibEhVazia(TBiblioteca_Arranjo* PBiblioteca){
 }
 
 int InsereTexto(TBiblioteca_Arranjo* PBiblioteca, Ttexto_Arranjo PTexto){
-    if(PBiblioteca->BibUltimo == sizeof(PBiblioteca->biblioteca)){ return 0;} //biblioteca cheia, impossivel colocar mais
+    if(PBiblioteca->BibUltimo == PBiblioteca->tam_max){ return 0;} //biblioteca cheia, impossivel colocar mais
     PBiblioteca->biblioteca[PBiblioteca->BibUltimo] = PTexto;
     PBiblioteca->BibUltimo++;
     return 1;
 }
 void RetiraTexto(TBiblioteca_Arranjo* PBiblioteca,int Posicao, Ttexto_Arranjo* PTexto){
     if(BibEhVazia(PBiblioteca)){ return;} //biblioteca ja vazia, impossivel adicionar mais
-    for (int i = 0; i < sizeof(PBiblioteca->biblioteca) ; ++i) {
+    for (int i = 0; i < PBiblioteca->tam_max ; ++i) {
         if (PBiblioteca->biblioteca[i].TextoUltimo == PTexto->TextoUltimo){ //compara por tamanho do texto com o texto a ser removido
-            for (int j = i; j < sizeof(PBiblioteca->biblioteca); ++j) {
+            for (int j = i; j < PBiblioteca->tam_max; ++j) {
                 PBiblioteca->biblioteca[j] = PBiblioteca->biblioteca[j+1]; //copia o resto do vetor 1 posiçao atras
             }
             PBiblioteca->BibUltimo --; //atualiza o tamanho da biblioteca
@@ -49,6 +49,7 @@ void RetiraTexto(TBiblioteca_Arranjo* PBiblioteca,int Posicao, Ttexto_Arranjo* P
 
 int ImprimeBib(TBiblioteca_Arranjo* PBiblioteca){
     int n =1;
+    printf("Bibultimo: %d\n",PBiblioteca->BibUltimo);
     for (int i = 0; i < PBiblioteca->BibUltimo ; ++i) {
         printf("Texto %d Tamamnho%d\n",n,TamanhoTexto(&PBiblioteca->biblioteca[i]));
         ImprimeTexto(&PBiblioteca->biblioteca[i]);

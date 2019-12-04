@@ -6,6 +6,7 @@ typedef int ApontadorTexto;
 typedef struct{
   TPalavra_Arranjo *vetorPalavra;
   ApontadorTexto TextoPrimeiro,TextoUltimo;
+  int tam_palavras;
 }Ttexto_Arranjo;
 
 void FazTextoVazia(Ttexto_Arranjo *pTexto, int size);

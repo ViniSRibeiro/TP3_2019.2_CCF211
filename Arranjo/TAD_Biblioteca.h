@@ -15,6 +15,7 @@ typedef int Apontadorbiblioteca;
 typedef struct{
     Ttexto_Arranjo *biblioteca;
     Apontadorbiblioteca BibPrimeiro, BibUltimo;
+    int tam_max;
 }TBiblioteca_Arranjo;
 
 void FBibVazia(TBiblioteca_Arranjo *PBiblioteca, int tamanho);

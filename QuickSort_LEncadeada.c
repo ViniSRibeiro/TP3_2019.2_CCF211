@@ -20,6 +20,7 @@ int Distancia_Texto_LEncadeada(TcelulaTexto* pCelulaA,TcelulaTexto* pCelulaB){
     }
     return cont;
 }
+
 int Distancia_Bib_LEncadeada(TCelulaBiblioteca* pCelulaBibA, TCelulaBiblioteca* pCelulaBibB){
     int cont = 0;
     TCelulaBiblioteca * i;
@@ -34,6 +35,7 @@ int Distancia_Bib_LEncadeada(TCelulaBiblioteca* pCelulaBibA, TCelulaBiblioteca* 
     }
     return cont;
 }
+
 void TrocaItens_Texto_QuickSort(TcelulaTexto* pCelulaA,TcelulaTexto* pCelulaB){
     TcelulaTexto pTemp;
     pTemp = *pCelulaA;
@@ -47,20 +49,7 @@ void TrocaItens_Bib_QuickSort(TCelulaBiblioteca* pCelulaBibA, TCelulaBiblioteca*
     pCelulaBibA->texto = pCelulaBibB->texto;
     pCelulaBibB->texto = pTemp.texto;
 }
-void Ordena_Texto_LEncadeada(TcelulaTexto* pEsq, TcelulaTexto* pDir, Ttexto_LEncadeada* pTexto){
-    printf("Iniciou o Ordena!\n");
-    TcelulaTexto i, j;
 
-    Particao_texto_LEncadeada(pEsq,pDir,&i,&j,pTexto);
-    comparacoesText++;
-    if(pEsq!= pTexto->pPrimeiroTexto && pEsq != NULL && (Distancia_Texto_LEncadeada(pEsq,&j)>0)){ //caso a esquerda nao esteja apontando para Nulo nem para a celula cabeça e a distancia entre ele e o J seja maior que 0
-        Ordena_Texto_LEncadeada(pEsq,&j,pTexto);
-    }
-    comparacoesText++;
-    if(pDir != pTexto->pPrimeiroTexto && pDir != NULL && (Distancia_Texto_LEncadeada(&i,pDir)>0)){
-        Ordena_Texto_LEncadeada(&i,pDir,pTexto);
-    }
-}
 void QuickSort_Texto_LEncadeada(Ttexto_LEncadeada* pTexto){
     printf("Iniciou o QuickSort!\n");
     clock_t tF, tI = clock();
@@ -76,6 +65,20 @@ void QuickSort_Texto_LEncadeada(Ttexto_LEncadeada* pTexto){
 
 }
 
+void Ordena_Texto_LEncadeada(TcelulaTexto* pEsq, TcelulaTexto* pDir, Ttexto_LEncadeada* pTexto){
+    printf("Iniciou o Ordena!\n");
+    TcelulaTexto i, j;
+
+    Particao_texto_LEncadeada(pEsq,pDir,&i,&j,pTexto);
+    comparacoesText++;
+    if(pEsq!= pTexto->pPrimeiroTexto && pEsq != NULL && (Distancia_Texto_LEncadeada(pEsq,&j)>0)){ //caso a esquerda nao esteja apontando para Nulo nem para a celula cabeça e a distancia entre ele e o J seja maior que 0
+        Ordena_Texto_LEncadeada(pEsq,&j,pTexto);
+    }
+    comparacoesText++;
+    if(pDir != pTexto->pPrimeiroTexto && pDir != NULL && (Distancia_Texto_LEncadeada(&i,pDir)>0)){
+        Ordena_Texto_LEncadeada(&i,pDir,pTexto);
+    }
+}
 
 
 void Particao_texto_LEncadeada(TcelulaTexto* pEsq, TcelulaTexto*pDir, TcelulaTexto*pI, TcelulaTexto* pJ, Ttexto_LEncadeada* pTexto){
@@ -106,29 +109,14 @@ void Particao_texto_LEncadeada(TcelulaTexto* pEsq, TcelulaTexto*pDir, TcelulaTex
         } //Troca o conteudo de I por J
     }while (Distancia_Texto_LEncadeada(pI,pJ)>= 0); //Enquanto a distancia entre I e J for maior ou igual a 0, quando for negativa e pq se cruzaram
 }
-void Ordena_Bib_LEncadeda(TCelulaBiblioteca* pEsq, TCelulaBiblioteca* pDir, TBiblioteca_LEncadeada* pBib){
-    printf("Iniciou o Ordena da lista encadeada!\n");
-    TCelulaBiblioteca i, j;
 
-    Particao_Bib_LEncadeada(pEsq,pDir,&i,&j,pBib);
-    comparacoesBib++;
-    if (pEsq != pBib->pPrimeiroBiblioteca && pEsq != NULL && (Distancia_Bib_LEncadeada(pEsq,&j)>0)){
-        Ordena_Bib_LEncadeda(pEsq,&j,pBib);
-        printf("A distancia entre pEsq e j eh %d\n ",Distancia_Bib_LEncadeada(pEsq,&j));
-    }
-    comparacoesBib++;
-    if (pDir != pBib->pPrimeiroBiblioteca && pDir != NULL && (Distancia_Bib_LEncadeada(&i,pDir)>0)){
-        Ordena_Bib_LEncadeda(&i,pDir,pBib);
-        printf("A distancia entre i e pDir eh %d\n ",Distancia_Bib_LEncadeada(&i,pDir));
-    }
-}
 void QuickSort_Bib_LEncadeada(TBiblioteca_LEncadeada* pBib){
     clock_t tF, tI = clock();
     double tempo;
     comparacoesText = 0; movimentacoesText = 0;
     tF = clock();
     printf("Iniciou o QuickSort da lista encadeada!\n");
-    Ordena_Bib_LEncadeda(pBib->pPrimeiroBiblioteca->pProxBiblioteca, pBib->pUltimoBiblioteca, pBib);
+    Ordena_Bib_LEncadeda(0, pBib->pUltimoBiblioteca->pAntBiblioteca->indice, pBib);
     tempo = (tF - tI) * 1000.0 / CLOCKS_PER_SEC;
     printf("Algoritmo Quick Sort:\n");
     printf("\tComparacoes: %d\n", comparacoesBib);
@@ -136,44 +124,56 @@ void QuickSort_Bib_LEncadeada(TBiblioteca_LEncadeada* pBib){
     printf("\tTempo Total Gasto: %lf s\n", tempo/1000);
 }
 
+void Ordena_Bib_LEncadeda(int Esq, int Dir, TBiblioteca_LEncadeada* pBib){
+    printf("Iniciou o Ordena da lista encadeada!\n");
+    int i, j;
 
-void Particao_Bib_LEncadeada(TCelulaBiblioteca* pEsq, TCelulaBiblioteca* pDir, TCelulaBiblioteca *pI, TCelulaBiblioteca* pJ, TBiblioteca_LEncadeada* pBib){
-    printf("Iniciou a Partiçao da lista encadeada !\n");
-    TCelulaBiblioteca* Pivo;
-
-    int tamanho_particao = Distancia_Bib_LEncadeada(pEsq,pDir);
-
-    pI = pEsq;
-    pJ = pDir;
-    Pivo = pEsq;
-
-    for (int i = 0; i < tamanho_particao/2; ++i) {
-        Pivo = Pivo->pProxBiblioteca;
-
+    Particao_Bib_LEncadeada(Esq, Dir, &i, &j, pBib);
+    comparacoesBib++;
+    if (Esq < j ){
+        Ordena_Bib_LEncadeda(Esq, j, pBib);
+        //printf("A distancia entre pEsq e j eh %d\n ",Distancia_Bib_LEncadeada(pEsq,&j));
     }
-    printf("pivo decidido!\n");
+    comparacoesBib++;
+    if (i < Dir){
+        Ordena_Bib_LEncadeda(i, Dir, pBib);
+        //printf("A distancia entre i e pDir eh %d\n ",Distancia_Bib_LEncadeada(&i,pDir));
+    }
+}
 
-    while (Distancia_Bib_LEncadeada(pI,pJ)> 0){
+void Particao_Bib_LEncadeada(int pEsq, int pDir, TCelulaBiblioteca *pI, TCelulaBiblioteca* pJ, TBiblioteca_LEncadeada* pBib){
+    printf("Iniciou a Partiçao da lista encadeada !\n");
+    Ttexto_LEncadeada  Pivo,aux;
+    TCelulaBiblioteca *auxI, *auxJ,*AuxPercorrer;
+    int tamanho_particao = (pI->indice + pJ->indice);
+
+
+    while (AuxPercorrer->indice != tamanho_particao/2 && AuxPercorrer->pProxBiblioteca != NULL){
+        AuxPercorrer = AuxPercorrer->pProxBiblioteca;
+    }
+    //Pivo decidido
+
+    while (pI->indice <= pJ->indice){
         comparacoesBib++;
-        while (Pivo->texto.tam_texto > pI->texto.tam_texto && pI!= NULL){
+        while (Pivo.tam_texto > pI->texto.tam_texto ){
             comparacoesBib++;
             pI = pI->pProxBiblioteca;
 
         }
-        while (Pivo->texto.tam_texto < pJ->texto.tam_texto && pJ != NULL){
+        while (Pivo.tam_texto < pJ->texto.tam_texto ){
             comparacoesBib++;
             pJ = pJ->pAntBiblioteca;
         }
-        if(Distancia_Bib_LEncadeada(pI,pJ)>= 0){
+        if(pI->indice<= pJ->indice){
             TrocaItens_Bib_QuickSort(pI,pJ);
             movimentacoesBib += 3;
             pI = pI->pProxBiblioteca;
             pJ = pJ->pAntBiblioteca;
             printf("Itens trocados!\n");
         }
-        printf("A distancia entre pI e pJ eh %d\n",Distancia_Bib_LEncadeada(pI,pJ));
+        printf("A distancia entre pI e pJ eh %d\n",pJ->indice-pI->indice);
     }
 
-    printf("saiu do while!");
+    printf("saiu do while!\n");
     return;
 }
