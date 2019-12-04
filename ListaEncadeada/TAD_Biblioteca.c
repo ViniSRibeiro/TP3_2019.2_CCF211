@@ -38,6 +38,7 @@ void ImprimeBiblioteca_LEncadeada(TBiblioteca_LEncadeada *pBiblioteca){
     for (TCelulaBiblioteca* i = pBiblioteca->pPrimeiroBiblioteca->pProxBiblioteca; i !=NULL; i = i->pProxBiblioteca) {
         printf("Texto %d\n",n);
         ImprimeTexto_LEncadeada(&i->texto);
+        printf("Tamanho: %d\n",i->texto.tam_texto);
         printf("\n");
         n++;
     }

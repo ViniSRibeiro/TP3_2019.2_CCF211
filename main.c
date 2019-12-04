@@ -91,6 +91,7 @@ int main(){
                 scanf("%d",&max_size_texto);
                 printf("\n");
 
+<<<<<<< HEAD
                 /*if(tipo_dados ==1){
                 
                     for (int i = 0; i < tam_biblioteca ; ++i) { //gera N textos aleatorios
@@ -106,6 +107,8 @@ int main(){
                             InserePalavra(&texto_Arranjo,Palavra_Arranjo); //insere a palavra gerada no texto;
                         }
                         InsereTexto(&Biblioteca_Arranjo,texto_Arranjo); */
+=======
+>>>>>>> b175cf9e03a2340afe6aab1f877e7eafb35f2dac
                     for (int i = 0; i < tam_biblioteca; i++)
                     {
                         FazTextoVazia(&texto_Arranjo);
@@ -136,23 +139,11 @@ int main(){
                         InsereTexto(&Biblioteca_Arranjo,texto_Arranjo);
                     }
   
-                /*}else{
-                    for (int i = 0; i <tam_biblioteca ; ++i) {
-                        FTVazia_LEncadeada(&texto_LEncadeada);
-                        for (int j = min_size_texto; j < rand()%(max_size_texto-min_size_texto+1) ; ++j) {
-                            FPVazia_LEncadeada(&Palavra_LEncadeada);
-                            for (int k = 0; k < rand()%50 ; ++k) {
-                                InsereLetra_LEncadeada(&Palavra_LEncadeada,Letra_Aleatoria_Encadeada());
-                            }
-                            InserePalavra_LEncadeada(&texto_LEncadeada,Palavra_LEncadeada);
-                        }
-                        InsereTexto_LEncadeada(&Biblioteca_LEncadeada,texto_LEncadeada);
-                    }
-                }*/
+
                 printf("Biblioteca criada!\n");
                 break;
             case 2:
-                printf("Imprimindo os textos dispostos na Biblioteca: \n");
+                printf("Imprimindo os textos dispostos na Biblioteca: \n"); //TODO imprimir tamanho dos textos
                 if(tipo_dados == 1){
                     ImprimeBib(&Biblioteca_Arranjo);
                     printf(" --------------------------------------------------------- \n");
@@ -175,20 +166,25 @@ int main(){
                         for (int i = 0; i <Biblioteca_Arranjo.BibUltimo ; ++i) {
                             selectionForText(&Biblioteca_Arranjo.biblioteca[i],Biblioteca_Arranjo.BibUltimo);
                         }
+                        printf("Ordenaçao concluida!\n");
                     }else{
-                        for (TCelulaBiblioteca *i = Biblioteca_LEncadeada.pPrimeiroBiblioteca->pProxBiblioteca; i != Biblioteca_LEncadeada.pUltimoBiblioteca ; i = i->pProxBiblioteca) {
-                            Ttexto_LEncadeada *j = &i->texto;
+                        for (TCelulaBiblioteca *i = Biblioteca_LEncadeada.pPrimeiroBiblioteca->pProxBiblioteca; i != Biblioteca_LEncadeada.pUltimoBiblioteca->pAntBiblioteca ; i = i->pProxBiblioteca) {
+                            Ttexto_LEncadeada *j = &i->pProxBiblioteca->texto;
                                 SelectSort_Texto(j);
 
+
                         }
+                        printf("Ordenaçao concluida!\n");
                     }
                 }else{
                     if(tipo_dados == 1){
                         for (int i = 0; i <Biblioteca_Arranjo.BibUltimo ; ++i) {
                             selectionForBib(&Biblioteca_Arranjo,Biblioteca_Arranjo.BibUltimo);
                         }
+                        printf("Ordenaçao concluida!\n");
                     }else{
                             SelectSort_Bib(&Biblioteca_LEncadeada);
+                            printf("Ordenaçao concluida!\n");
 
                     }
                 }
@@ -208,21 +204,29 @@ int main(){
                         for (int i = 0; i <Biblioteca_Arranjo.BibUltimo ; ++i) {
                             quicksortForText(&Biblioteca_Arranjo.biblioteca[i],Biblioteca_Arranjo.BibUltimo);
                         }
+                        printf("Ordenaçao concluida!\n");
                     }else{
                         for (TCelulaBiblioteca *i = Biblioteca_LEncadeada.pPrimeiroBiblioteca->pProxBiblioteca; i != Biblioteca_LEncadeada.pUltimoBiblioteca ; i = i->pProxBiblioteca) {
 
                                 QuickSort_Texto_LEncadeada(&i->texto);
 
                         }
+                        printf("Ordenaçao concluida!\n");
                     }
                 }else{
                     if(tipo_dados == 1){
                         for (int i = 0; i <Biblioteca_Arranjo.BibUltimo ; ++i) {
                             quicksortForBib(&Biblioteca_Arranjo,Biblioteca_Arranjo.BibUltimo);
                         }
+                        printf("Ordenaçao concluida!\n");
                     }else{
                             printf("Vai iniciar o Quicksort de lista encadeada na biblioteca!\n");
                             QuickSort_Bib_LEncadeada(&Biblioteca_LEncadeada);
+<<<<<<< HEAD
+=======
+                            printf("Ordenaçao concluida!\n");
+
+>>>>>>> b175cf9e03a2340afe6aab1f877e7eafb35f2dac
                     }
                 }
                 break;

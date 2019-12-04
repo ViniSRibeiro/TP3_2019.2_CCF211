@@ -8,6 +8,6 @@
 #endif //TP3_2019_2_CCF211_SELECAO_LISTAENCADEADA_H
 #include "ListaEncadeada/TAD_Biblioteca.h"
 void TrocaItens_Texto(TcelulaTexto* pCelulaA,TcelulaTexto* pCelulaB);
-void TrocaItens_Bib(TCelulaBiblioteca* pCelulaBibA, TCelulaBiblioteca* pCelulaBibB);
+void TrocaItens_Bib(TCelulaBiblioteca *pCelulaBibA, TCelulaBiblioteca *pCelulaBibB);
 void SelectSort_Texto(Ttexto_LEncadeada* pTexto);
 void SelectSort_Bib(TBiblioteca_LEncadeada* pBib);
