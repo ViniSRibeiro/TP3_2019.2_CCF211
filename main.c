@@ -127,7 +127,7 @@ int main(){
                 printf("Biblioteca criada!\n");
                 break;
             case 2:
-                printf("Imprimindo os textos dispostos na Biblioteca: \n"); //TODO imprimir tamanho dos textos
+                printf("Imprimindo os textos dispostos na Biblioteca: \n");
                 if(tipo_dados == 1){
                     ImprimeBib(&Biblioteca_Arranjo);
                     printf(" --------------------------------------------------------- \n");

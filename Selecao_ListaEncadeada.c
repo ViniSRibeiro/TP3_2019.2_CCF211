@@ -4,7 +4,7 @@
 
 #include "Selecao_ListaEncadeada.h"
 #include <stdio.h>
-void TrocaItens_Texto(TcelulaTexto* pCelulaA,TcelulaTexto* pCelulaB){ //TODO conferir o assign de ponteiros aqui
+void TrocaItens_Texto(TcelulaTexto* pCelulaA,TcelulaTexto* pCelulaB){
     TcelulaTexto pTemp;
     pTemp.palavra = pCelulaA->palavra;
     pCelulaA->palavra = pCelulaB->palavra;
