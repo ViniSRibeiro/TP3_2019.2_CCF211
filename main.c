@@ -44,7 +44,7 @@ int main(){
     printf("|            Vinicius Ribeiro       -  2670               |\n");
     printf("|            Isabella Ramos         -  3474               |\n"); 
     printf(" --------------------------------------------------------- \n");
-    FBibVazia(&Biblioteca_Arranjo);
+
     FBVazia_LEncadeada(&Biblioteca_LEncadeada);
 
     do{
@@ -80,6 +80,7 @@ int main(){
                 printf("Qual o tamanho da biblioteca ( quantos textos possui): ");
                 scanf("%d",&tam_biblioteca);
                 printf("\n");
+                FBibVazia(&Biblioteca_Arranjo,tam_biblioteca );
                 
 
 
@@ -91,30 +92,14 @@ int main(){
                 scanf("%d",&max_size_texto);
                 printf("\n");
 
-<<<<<<< HEAD
-                /*if(tipo_dados ==1){
-                
-                    for (int i = 0; i < tam_biblioteca ; ++i) { //gera N textos aleatorios
-                        FazTextoVazia(&texto_Arranjo);
-                        for (int k = min_size_texto; k <rand()%(max_size_texto-min_size_texto+1) ; ++k) { //tamanho dos textos gerados aleatoriamente
-                            FazPalavraVazia_Arranjo(&Palavra_Arranjo);
-                            
-                             // o for interno roda K vezes, que eh a quantidade de palavras que o txto tera
-                             
-                            for (int j = 0; j < rand()%50 ; ++j) { //roda um numero aleatorio de vezes para gerar de 0 a 50 letras, ja que o numero de letras nao ta especificado
-                                InsereLetra_Arranjo(&Palavra_Arranjo,Letra_Aleatoria_Arranjo()); //insere as letras geradas aleatorias na palavra
-                            }
-                            InserePalavra(&texto_Arranjo,Palavra_Arranjo); //insere a palavra gerada no texto;
-                        }
-                        InsereTexto(&Biblioteca_Arranjo,texto_Arranjo); */
-=======
->>>>>>> b175cf9e03a2340afe6aab1f877e7eafb35f2dac
+
                     for (int i = 0; i < tam_biblioteca; i++)
                     {
-                        FazTextoVazia(&texto_Arranjo);
+                        int nTextos = 1 + rand()%(min_size_texto-max_size_texto + 1);
+                        FazTextoVazia(&texto_Arranjo, nTextos);
                         FTVazia_LEncadeada(&texto_LEncadeada);
                     
-                        int nTextos = 1 + rand()%(min_size_texto-max_size_texto + 1);
+
                         for (int i = 0; i < nTextos; i++) //formação de texto
                         { 
                         FPVazia_LEncadeada(&Palavra_LEncadeada);
@@ -222,11 +207,10 @@ int main(){
                     }else{
                             printf("Vai iniciar o Quicksort de lista encadeada na biblioteca!\n");
                             QuickSort_Bib_LEncadeada(&Biblioteca_LEncadeada);
-<<<<<<< HEAD
-=======
+
                             printf("Ordenaçao concluida!\n");
 
->>>>>>> b175cf9e03a2340afe6aab1f877e7eafb35f2dac
+
                     }
                 }
                 break;

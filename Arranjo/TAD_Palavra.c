@@ -10,24 +10,24 @@ int PalavraEhVazia_Arranjo(TPalavra_Arranjo *palavra){
 }
 
 void InsereLetra_Arranjo(TPalavra_Arranjo *palavra, TCaractereArranjo caractere){
-     //if(palavra ->Ultimo == TAMMAX){
-     //    printf("Vetor cheio\n");
-      //   exit ;} //vetor cheio
+     if(palavra ->Ultimo == TAMMAX){
+        printf("Vetor cheio\n");
+         exit ;} //vetor cheio
     palavra->caractere[palavra->Ultimo].letra = caractere.letra;
     palavra->Ultimo +=1;
-    //return 1;
+    return ;
 }
 
 void RetiraLetra_Arranjo(TPalavra_Arranjo *palavra, int posicao, TCaractereArranjo *caractere){
     int cont;
-  //if(PalavraEhVazia(palavra) || Posicao >= palavra->Ultimo || Posicao < 0) exit;
+  if(PalavraEhVazia_Arranjo(palavra) || posicao >= palavra->Ultimo || posicao < 0) exit;
 
     *caractere = palavra->caractere[posicao];
     palavra->Ultimo--;
     for(cont = posicao + 1; cont <= palavra->Ultimo; cont++){
         palavra->caractere[cont - 1] = palavra->caractere[cont];
     }
-  //  return 1;
+   return ;
 }
 
 void TamanhoPalavra(TPalavra_Arranjo *palavra){

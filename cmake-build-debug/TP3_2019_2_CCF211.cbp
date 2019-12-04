@@ -8,150 +8,152 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug"/>
+				<Option working_dir="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="TP3_2019_2_CCF211">
-				<Option output="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/TP3_2019_2_CCF211.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/."/>
-					<Add directory="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/Arranjo"/>
-					<Add directory="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/ListaEncadeada"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP3_2019_2_CCF211"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="TP3_2019_2_CCF211/fast">
-				<Option output="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/TP3_2019_2_CCF211.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/."/>
-					<Add directory="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/Arranjo"/>
-					<Add directory="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/ListaEncadeada"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP3_2019_2_CCF211/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug"/>
+				<Option working_dir="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TP3_2019_2_CCF211">
+				<Option output="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/TP3_2019_2_CCF211" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/."/>
+					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo"/>
+					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP3_2019_2_CCF211"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TP3_2019_2_CCF211/fast">
+				<Option output="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/TP3_2019_2_CCF211" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/."/>
+					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo"/>
+					<Add directory="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP3_2019_2_CCF211/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/Arranjo/TAD_Biblioteca.c">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Biblioteca.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/Arranjo/TAD_Biblioteca.h">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Biblioteca.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/Arranjo/TAD_Palavra.c">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Palavra.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/Arranjo/TAD_Palavra.h">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Palavra.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/Arranjo/TAD_Texto.c">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Texto.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/Arranjo/TAD_Texto.h">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Arranjo/TAD_Texto.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/ListaEncadeada/TAD_Biblioteca.c">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada/TAD_Biblioteca.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/ListaEncadeada/TAD_Biblioteca.h">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada/TAD_Biblioteca.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/ListaEncadeada/TAD_Palavra.c">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada/TAD_Palavra.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/ListaEncadeada/TAD_Palavra.h">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada/TAD_Palavra.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/ListaEncadeada/TAD_Texto.c">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada/TAD_Texto.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/ListaEncadeada/TAD_Texto.h">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/ListaEncadeada/TAD_Texto.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/QuickSort_LEncadeada.c">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/QuickSort_LEncadeada.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/QuickSort_LEncadeada.h">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/QuickSort_LEncadeada.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/Quicksort_Arranjo.c">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Quicksort_Arranjo.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/Quicksort_Arranjo.h">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Quicksort_Arranjo.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/Selecao_Arranjo.c">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Selecao_Arranjo.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/Selecao_Arranjo.h">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Selecao_Arranjo.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/Selecao_ListaEncadeada.c">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Selecao_ListaEncadeada.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/Selecao_ListaEncadeada.h">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/Selecao_ListaEncadeada.h">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/geracaoBib.c">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/geracaoBib.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/geracaoBib2.c">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/geracaoBib2.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/main.c">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/main.c">
 			<Option target="TP3_2019_2_CCF211"/>
 		</Unit>
-		<Unit filename="C:/Users/Roniel Nunes/github/TP3_2019.2_CCF211/CMakeLists.txt">
+		<Unit filename="/home/vinicius/Documentos/Algoritmos/C/CCF211/TP3_2019.2_CCF211/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
