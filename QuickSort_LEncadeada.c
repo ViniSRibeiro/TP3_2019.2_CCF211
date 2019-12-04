@@ -42,9 +42,9 @@ void TrocaItens_Texto_QuickSort(TcelulaTexto* pCelulaA,TcelulaTexto* pCelulaB){
 
 void TrocaItens_Bib_QuickSort(TCelulaBiblioteca* pCelulaBibA, TCelulaBiblioteca* pCelulaBibB){
     TCelulaBiblioteca pTemp;
-    pTemp = *pCelulaBibA;
-    *pCelulaBibA = *pCelulaBibB;
-    *pCelulaBibB = pTemp;
+    pTemp.texto = pCelulaBibA->texto;
+    pCelulaBibA->texto = pCelulaBibB->texto;
+    pCelulaBibB->texto = pTemp.texto;
 }
 void Ordena_Texto_LEncadeada(TcelulaTexto* pEsq, TcelulaTexto* pDir, Ttexto_LEncadeada* pTexto){
     printf("Iniciou o Ordena!\n");
@@ -121,11 +121,11 @@ void Particao_Bib_LEncadeada(TCelulaBiblioteca* pEsq, TCelulaBiblioteca* pDir, T
     }
     printf("pivo decidido!\n");
 
-    while (Distancia_Bib_LEncadeada(pI,pJ)>= 0){
+    while (Distancia_Bib_LEncadeada(pI,pJ)> 0){
         while (Pivo->texto.tam_texto > pI->texto.tam_texto && pI!= NULL){pI = pI->pProxBiblioteca;}
         while (Pivo->texto.tam_texto < pJ->texto.tam_texto && pJ != NULL){pJ = pJ->pAntBiblioteca;}
         if(Distancia_Bib_LEncadeada(pI,pJ)>= 0){
-            TrocaItens_Bib_QuickSort(pI,pJ); //TODO verificar troca por ponteiros
+            TrocaItens_Bib_QuickSort(pI,pJ);
             pI = pI->pProxBiblioteca;
             pJ = pJ->pAntBiblioteca;
             printf("Itens trocados!\n");
