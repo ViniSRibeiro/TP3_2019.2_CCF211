@@ -7,7 +7,7 @@
 
 
 void FBibVazia(TBiblioteca_Arranjo *PBiblioteca, int tamanho) {
-    printf("Size eh %d\n", tamanho);
+
     PBiblioteca->biblioteca =(Ttexto_Arranjo*)  malloc(sizeof(Ttexto_Arranjo)* tamanho);
     PBiblioteca->BibPrimeiro = 0;
     PBiblioteca->tam_max = tamanho;
@@ -49,7 +49,7 @@ void RetiraTexto(TBiblioteca_Arranjo* PBiblioteca,int Posicao, Ttexto_Arranjo* P
 
 int ImprimeBib(TBiblioteca_Arranjo* PBiblioteca){
     int n =1;
-    printf("Bibultimo: %d\n",PBiblioteca->BibUltimo);
+
     for (int i = 0; i < PBiblioteca->BibUltimo ; ++i) {
         printf("Texto %d Tamamnho%d\n",n,TamanhoTexto(&PBiblioteca->biblioteca[i]));
         ImprimeTexto(&PBiblioteca->biblioteca[i]);

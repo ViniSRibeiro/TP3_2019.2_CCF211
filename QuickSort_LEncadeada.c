@@ -50,13 +50,13 @@ void TrocaItens_Bib_QuickSort(TCelulaBiblioteca* pCelulaBibA, TCelulaBiblioteca*
     pCelulaBibB->texto = pTemp.texto;
 }
 
-void QuickSort_Texto_LEncadeada(Ttexto_LEncadeada* pTexto){
+void QuickSort_Texto_LEncadeada(Ttexto_LEncadeada* pTex ){
     printf("Iniciou o QuickSort!\n");
     clock_t tF, tI = clock();
     double tempo;
     comparacoesText = 0; movimentacoesText = 0;
     tF = clock();
-    Ordena_Texto_LEncadeada(pTexto->pPrimeiroTexto->pProxTexto, pTexto->pUltimoTexto, pTexto);
+    Ordena_Texto_LEncadeada(0, pTex->pUltimoTexto->indice, pTex);
     tempo = (tF - tI) * 1000.0 / CLOCKS_PER_SEC;
     printf("Algoritmo Quick Sort:\n");
     printf("\tComparacoes: %d\n", comparacoesText);
@@ -65,49 +65,67 @@ void QuickSort_Texto_LEncadeada(Ttexto_LEncadeada* pTexto){
 
 }
 
-void Ordena_Texto_LEncadeada(TcelulaTexto* pEsq, TcelulaTexto* pDir, Ttexto_LEncadeada* pTexto){
+void Ordena_Texto_LEncadeada(int Esq, int Dir, Ttexto_LEncadeada* pTexto){
     printf("Iniciou o Ordena!\n");
-    TcelulaTexto i, j;
+    int i, j;
 
-    Particao_texto_LEncadeada(pEsq,pDir,&i,&j,pTexto);
+    Particao_texto_LEncadeada(Esq, Dir, &i, &j, pTexto);
     comparacoesText++;
-    if(pEsq!= pTexto->pPrimeiroTexto && pEsq != NULL && (Distancia_Texto_LEncadeada(pEsq,&j)>0)){ //caso a esquerda nao esteja apontando para Nulo nem para a celula cabeça e a distancia entre ele e o J seja maior que 0
-        Ordena_Texto_LEncadeada(pEsq,&j,pTexto);
+    if (Esq < j ){
+        Ordena_Texto_LEncadeada(Esq, j, pTexto);
+
     }
     comparacoesText++;
-    if(pDir != pTexto->pPrimeiroTexto && pDir != NULL && (Distancia_Texto_LEncadeada(&i,pDir)>0)){
-        Ordena_Texto_LEncadeada(&i,pDir,pTexto);
+    if (i < Dir){
+        Ordena_Texto_LEncadeada(i, Dir, pTexto);
+
     }
 }
 
 
-void Particao_texto_LEncadeada(TcelulaTexto* pEsq, TcelulaTexto*pDir, TcelulaTexto*pI, TcelulaTexto* pJ, Ttexto_LEncadeada* pTexto){
+void Particao_texto_LEncadeada(int pEsq, int pDir, int *pI, int* pJ, Ttexto_LEncadeada * pTex){
     printf("Iniciou a Partiçao!\n");
-    TcelulaTexto * Pivo;
-    int tamanho_particao = Distancia_Texto_LEncadeada(pEsq,pDir);
-     pI = pEsq;
-     pJ = pDir;
-     Pivo = pEsq;
-    for (int i = 0; i < tamanho_particao/2; ++i) {
-        Pivo = Pivo->pProxTexto; //o pivo recebe o endereço do item no meio da partiçao
+    TPalavra_LEncadeada  Pivo;
+    TcelulaTexto *auxI, *auxJ,*AuxPercorrer;
+
+    auxI = pTex->pPrimeiroTexto;
+    while(auxI->indice != pEsq && auxI->pProxTexto !=NULL){
+        auxI = auxI->pProxTexto;
     }
-    do{
+    auxJ = pTex->pUltimoTexto;
+    while (auxJ->indice != pDir && auxJ->pAntTexto != NULL){
+        auxJ = auxJ->pAntTexto;
+    }
+    int tamanho_particao = (auxI->indice + auxJ->indice);
+    AuxPercorrer = auxI;
+    while (AuxPercorrer->indice != tamanho_particao/2 && AuxPercorrer->pProxTexto != NULL){
+        AuxPercorrer = AuxPercorrer->pProxTexto;
+    }
+    Pivo = AuxPercorrer->palavra;
+    //Pivo decidido
+
+    while (auxI->indice <= auxJ->indice){
         comparacoesText++;
-        while (Pivo->palavra.pPrimeiro->pProx->caractere.letra > pI->palavra.pPrimeiro->pProx->caractere.letra){
-            pI = pI->pProxTexto;
+        while (Pivo.pPrimeiro->pProx->caractere.letra > auxI->palavra.pPrimeiro->pProx->caractere.letra ){
             comparacoesText++;
-        } //se a primeira letra valida da palavra do pivo for maior que a primeira letra valida da palavra do pI, pI avança para a proxima celula //TODO verificar essa condiçao
-        while (Pivo->palavra.pPrimeiro->pProx->caractere.letra < pJ->palavra.pPrimeiro->pProx->caractere.letra){
-            comparacoesText++;
-            pJ = pJ->pAntTexto;
+            auxI = auxI->pProxTexto;
+
         }
-        if(Distancia_Texto_LEncadeada(pI,pJ)>=0){
-            TrocaItens_Texto_QuickSort(pI,pJ);
-            movimentacoesText +=3;
-            pI = pI->pProxTexto;
-            pJ = pJ->pAntTexto;
-        } //Troca o conteudo de I por J
-    }while (Distancia_Texto_LEncadeada(pI,pJ)>= 0); //Enquanto a distancia entre I e J for maior ou igual a 0, quando for negativa e pq se cruzaram
+        while (Pivo.pPrimeiro->pProx->caractere.letra < auxJ->palavra.pPrimeiro->pProx->caractere.letra ){
+            comparacoesText++;
+            auxJ = auxJ->pAntTexto;
+        }
+        if(auxI->indice<= auxJ->indice){
+            TrocaItens_Texto_QuickSort(auxI,auxJ);
+            movimentacoesText += 3;
+            auxI = auxI->pProxTexto;
+            auxJ = auxJ->pAntTexto;
+            printf("Itens trocados!\n");
+        }
+
+    }
+    *pI = auxI->indice;
+    *pJ =auxJ->indice;
 }
 
 void QuickSort_Bib_LEncadeada(TBiblioteca_LEncadeada* pBib){
@@ -115,7 +133,7 @@ void QuickSort_Bib_LEncadeada(TBiblioteca_LEncadeada* pBib){
     double tempo;
     comparacoesText = 0; movimentacoesText = 0;
     tF = clock();
-    printf("Iniciou o QuickSort da lista encadeada!\n");
+
     Ordena_Bib_LEncadeda(0, pBib->pUltimoBiblioteca->pAntBiblioteca->indice, pBib);
     tempo = (tF - tI) * 1000.0 / CLOCKS_PER_SEC;
     printf("Algoritmo Quick Sort:\n");
@@ -125,7 +143,7 @@ void QuickSort_Bib_LEncadeada(TBiblioteca_LEncadeada* pBib){
 }
 
 void Ordena_Bib_LEncadeda(int Esq, int Dir, TBiblioteca_LEncadeada* pBib){
-    printf("Iniciou o Ordena da lista encadeada!\n");
+
     int i, j;
 
     Particao_Bib_LEncadeada(Esq, Dir, &i, &j, pBib);
@@ -141,39 +159,49 @@ void Ordena_Bib_LEncadeda(int Esq, int Dir, TBiblioteca_LEncadeada* pBib){
     }
 }
 
-void Particao_Bib_LEncadeada(int pEsq, int pDir, TCelulaBiblioteca *pI, TCelulaBiblioteca* pJ, TBiblioteca_LEncadeada* pBib){
-    printf("Iniciou a Partiçao da lista encadeada !\n");
-    Ttexto_LEncadeada  Pivo,aux;
+void Particao_Bib_LEncadeada(int pEsq, int pDir, int *pI, int* pJ, TBiblioteca_LEncadeada* pBib){
+
+    Ttexto_LEncadeada  Pivo;
     TCelulaBiblioteca *auxI, *auxJ,*AuxPercorrer;
-    int tamanho_particao = (pI->indice + pJ->indice);
 
-
+    auxI = pBib->pPrimeiroBiblioteca;
+    while(auxI->indice != pEsq && auxI->pProxBiblioteca !=NULL){
+        auxI = auxI->pProxBiblioteca;
+    }
+    auxJ = pBib->pUltimoBiblioteca;
+    while (auxJ->indice != pDir && auxJ->pAntBiblioteca != NULL){
+        auxJ = auxJ->pAntBiblioteca;
+    }
+    int tamanho_particao = (auxI->indice + auxJ->indice);
+    AuxPercorrer = auxI;
     while (AuxPercorrer->indice != tamanho_particao/2 && AuxPercorrer->pProxBiblioteca != NULL){
         AuxPercorrer = AuxPercorrer->pProxBiblioteca;
     }
+    Pivo = AuxPercorrer->texto;
     //Pivo decidido
 
-    while (pI->indice <= pJ->indice){
+    while (auxI->indice <= auxJ->indice){
         comparacoesBib++;
-        while (Pivo.tam_texto > pI->texto.tam_texto ){
+        while (Pivo.tam_texto > auxI->texto.tam_texto ){
             comparacoesBib++;
-            pI = pI->pProxBiblioteca;
+            auxI = auxI->pProxBiblioteca;
 
         }
-        while (Pivo.tam_texto < pJ->texto.tam_texto ){
+        while (Pivo.tam_texto < auxJ->texto.tam_texto ){
             comparacoesBib++;
-            pJ = pJ->pAntBiblioteca;
+            auxJ = auxJ->pAntBiblioteca;
         }
-        if(pI->indice<= pJ->indice){
-            TrocaItens_Bib_QuickSort(pI,pJ);
+        if(auxI->indice<= auxJ->indice){
+            TrocaItens_Bib_QuickSort(auxI,auxJ);
             movimentacoesBib += 3;
-            pI = pI->pProxBiblioteca;
-            pJ = pJ->pAntBiblioteca;
-            printf("Itens trocados!\n");
-        }
-        printf("A distancia entre pI e pJ eh %d\n",pJ->indice-pI->indice);
-    }
+            auxI = auxI->pProxBiblioteca;
+            auxJ = auxJ->pAntBiblioteca;
 
-    printf("saiu do while!\n");
+        }
+
+    }
+    *pI = auxI->indice;
+    *pJ =auxJ->indice;
+
     return;
 }
